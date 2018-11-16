@@ -44,7 +44,7 @@ Der Mittelwert aller Winkelrichtgrößen beträgt:
 \subsection{Bestimmung des Trägheitsmoments der Drillachse}
 In folgender Tabelle wird die Schwingungsdauer T und der zugehörige Abstand a vom Mittelpunk der Drillachse bis 
 zum Schwerpunkt der Gewichte dargestellt. Dabei wurde für einen Abstand 10 Schwingungen gemessen und das Ergebnis
-durch 10 geteilt.
+durch 10 geteilt. Der Fehler der Messung wird auf 0.5 Sekunden geschätzt.
 
 
 \begin{table}[H]
@@ -55,24 +55,75 @@ durch 10 geteilt.
     \toprule
     $a/$mm & $T/$s \\
     \midrule
-     $60 \pm 0.05$ & $2.46 \pm 0.5$ \\ 
-     $80 \pm 0.05$ & $2.79 \pm 0.5$ \\
-    $100 \pm 0.05$ & $3.16 \pm 0.5$ \\
-    $120 \pm 0.05$ & $3.54 \pm 0.5$ \\
-    $140 \pm 0.05$ & $3.97 \pm 0.5$ \\
-    $160 \pm 0.05$ & $4.40 \pm 0.5$ \\
-    $180 \pm 0.05$ & $4.86 \pm 0.5$ \\
-    $200 \pm 0.05$ & $5.28 \pm 0.5$ \\
-    $220 \pm 0.05$ & $5.76 \pm 0.5$ \\
-    $240 \pm 0.05$ & $6.24 \pm 0.5$ \\
+     $60 \pm 0.05$ & $2.46 \pm 0.05$ \\ 
+     $80 \pm 0.05$ & $2.79 \pm 0.05$ \\
+    $100 \pm 0.05$ & $3.16 \pm 0.05$ \\
+    $120 \pm 0.05$ & $3.54 \pm 0.05$ \\
+    $140 \pm 0.05$ & $3.97 \pm 0.05$ \\
+    $160 \pm 0.05$ & $4.40 \pm 0.05$ \\
+    $180 \pm 0.05$ & $4.86 \pm 0.05$ \\
+    $200 \pm 0.05$ & $5.28 \pm 0.05$ \\
+    $220 \pm 0.05$ & $5.76 \pm 0.05$ \\
+    $240 \pm 0.05$ & $6.24 \pm 0.05$ \\
     \bottomrule
   \end{tabular}
 \end{table} 
 
 
+Das Quadrat der Schwingungsauer wird gegen das Quadrat des Abstandes aufgetragen, und mit linearer Regression wird das Trägheitsmoment
+der Drillachse berechnet. 
 
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot1.pdf}
+  \caption{Ausgleichsrechnung zur Bestimmung des Trägheitsmomentes der Drillachse.}
+  \label{fig:plot}
+\end{figure}
 
+Beschrieben wird die Ausgleichsgerade durch folgende Gleichung:
 
+\begin{equation}
+  y = (592.91 \pm 11.52)x + (4.39 \pm 0.36)
+\end{equation}
+
+Mit Hilfe von Gleichung () ergibt sich:
+\begin{align}
+  T^2(a^2) = 4\pi^2\frac{(I_\text{D}+I_\text{K})}{D}
+\end{align}
+wobei $I_\text{K}$ das Trägheitsmoment der Gewichte ist, welches sich wie folgt zusammen setzt:
+
+\begin{equation}
+ I_\text{K} = (I_\text{Z1S}+I_\text{Z2S})+(m_\text{Z1}+m_\text{Z2})a^2
+\end{equation}
+
+$I_\text{Z1S}$ bzw. $I_\text{Z2S}$ sind die Trägheitsmomente der Zylinder-Gewichte mit Achse durch den Schwerpunkt.
+Sie lassen sich mit Gleichung () berechnen. 
+Die Masse der Gewichte beträgt:
+\begin{equation}
+m_\text{Z1} = 0.2218 kg , m_\text{Z2} = 0.2225 kg
+\end{equation}
+Der Durchmesser beider Gewichte beträgt $d = (0.03475 \pm 0.00005)m$ und die Höhe $h = (0.0297 \pm 0.00005)m$.
+Die Werte für die Trägheitsmomente lauten also:
+\begin{equation}
+I_\text{Z1S} = (3.304 \pm 0.007)10^{-5} , I_\text{Z2S} = (3.315 \pm 0.007)10^{-5} .
+\end{equation}
+
+Setzt man $I_\text{K}$ in Gleichung () ein, so ergibt sich:
+
+\begin{equation}
+ T^2(a^2) = 4\pi^2\frac{(I_\text{D}+(I_\text{Z1S}+I_\text{Z2S})+(m_\text{Z1}+m_\text{Z2})a^2)}{D}
+\end{equation}
+\begin{equation}
+ \Rightarrow T^2(a^2) = \underbrace{4\pi^2\frac{(I_\text{D}+(I_\text{Z1S}+I_\text{Z2S}))}{D}}_{Achsenabschnitt \: b} + \underbrace{\frac{4\pi^2(m_\text{Z1}+m_\text{Z2})}{D}}_{Steigung \: m} a^2
+ \end{equation}
+ \begin{align}
+  \Rightarrow I_D = \frac{bD}{4\pi^2}-(I_\text{ZS1}+I_\text{ZS2})
+ \end{align}
+
+ Das Trägheitsmoment der Drillachse beträgt:
+ \begin{equation}
+ I_D= (-1.5 \pm 0.4) \cdot 10^{-5} \symup{kgm^2}
+ \end{equation}
 
 
 \subsection{Bestimmung des Trägheitsmoments für zwei Körper}
@@ -87,21 +138,49 @@ Für die Kugel wurden je 8 Schwingungen gemessen, für den Zylinder je 5.
     \toprule
     $T_Z/$s & $T_K/$s \\
     \midrule
-    0.72 & 1.47 \\
-    0.75 & 1.45 \\
-    0.74 & 1.48 \\
-    0.74 & 1.44 \\
-    0.74 & 1.46 \\
+    $0.72 \pm 0.01$ & $1.47\pm 0.0625$ \\
+    $0.75 \pm 0.01$ & $1.45\pm 0.0625$ \\
+    $0.74 \pm 0.01$ & $1.48\pm 0.0625$ \\
+    $0.74 \pm 0.01$ & $1.44\pm 0.0625$ \\
+    $0.74 \pm 0.01$ & $1.46\pm 0.0625$ \\
+  
     \bottomrule
   \end{tabular}
 \end{table}
+
+Als Mittelwerte ergeben sich:
+\begin{equation}
+T_Z = (0.74 \pm 0.04) 
+\end{equation}
+\begin{equation}
+T_K = (0.146 \pm 0.028) 
+\end{equation}
+
+
+
+Dadurch lassen sich mit Gleichung () die Trägheitsmomente berechnen:
+
+\begin{equation}
+I_Z = (6.4 \pm 0.8)\cdot 10^{-6} 
+\end{equation}
+\begin{equation}
+I_K = (2.51 \pm 0.1)\cdot 10^{-5}
+\end{equation}
+
+Das negative Trägheitsmoment der Drillachse wurde bei der Berechnung nicht berücksichtigt,
+da es physikalisch keinen Sinn ergibt. 
+Berechnet man das Trägheitsmoment für einen Zylinder mit Masse $m = 0.3684 kg$, Durchmesser $d = (0.0973 \pm 0.00005)$
+und Höhe $h = (0.101 \pm 0.00005)$ , ergibt sich: $I_Z =(4.36 \pm 0.004)10^{-4} $.
+Der Theoriewert einer Kugel mit Masse $ m = 0.8123 kg$ und Durchmesser $ d = (0.13755 \pm 0.00005)$
+beträgt: $I_K = (1.54 \pm 0.001)10^{-3} $
+
 
 
 
 
 \subsection{Bestimmung des Trägheitsmoments einer Modellpuppe}
 Es wird die Schwingungsdauer einer Puppe für zwei unterschiedliche 
-Posen $P_1$ und $P_2$ bestimmt. Bei der ersten Pose sind Arme und Beine am Körper angewinkelt und in der zweiten
+Posen $P_\text{1}$ und $P_\text{2}$ bestimmt. Bei der ersten Pose sind Arme und Beine am Körper angewinkelt und in der zweiten
 sind Arme senkrecht zum Körper nach außen gestreckt, und die Beine entgegengesetzt nach hinten bzw. vorne gestreckt.
 Für die erste Pose werden 5 Schwingungen gemessen, für die zweite 10.
 \begin{table}[H]
@@ -112,14 +191,32 @@ Für die erste Pose werden 5 Schwingungen gemessen, für die zweite 10.
     \toprule
     $T_{P_1}/$s & $T_{P_2}/$s \\
     \midrule
-    $0.34 \pm 0.5$ & $0.85 \pm 0.5$ \\
-    $0.35 \pm 0.5$ & $0.85 \pm 0.5$ \\
-    $0.36 \pm 0.5$ & $0.84 \pm 0.5$ \\
-    $0.38 \pm 0.5$ & $0.85 \pm 0.5$ \\
-    $0.35 \pm 0.5$ & $0.86 \pm 0.5$ \\
+    $0.34 \pm 0.1$ & $0.85 \pm 0.05$ \\
+    $0.35 \pm 0.1$ & $0.85 \pm 0.05$ \\
+    $0.36 \pm 0.1$ & $0.84 \pm 0.05$ \\
+    $0.38 \pm 0.1$ & $0.85 \pm 0.05$ \\
+    $0.35 \pm 0.1$ & $0.86 \pm 0.05$ \\
     \bottomrule
   \end{tabular}
 \end{table}
+
+Als Mittelwerte ergeben sich:
+
+\begin{equation}
+T_{P_1} = (0.35 \pm 0.04) 
+\end{equation}
+\begin{equation}
+T_{P_2}= (0.85 \pm 0.02) 
+\end{equation}
+
+Die Trägheitsmomente lassen sich analog zu den zwei Körpern mit Gleichung () berechnen:
+
+\begin{equation}
+I_{P_1}  = (1.6 \pm 0.4)\cdot 10^{-5} 
+\end{equation}
+\begin{equation}
+I_{P_2}  = (2.3 \pm 0.4)\cdot 10^{-5}
+\end{equation}
 
 
 

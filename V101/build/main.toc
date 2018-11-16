@@ -7,7 +7,7 @@
 \contentsline {section}{\numberline {4}Auswertung}{4}{section.4}
 \contentsline {subsection}{\numberline {4.1}Betimmung der Winkelrichtgröße}{4}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Bestimmung des Trägheitsmoments der Drillachse}{5}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Bestimmung des Trägheitsmoments für zwei Körper}{6}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Bestimmung des Trägheitsmoments einer Modellpuppe}{6}{subsection.4.4}
-\contentsline {section}{\numberline {5}Diskussion}{6}{section.5}
-\contentsline {section}{\nonumberline Literatur}{6}{section*.7}
+\contentsline {subsection}{\numberline {4.3}Bestimmung des Trägheitsmoments für zwei Körper}{7}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Bestimmung des Trägheitsmoments einer Modellpuppe}{8}{subsection.4.4}
+\contentsline {section}{\numberline {5}Diskussion}{8}{section.5}
+\contentsline {section}{\nonumberline Literatur}{8}{section*.8}
