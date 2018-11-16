@@ -4,10 +4,10 @@
 \contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}
 \contentsline {section}{\numberline {2}Theorie}{3}{section.2}
 \contentsline {section}{\numberline {3}Durchführung}{4}{section.3}
-\contentsline {section}{\numberline {4}Auswertung}{4}{section.4}
-\contentsline {subsection}{\numberline {4.1}Betimmung der Winkelrichtgröße}{4}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Bestimmung des Trägheitsmoments der Drillachse}{5}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Bestimmung des Trägheitsmoments für zwei Körper}{7}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Bestimmung des Trägheitsmoments einer Modellpuppe}{8}{subsection.4.4}
-\contentsline {section}{\numberline {5}Diskussion}{8}{section.5}
-\contentsline {section}{\nonumberline Literatur}{8}{section*.8}
+\contentsline {section}{\numberline {4}Auswertung}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}Betimmung der Winkelrichtgröße}{5}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Bestimmung des Trägheitsmoments der Drillachse}{6}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Bestimmung des Trägheitsmoments für zwei Körper}{8}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Bestimmung des Trägheitsmoments einer Modellpuppe}{9}{subsection.4.4}
+\contentsline {section}{\numberline {5}Diskussion}{9}{section.5}
+\contentsline {section}{\nonumberline Literatur}{9}{section*.9}
