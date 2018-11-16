@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber build/main"] 1542385883 "build/main.bcf" "build/main.bbl" "build/main" 1542386064
-  "build/main.bcf" 1542386063 90581 8760776e7e407e5cbdfd0d8511ddeaed ""
+["biber build/main"] 1542385883 "build/main.bcf" "build/main.bbl" "build/main" 1542395497
+  "build/main.bcf" 1542395497 90581 8760776e7e407e5cbdfd0d8511ddeaed ""
   "lit.bib" 1542385559 104 86a179d4531778a9d3936100d09f088a ""
   (generated)
-  "build/main.bbl"
   "build/main.blg"
-["lualatex"] 1542386058 "main.tex" "build/main.pdf" "main" 1542386064
+  "build/main.bbl"
+["lualatex"] 1542395492 "main.tex" "build/main.pdf" "main" 1542395497
   "/home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1480098679 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1480098679 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
   "/home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf" 1480098679 118828 4d461c73423fe2666dad2ff0dfc3ca68 ""
@@ -214,21 +214,21 @@
   "/home/kalina/.local/texlive/2018/texmf-var/tex/generic/config/language.dat.lua" 1537899430 17401 ab54a87e630a3a714751da42db4f619a ""
   "/home/kalina/.local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt" 1537899520 1362411 917f6a7a4dc9fe7a45919025b3afc426 ""
   "build/koerper.PNG" 1542385559 18431 9bd7e66613a403d349ed11ae3889b13c ""
-  "build/main.aux" 1542386063 8704 10994f4505ed115a87ea8b5d9dd35cd1 ""
+  "build/main.aux" 1542395497 8704 10994f4505ed115a87ea8b5d9dd35cd1 ""
   "build/main.bbl" 1542385884 1425 904dfd354e9cceee254d2480b8f013b3 "biber build/main"
-  "build/main.run.xml" 1542386063 2365 9506e75c9b41e27fa8670338f5c4ba94 ""
-  "build/main.toc" 1542386063 994 fc816103eebdaed80a48388fd5f64e62 ""
+  "build/main.run.xml" 1542395497 2365 9506e75c9b41e27fa8670338f5c4ba94 ""
+  "build/main.toc" 1542395497 994 fc816103eebdaed80a48388fd5f64e62 ""
   "build/plot1.pdf" 1542385970 17675 c318033b77c50aa40279729b4e132431 ""
-  "content/auswertung.tex" 1542382803 7500 26140d54deac02bdcf1c47a3596249bd ""
+  "content/auswertung.tex" 1542395486 7659 3e1af61bd52ae1604a4d5616445cefe3 ""
   "content/diskussion.tex" 1542385559 44 402cc6c9751419c0f1a455b2d4ed1f51 ""
   "content/durchfuehrung.tex" 1542385559 50 21282d8bb0cc9b2f3316d3739203a5a9 ""
   "content/theorie.tex" 1542385677 3205 af151c9954619bdae02d61811b2a9775 ""
   "header.tex" 1542385559 3578 21c2df9c8674f0b4a58cdc11428c48b4 ""
   "main.tex" 1542385559 364 66f26a30abbb82b0baca5e3582194cda ""
   (generated)
-  "build/main.toc"
-  "build/main.bcf"
   "build/main.aux"
   "build/main.run.xml"
   "build/main.log"
+  "build/main.toc"
+  "build/main.bcf"
   "build/main.pdf"
