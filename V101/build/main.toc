@@ -10,4 +10,4 @@
 \contentsline {subsection}{\numberline {4.3}Bestimmung des Trägheitsmoments für zwei Körper}{8}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Bestimmung des Trägheitsmoments einer Modellpuppe}{9}{subsection.4.4}
 \contentsline {section}{\numberline {5}Diskussion}{9}{section.5}
-\contentsline {section}{\nonumberline Literatur}{9}{section*.9}
+\contentsline {section}{\nonumberline Literatur}{10}{section*.9}
