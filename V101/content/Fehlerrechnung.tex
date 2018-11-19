@@ -1,0 +1,24 @@
+\section{Fehlerrechnung}
+\label{sec:Fehlerrechnung}
+Der Mittelwert berechnet sich mit folgender Formel:
+\begin{equation}
+  \bar{x} = \frac{1}{N} \sum_{i=1}^N x_i
+\end{equation}
+Der Fehler des Mittelwertes lautet entsprechend :
+\begin{equation}
+  \sigma = \sqrt{\frac{1}{N(N-1)} \sum_{i=1}^N (x_i - \bar{x})}
+\end{equation}
+Werden Daten mit Unsicherheiten in späteren Formeln weiter verwendet, breiten sich die Fehler nach der Gauß'schen Fehlerfortpflanzung aus:
+\begin{equation}
+  \sigma_f = \sqrt{
+      \sum\limits_{i = 1}^N
+       \left( \frac{\partial f}{\partial x_i} \sigma_i \right)^{\!\! 2}
+     }
+\end{equation}
+Ausgleichsrechnung wird mit folgender Formel durchgeführt :
+\begin{align}
+  y = a \cdot x + b \\
+  a = \frac{\overline{xy}-\bar{x}\cdot\bar{y}}{\bar{x^2}-\bar{x}^2} \\
+  b = \frac{\bar{x^2}\bar{y}-\overline{xy}\bar{x}}{\bar{x^2}-\bar{x}^2}
+\end{align}
+

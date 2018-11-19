@@ -378,6 +378,8 @@ INPUT ./content/durchfuehrung.tex
 INPUT ./content/durchfuehrung.tex
 INPUT ./Drillachse.PNG
 INPUT ./Drillachse.PNG
+INPUT ./content/Fehlerrechnung.tex
+INPUT ./content/Fehlerrechnung.tex
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
 INPUT build/plot1.pdf
