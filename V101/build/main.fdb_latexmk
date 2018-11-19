@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber build/main"] 1542649726 "build/main.bcf" "build/main.bbl" "build/main" 1542652296
-  "build/main.bcf" 1542652296 90581 8760776e7e407e5cbdfd0d8511ddeaed ""
+["biber build/main"] 1542649726 "build/main.bcf" "build/main.bbl" "build/main" 1542653358
+  "build/main.bcf" 1542653357 90581 8760776e7e407e5cbdfd0d8511ddeaed ""
   "lit.bib" 1542385559 104 86a179d4531778a9d3936100d09f088a ""
   (generated)
   "build/main.bbl"
   "build/main.blg"
-["lualatex"] 1542652286 "main.tex" "build/main.pdf" "main" 1542652296
+["lualatex"] 1542653347 "main.tex" "build/main.pdf" "main" 1542653358
   "/home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1480098679 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1480098679 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
   "/home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf" 1480098679 118828 4d461c73423fe2666dad2ff0dfc3ca68 ""
@@ -215,22 +215,22 @@
   "/home/kalina/.local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt" 1537899520 1362411 917f6a7a4dc9fe7a45919025b3afc426 ""
   "Drillachse.PNG" 1510225120 37127 23e150bf303ed83010b222aa68d60277 ""
   "build/koerper.PNG" 1542385559 18431 9bd7e66613a403d349ed11ae3889b13c ""
-  "build/main.aux" 1542652296 9332 cf2fd9eaa066dadccee693165f1771fd ""
+  "build/main.aux" 1542653357 9332 cf2fd9eaa066dadccee693165f1771fd ""
   "build/main.bbl" 1542649729 1425 904dfd354e9cceee254d2480b8f013b3 "biber build/main"
-  "build/main.run.xml" 1542652296 2365 9506e75c9b41e27fa8670338f5c4ba94 ""
-  "build/main.toc" 1542652296 1065 c130595d398985afa59b9499bb2e0e8d ""
+  "build/main.run.xml" 1542653357 2365 9506e75c9b41e27fa8670338f5c4ba94 ""
+  "build/main.toc" 1542653357 1065 c130595d398985afa59b9499bb2e0e8d ""
   "build/plot1.pdf" 1542385970 17675 c318033b77c50aa40279729b4e132431 ""
   "content/Fehlerrechnung.tex" 1542649845 901 56dbb592ec3085d3cb19bb50d154025c ""
   "content/auswertung.tex" 1542652283 7773 1d187febcd4872c30c9aa97a368e2def ""
-  "content/diskussion.tex" 1542537563 1395 e01fe877a15b3b770cfd9eebd7bc8990 ""
+  "content/diskussion.tex" 1542653345 1389 234ec324893611051cf468c4e061bbde ""
   "content/durchfuehrung.tex" 1542397969 1275 86f9c6da26e4c0c00a42eabdc9c25a27 ""
   "content/theorie.tex" 1542385677 3205 af151c9954619bdae02d61811b2a9775 ""
   "header.tex" 1542649461 3634 8a06b06c7548cbcc918db5c904bf970a ""
   "main.tex" 1542649388 410 802db5067e930c2b41bb7bb99dd3d037 ""
   (generated)
-  "build/main.bcf"
-  "build/main.aux"
+  "build/main.pdf"
   "build/main.run.xml"
   "build/main.toc"
+  "build/main.bcf"
   "build/main.log"
-  "build/main.pdf"
+  "build/main.aux"

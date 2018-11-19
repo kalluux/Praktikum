@@ -46,7 +46,7 @@ Idrill = ((b*Dmittel)/(4*(np.pi**2)))-Izy
 mk = 0.8123
 dk = ufloat(0.13755, 0.00005)
 Ik = 2/5 * mk * ((dk/2)**2)
-#print(Ik)
+print(Ik)
 
 s1 = ufloat(1.47, 0.0625)
 s2 = ufloat(1.45, 0.0625)
@@ -76,10 +76,10 @@ mz = 0.3684
 dz = ufloat(0.0973,0.00005)
 hz = ufloat(0.101,0.00005)
 Iz = (mz*((dz/2)**2))/2
-#print(Iz)
+print(Iz)
 
 Izylinder = (((tt**2)*Dmittel)/(4*((np.pi)**2)))
-#print(Izylinder)
+print(Izylinder)
 
 
 
