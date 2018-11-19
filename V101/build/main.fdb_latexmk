@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber build/main"] 1542385883 "build/main.bcf" "build/main.bbl" "build/main" 1542537599
-  "build/main.bcf" 1542537598 90581 8760776e7e407e5cbdfd0d8511ddeaed ""
+["biber build/main"] 1542385883 "build/main.bcf" "build/main.bbl" "build/main" 1542638324
+  "build/main.bcf" 1542638323 90581 8760776e7e407e5cbdfd0d8511ddeaed ""
   "lit.bib" 1542385559 104 86a179d4531778a9d3936100d09f088a ""
   (generated)
   "build/main.bbl"
   "build/main.blg"
-["lualatex"] 1542537588 "main.tex" "build/main.pdf" "main" 1542537599
+["lualatex"] 1542638313 "main.tex" "build/main.pdf" "main" 1542638324
   "/home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1480098679 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1480098679 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
   "/home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf" 1480098679 118828 4d461c73423fe2666dad2ff0dfc3ca68 ""
@@ -215,21 +215,21 @@
   "/home/kalina/.local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt" 1537899520 1362411 917f6a7a4dc9fe7a45919025b3afc426 ""
   "Drillachse.PNG" 1510225120 37127 23e150bf303ed83010b222aa68d60277 ""
   "build/koerper.PNG" 1542385559 18431 9bd7e66613a403d349ed11ae3889b13c ""
-  "build/main.aux" 1542537598 8895 beb496a6ce1eda57846a867b713f67d0 ""
+  "build/main.aux" 1542638323 8895 beb496a6ce1eda57846a867b713f67d0 ""
   "build/main.bbl" 1542385884 1425 904dfd354e9cceee254d2480b8f013b3 "biber build/main"
-  "build/main.run.xml" 1542537598 2365 9506e75c9b41e27fa8670338f5c4ba94 ""
-  "build/main.toc" 1542537598 995 6d650631304dcfb6853d00d878587271 ""
+  "build/main.run.xml" 1542638323 2365 9506e75c9b41e27fa8670338f5c4ba94 ""
+  "build/main.toc" 1542638323 995 6d650631304dcfb6853d00d878587271 ""
   "build/plot1.pdf" 1542385970 17675 c318033b77c50aa40279729b4e132431 ""
-  "content/auswertung.tex" 1542395600 7659 3e1af61bd52ae1604a4d5616445cefe3 ""
+  "content/auswertung.tex" 1542638309 7769 6d0e8ca8d2cc69c1afde8fe1c2521f14 ""
   "content/diskussion.tex" 1542537563 1395 e01fe877a15b3b770cfd9eebd7bc8990 ""
   "content/durchfuehrung.tex" 1542397969 1275 86f9c6da26e4c0c00a42eabdc9c25a27 ""
   "content/theorie.tex" 1542385677 3205 af151c9954619bdae02d61811b2a9775 ""
   "header.tex" 1542385559 3578 21c2df9c8674f0b4a58cdc11428c48b4 ""
   "main.tex" 1542385559 364 66f26a30abbb82b0baca5e3582194cda ""
   (generated)
-  "build/main.toc"
-  "build/main.log"
+  "build/main.bcf"
   "build/main.aux"
+  "build/main.log"
+  "build/main.toc"
   "build/main.run.xml"
   "build/main.pdf"
-  "build/main.bcf"

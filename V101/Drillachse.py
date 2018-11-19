@@ -93,7 +93,7 @@ sch5 = ufloat(0.3478,0.1)
 schw = np.array([sch1,sch2,sch3,sch4,sch5])
 schww = np.mean(schw)
 print(schww)
-Ip1 = (((schww**2)*Dmittel)/(4*((np.pi)**2)))-Idrill
+Ip1 = (((schww**2)*Dmittel)/(4*((np.pi)**2)))
 print(Ip1)
 
 
@@ -105,7 +105,7 @@ p5 = ufloat(0.8572,0.05)
 pe = np.array([p1,p2,p3,p4,p5])
 pep = np.mean(pe)
 print(pep)
-Ip2 = (((pep**2)*Dmittel)/(4*((np.pi)**2)))-Idrill
+Ip2 = (((pep**2)*Dmittel)/(4*((np.pi)**2)))
 print(Ip2)
 
 
