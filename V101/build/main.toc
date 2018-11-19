@@ -7,8 +7,10 @@
 \contentsline {section}{\numberline {4}Fehlerrechnung}{5}{section.4}
 \contentsline {section}{\numberline {5}Auswertung}{6}{section.5}
 \contentsline {subsection}{\numberline {5.1}Betimmung der Winkelrichtgröße}{6}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Bestimmung des Trägheitsmoments der Drillachse}{6}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Bestimmung des Trägheitsmoments für zwei Körper}{8}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Bestimmung des Trägheitsmoments einer Modellpuppe}{9}{subsection.5.4}
-\contentsline {section}{\numberline {6}Diskussion}{10}{section.6}
-\contentsline {section}{\nonumberline Literatur}{10}{section*.9}
+\contentsline {subsection}{\numberline {5.2}Bestimmung des Trägheitsmoments der Drillachse}{7}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Bestimmung des Trägheitsmoments für zwei Körper}{9}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Bestimmung des Trägheitsmoments einer Modellpuppe}{10}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Berechnung über die gemessene Schwingungsdauer}{10}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}Berechnung über die Modellierung der Puppe}{10}{subsubsection.5.4.2}
+\contentsline {section}{\numberline {6}Diskussion}{13}{section.6}
+\contentsline {section}{\nonumberline Literatur}{13}{section*.11}

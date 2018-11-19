@@ -70,7 +70,7 @@ durch 10 geteilt. Der Fehler der Messung wird auf 0.5 Sekunden geschätzt.
 \end{table} 
 
 
-Das Quadrat der Schwingungsauer wird gegen das Quadrat des Abstandes aufgetragen, und mit linearer Regression wird das Trägheitsmoment
+Das Quadrat der Schwingungsdauer wird gegen das Quadrat des Abstandes aufgetragen, und mit linearer Regression wird das Trägheitsmoment
 der Drillachse berechnet. 
 
 \begin{figure}[H]
@@ -179,6 +179,7 @@ beträgt: $I_K = (1.54 \pm 0.001)10^{-3} \symup{kgm^2}$
 
 
 \subsection{Bestimmung des Trägheitsmoments einer Modellpuppe}
+\subsubsection{Berechnung über die gemessene Schwingungsdauer}
 Es wird die Schwingungsdauer einer Puppe für zwei unterschiedliche 
 Posen $P_\text{1}$ und $P_\text{2}$ bestimmt. Bei der ersten Pose sind Arme und Beine am Körper angewinkelt und in der zweiten
 sind Arme senkrecht zum Körper nach außen gestreckt, und die Beine entgegengesetzt nach hinten bzw. vorne gestreckt.
@@ -219,6 +220,116 @@ I_{P_1}  = (1.5 \pm 0.4)\cdot 10^{-6} \symup{kgm^2}
 I_{P_2}  = (8.5 \pm 0.4)\cdot 10^{-6} \symup{kgm^2} .
 \end{equation}
 
+\subsubsection{Berechnung über die Modellierung der Puppe}
+Die Holzpuppe hat folgende Maße:\\
+Kopf:\\
+\begin{align*}
+d_{\text{Kopf,Halbkugel}} &= (\num{30.9 +- 0.05})\,\si{\milli\meter}
+\end{align*}
+\begin{align*}
+d_{\text{Kopf,1,Kegelstumpf}} &= (\num{30.9 +- 0.05})\,\si{\milli\meter} \\
+d_{\text{Kopf,2,Kegelstumpf}} &= (\num{18.15 +- 0.05})\,\si{\milli\meter} \\
+h_{\text{Kopf,Kegelstumpf}} &= (\num{35.4 +- 0.05})\,\si{\milli\meter} \\
+d_{\text{Hals,Zylinder}} &= (\num{16 +- 0.05})\,\si{\milli\meter} \\
+h_{\text{Hals,Zylinder}} &= (\num{10.7 +- 0.05})\,\si{\milli\meter}
+\end{align*}
+Oberkörper:\\
+\begin{align*}
+h_{\text{Oberkörper,1,Quader}} &= (\num{49.7 +- 0.05})\,\si{\milli\meter} \\
+b_{\text{Oberkörper,1,Quader}} &= (\num{39.45 +- 0.05})\,\si{\milli\meter} \\
+l_{\text{Oberkörper,1,Quader}} &= (\num{37 +- 0.05})\,\si{\milli\meter}
+\end{align*}
+\begin{align*}
+d_{\text{Oberkörper,2,Zylinder}} &= (\num{24.9 +- 0.05})\,\si{\milli\meter} \\
+h_{\text{Oberkörper,2,Zylinder}} &= (\num{15.15 +- 0.05})\,\si{\milli\meter}
+\end{align*}
+\begin{align*}
+d_{\text{Oberkörper,3,Zylinder}} &= (\num{38.2 +- 0.05})\,\si{\milli\meter} \\
+h_{\text{Oberkörper,3,Zylinder}} &= (\num{35.65 +- 0.05})\,\si{\milli\meter}
+\end{align*}
+Arm:\\
+\begin{align*}
+d_{\text{Arm,Kugel}} &= (\num{11.9 +- 0.05})\,\si{\milli\meter} \\
+d_{\text{Arm,Zylinder}} &= (\num{12 +- 0.05})\,\si{\milli\meter} \\
+h_{\text{Arm,Zylinder}} &= (\num{99.15 +- 0.05})\,\si{\milli\meter} \\
+h_{\text{Hand,Quader}} &= (\num{24.7 +- 0.05})\,\si{\milli\meter} \\
+b_{\text{Hand,Quader}} &= (\num{7.35 +- 0.05})\,\si{\milli\meter} \\
+l_{\text{Hand,Quader}} &= (\num{12.9 +- 0.05})\,\si{\milli\meter}
+\end{align*}
+Bein:\\
+\begin{align*}
+d_{\text{Bein, Kugel}} &= (\num{12.05 +- 0.05})\,\si{\milli\meter} \\
+d_{\text{Bein,1,Zylinder}} &= (\num{9.35 +- 0.05})\,\si{\milli\meter} \\
+h_{\text{Bein,1,Zylinder}} &= (\num{56.8 +- 0.05})\,\si{\milli\meter} \\
+d_{\text{Bein,2,Zylinder}} &= (\num{12.6 +- 0.05})\,\si{\milli\meter} \\
+h_{\text{Bein,2,Zylinder}} &= (\num{6.9 +- 0.05})\,\si{\milli\meter} \\
+d_{\text{Bein,3,Zylinder}} &= (\num{16.35 +- 0.05})\,\si{\milli\meter} \\
+h_{\text{Bein,3,Zylinder}} &= (\num{61.35 +- 0.05})\,\si{\milli\meter} \\
+h_{\text{Bein,Quader}} &= (\num{8.6 +- 0.05})\,\si{\milli\meter} \\
+b_{\text{Bein,Quader}} &= (\num{15.45 +- 0.05})\,\si{\milli\meter} \\
+l_{\text{Bein,Quader}} &= (\num{37.55 +- 0.05})\,\si{\milli\meter}.
+\end{align*}
+Für das Trägheitsmoment der Holzpuppe werden die Massen der einzelnen Körperteile benötigt.
+Diese werden durch das Volumen der Bestandteile und das Gesamtgewicht bestimmt. Es wird angenommen,
+dass eine homogene Massenverteilung vorliegt und dass die Arme und Beine paarweise identisch sind.
+Das Volumen von Kugel, Kegelstumpf, Zylinder und Quader lassen sich durch
+\begin{align*}
+V_\text{K} &= \frac{4\pi}{3} \cdot R^3 &
+V_\text{Ks} &= \frac{\pi h}{3} \cdot (R1^2 + R1 \cdot R2 + R2^2) \\
+V_\text{Z} &= \pi \cdot R^2 \cdot h &
+V_\text{Q} &= h \cdot b \cdot l
+\end{align*}
+und das Gesamtvolumen durch die Summe aller Einzelvolumina berechnen, wobei die der Arme und Beine
+verdoppelt werden. Diese sind in Tabelle (5) zu finden.
+\begin{table}[H]
+\centering
+\caption{Volumina der Körperteile und das Gesamtvolumen der Holzpuppe.}
+\label{tab:puppe1}
+\begin{tabular}{c c}
+\toprule
+Körperteil & $V \:/\: \cdot 10^{-5} \si{\cubic\meter}$ \\
+\midrule
+Kopf & $\num{2.697 +- 0.007}$ \\
+Oberkörper & $\num{12.078 +- 0.002}$ \\
+1 $\times$ Arm & $\num{1.444 +- 0.01}$ \\
+1 $\times$ Bein & $\num{3.525 +- 0.012}$ \\
+\midrule
+\textit{Gesamt} & $\num{24.71 +- 0.04}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
 
+Aus diesen ergibt sich mittels der Dichte 
+\begin{align*}
+\rho = \frac{Masse}{Volumen} = \frac{0.1626 \si{\kilo\gram}}{(\num{24.71 +- 0.04})\si{\cubic\meter}} = (\num{658 +- 1})\,\si{\kilo\gram\per\cubic\per\meter}
+\end{align*}
+die Massen der Körperteile, welche in Tabelle (6) zu finden sind.
 
+\begin{table}[H]
+\centering
+\caption{Masse der Körperteile der Holzpuppe.}
+\label{tab:puppemasse}
+\begin{tabular}{c c c}
+\toprule
+Körperteil & $m \:/\: \si{\gram}$ \\
+\midrule
+Kopf & 17,75 \\
+Oberkörper & 79,47 \\
+1 $\times$ Arm & 9,50 \\
+1 $\times$ Bein & 23,19 \\
+\midrule
+\textit{Gesamt} & 162,6 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
+Die theoretischen Werte für das Trägheitsmoment werden mit dem Steiner'schen Satz und den Formeln aus
+Abbildung (1) sowie
+\begin{align*}
+I_\text{Ks} = \frac{3}{10} m \frac{r_\text{2}^5 - r_\text{1}^5}{r_\text{1}^3 - r_\text{1}^3}
+\end{align*}
+bestimmt. Für das gesamte Trägheitsmoment der Figur in den Position $P_\text{1}$ und $P_\text{2}$ ergibt sich somit:
+\begin{align*}
+I_{\text{P}_1} &= (\num{4.09 +- 0.008})\cdot 10^{-5}\si{\kilo\gram\meter\squared} &
+I_{\text{P}_2} &= (\num{53.14 +- 0.13})\cdot 10^{-5}\si{\kilo\gram\meter\squared}.
+\end{align*}

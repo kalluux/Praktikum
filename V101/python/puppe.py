@@ -4,17 +4,17 @@ from uncertainties import ufloat
 massekg = 0.1626
 
 #hkkopf check
-rhkkopf = ufloat(15.45 * 10**-3, 0.05 * 10**-3)
+rhkkopf = ufloat(15.45 * 10**-3, 0.025 * 10**-3)
 vhkkopf = (2/3) * np.pi * rhkkopf**3
 
 #kskopf check
-r1kskopf = ufloat(9.075 * 10**-3, 0.05 * 10**-3)
-r2kskopf = ufloat(15.45 * 10**-3, 0.05 * 10**-3)
+r1kskopf = ufloat(9.075 * 10**-3, 0.025 * 10**-3)
+r2kskopf = ufloat(15.45 * 10**-3, 0.025 * 10**-3)
 hkskopf = ufloat(35.4 * 10**-3, 0.05 * 10**-3)
 vkskopf = (1/3) * np.pi * hkskopf * (r1kskopf**2 + r1kskopf * r2kskopf + r2kskopf**2)
 
 #zhals check
-rzhals = ufloat(8 * 10**-3, 0.05 * 10**-3)
+rzhals = ufloat(8 * 10**-3, 0.025 * 10**-3)
 hzhals = ufloat(10.7 * 10**-3, 0.05 * 10**-3)
 vzhals = np.pi * rzhals**2 * hzhals
 
@@ -25,22 +25,22 @@ lo1 = ufloat(37 * 10**-3, 0.05 * 10**-3)
 vqo1 = lo1 * bo1 * ho1
 
 #zo2 check
-rzo2 = ufloat(12.45 * 10**-3, 0.05 * 10**-3)
+rzo2 = ufloat(12.45 * 10**-3, 0.025 * 10**-3)
 hzo2 = ufloat(15.15 * 10**-3, 0.05 * 10**-3)
 vzo2 = np.pi * rzo2**2 * hzo2
 
 #zo3 check
-rzo3 = ufloat(19.1 * 10**-3, 0.05 * 10**-3)
+rzo3 = ufloat(19.1 * 10**-3, 0.025 * 10**-3)
 hzo3 = ufloat(35.65 * 10**-3, 0.05 * 10**-3)
 vzo3 = np.pi * rzo3**2 * hzo3
 
 #ARME
 #karm check
-rkarm = ufloat(5.95 * 10**-3, 0.05 * 10**-3)
+rkarm = ufloat(5.95 * 10**-3, 0.025 * 10**-3)
 vkarm = (4/3) * np.pi * rkarm**3
 
 #zarm check
-rzarm = ufloat(6 * 10**-3, 0.05 * 10**-3)
+rzarm = ufloat(6 * 10**-3, 0.025 * 10**-3)
 hzarm = ufloat(99.15 * 10**-3, 0.05 * 10**-3)
 vzarm = np.pi * rzarm**2 * hzarm
 
@@ -52,22 +52,22 @@ vqhand = hqhand * bqhand * lqhand
 
 #BEINE
 #kbein check
-rkbein = ufloat(6.025* 10**-3, 0.05 * 10**-3)
+rkbein = ufloat(6.025* 10**-3, 0.025 * 10**-3)
 vkbein = (4/3) * np.pi * rkbein**3
 
 #zb1 check
 hzb1 = ufloat(56.8 * 10**-3 , 0.05 * 10**-3)
-rzb1 = ufloat(9.35 * 10**-3 ,0.05 * 10**-3)
+rzb1 = ufloat(9.35 * 10**-3 ,0.025 * 10**-3)
 vzb1 = np.pi * rzb1**2 * hzb1
 
 #zb2 check
 hzb2 = ufloat(6.9 * 10**-3 ,0.05 * 10**-3)
-rzb2 = ufloat(6.3 * 10**-3 ,0.05 * 10**-3)
+rzb2 = ufloat(6.3 * 10**-3 ,0.025 * 10**-3)
 vzb2 = np.pi * rzb2**2 * hzb2
 
 #zb3 check
 hzb3 = ufloat(61.35 * 10**-3 ,0.05 * 10**-3)
-rzb3 = ufloat(8.175 * 10**-3 ,0.05 * 10**-3)
+rzb3 = ufloat(8.175 * 10**-3 ,0.025 * 10**-3)
 vzb3 = np.pi * rzb3**2 * hzb3
 
 #qfuss 
@@ -82,22 +82,26 @@ vgesamt = vhkkopf + vkskopf + vzhals + vqo1 + vzo2 + vzo3 + 2*(vkarm + vzarm + v
 #dichte kg/m³
 dichte = massekg/vgesamt
 
-#print('V in m³: ')
-#print('vgesamt = ', vgesamt)
+print('V in m³: ')
+print('vgesamt = ', vgesamt)
 #print('vhkkopf = ', vhkkopf)
 #print('vkskopf = ', vkskopf)
 #print('vzhals = ', vzhals)
+print('VKopf =', vhkkopf+vkskopf+vzhals)
 #print('vqo1 = ', vqo1)
 #print('vzo2 = ', vzo2)
 #print('vzo3 = ', vzo3)
+print('VOberkoerper =', vqo1+vzo2+vzo3)
 #print('vkarm = ', vkarm)
 #print('vzarm = ', vzarm)
 #print('vqhand = ', vqhand)
+print('VArm =', vkarm+vzarm+vqhand)
 #print('vkbein = ', vkbein)
 #print('vzb1 = ', vzb1)
 #print('vzb2 = ', vzb2)
 #print('vzb3 = ', vzb3)
 #print('vqfuss = ', vqfuss)
+print('VBein =', vkbein+vzb1+vzb2+vzb3+vqfuss)
 print('dichte puppe kg/m³ = ', dichte)
 
 #masse test
@@ -120,6 +124,10 @@ mzb2 = vzb2 * dichte
 mzb3 = vzb3 * dichte
 mqfuss = vqfuss * dichte
 
+print('MKopf =', mhkkopf+mkskopf+mzhals)
+print('MOberkoerper =', mqo1+mzo2+mzo3)
+print('MArm =', mkarm+mzarm+mqhand)
+print('MBein =', mkbein+mzb1+mzb2+mzb3+mqfuss)
 
 def ikugel(r,m):
     i = (2/5) * m * r**2
