@@ -48,6 +48,7 @@ vgmeter = vgesamt * 10**(-9)
 dichte = massekg/vgmeter
 
 print('dichte puppe kg/m³ = ', dichte)
+print('vgesamt = ', vgmeter)
 
 #umrechnung vol in m³
 vmkopf = vkopf * 10**-9
