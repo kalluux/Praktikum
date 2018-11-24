@@ -370,6 +370,8 @@ INPUT build/main.toc
 OUTPUT build/main.toc
 INPUT ./content/theorie.tex
 INPUT ./content/theorie.tex
+INPUT ./Screenshot (7).png
+INPUT ./Screenshot (7).png
 INPUT /home/kalina/.local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /home/kalina/.local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
 INPUT /home/kalina/.local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
@@ -381,8 +383,16 @@ INPUT /home/kalina/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symb
 INPUT /home/kalina/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /home/kalina/.local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc
 INPUT /home/kalina/.local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc
+INPUT ./Screenshot (9).png
+INPUT ./Screenshot (9).png
 INPUT ./content/durchfuehrung.tex
 INPUT ./content/durchfuehrung.tex
+INPUT ./Screenshot (10).png
+INPUT ./Screenshot (10).png
+INPUT ./Screenshot (11).png
+INPUT ./Screenshot (11).png
+INPUT ./Screenshot (12).png
+INPUT ./Screenshot (12).png
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
 INPUT build/plot.pdf
