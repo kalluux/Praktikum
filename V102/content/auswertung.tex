@@ -1,9 +1,76 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-\begin{figure}
-  \centering
-  \includegraphics{plot.pdf}
-  \caption{Plot.}
-  \label{fig:plot}
-\end{figure}
+\subsection{Messung ohne Magnetfeld}
+Das Gesamtträgheitsmoment $\Theta_\text{ges}$ ergibt sich aus der Summe des Trägheitsmomentes
+der Kugel $\Theta_\text{Kugel}$ nach Gleichung (11), und dem gegebenen Trägheitsmoment der Halterung $\Theta_\text{h}$ zu
+\begin{align*}
+  \Theta_\text{ges} = {} & \Theta_\text{Kugel} + \Theta_\text{h} \\
+                    = {} & (1,53 \cdot 10^{-4} \pm 1,4 \cdot 10^{-7})\,\si{\kilo\gram\meter\squared} + 2,25 \cdot 10^{-6}\,\si{\kilo\gram\meter\squared} \\
+                    = {} & (1,5525 \cdot 10^{-4} \pm 1,4 \cdot 10^{-7})\,\si{\kilo\gram\meter\squared}.
+\end{align*}
+
+\noindent Zur Bestimmung des Schubmoduls $G$ werden nun 10 Schwingungsperioden ohne Magnetfeld $B$ gemessen (Tabelle 1).
+
+
+\begin{table}[H]
+\centering
+\caption{Periodendauer $T$ des zur Schwingung angeregten Drahtes ohne Magnetfeld $B$.}
+\label{tab:ohnebfeld}
+\begin{tabular}{c c}
+\toprule
+Fehler & T\:/\:s\\
+\midrule
+ & 18,247 \\
+ & 18,242 \\
+ & 18,244 \\
+ & 18,245 \\
+ & 18,250 \\
+ & 18,249 \\
+ & 18,243 \\
+ & 18,235 \\
+ & 18,248 \\
+ & 18,250 \\
+\hline
+Mittelwert & 18,245 \\
+Standardabweichung & 0,004 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent Mit der Länge $L$ und dem Durchmesser $d$ des Drahtes lässt sich nach Gleichung (12) den Schubmodul $G$ zu 
+
+\begin{table}
+\centering
+\caption{Messgrößen des Drahtes.}
+\label{tab:ohnebfeld}
+\begin{tabular}{c c c}
+\toprule
+ & d\:/\:mm & L\:/\:cm\\
+\midrule
+ & 0,172 & 66,30 \\
+ & 0,173 &  \\
+ & 0,170 & \\
+\hline
+Mittelwert & 0,172 & \\
+Standardabweichung & 0,001 & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{align*}
+G = (1,41 \pm 0,04) \cdot 10^{13}\,\si{\newton\per\meter\squared}
+\end{align*}
+berechnen.
+
+Der Elastizitätsmodul $E$ wird aufgrund der fehlenden experimentellen Bestimmung nach Literaturwerten
+\begin{align*}
+E = 210\,\si{\giga\pascal}
+\end{align*}
+gesetzt.
+
+Nach Gleichung (3) ergibt sich für die Poissonsche Querkontraktionszahl
+\begin{align*}
+\mu = {} & \frac{E}{2G} - 1 \\
+    = {} & 
+\end{align*}
