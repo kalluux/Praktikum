@@ -2,8 +2,8 @@
 \defcounter {refsection}{0}\relax 
 \select@language {german}
 \contentsline {section}{\numberline {1}Theorie}{3}{section.1}
-\contentsline {subsection}{\numberline {1.1}Bestimmung der elastischen Konstanten $G$}{4}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Bestimmung des magnetischen Moments eines Permanentmagneten}{6}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.1}Die elastische Konstanten $G$}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Das magnetischen Moments eines Permanentmagneten}{6}{subsection.1.2}
 \contentsline {section}{\numberline {2}Durchführung}{6}{section.2}
 \contentsline {subsection}{\numberline {2.1}Bestimmung des Schubmoduls}{7}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Bestimmung des magnetischen Momentes eines Permanentmagneten}{8}{subsection.2.2}
