@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber build/main"] 1543250391 "build/main.bcf" "build/main.bbl" "build/main" 1543250424
-  "build/main.bcf" 1543250424 90994 d1d766bc1a3746458e577237a105dfd3 ""
+["biber build/main"] 1543256638 "build/main.bcf" "build/main.bbl" "build/main" 1543256987
+  "build/main.bcf" 1543256986 90994 d1d766bc1a3746458e577237a105dfd3 ""
   "lit.bib" 1543248985 212 f69bb47e95deb5632fcb3648df8821c4 ""
   (generated)
   "build/main.blg"
   "build/main.bbl"
-["lualatex"] 1543250393 "main.tex" "build/main.pdf" "main" 1543250424
+["lualatex"] 1543256954 "main.tex" "build/main.pdf" "main" 1543256987
   "/home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1480098679 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1480098679 64684 15a2082c8e31f411875a86ea2d29a0ee ""
   "/home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1480098679 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
@@ -224,23 +224,23 @@
   "Screenshot (5).png" 1543248985 113974 6b0c915b819ff1378e3a96fd4b4aa3af ""
   "Screenshot (6).png" 1543248985 9270 f45c9ff0c99358d151a00aa81af39201 ""
   "build/feldstaerke.pdf" 1543248985 15413 8bd6ac348a54a3237cc982b05d468591 ""
-  "build/main.aux" 1543250424 18117 4e28138223460483c9acac7f0d4eb588 ""
-  "build/main.bbl" 1543250393 1749 86377b697d3c94480777d70c5d54a568 "biber build/main"
-  "build/main.run.xml" 1543250424 2365 9506e75c9b41e27fa8670338f5c4ba94 ""
-  "build/main.toc" 1543250424 1969 5abe4e5954ff6205a4debd048977111b ""
+  "build/main.aux" 1543256986 18117 1c1e8db6efde55afe65ccef2f0076122 ""
+  "build/main.bbl" 1543256641 1749 86377b697d3c94480777d70c5d54a568 "biber build/main"
+  "build/main.run.xml" 1543256986 2365 9506e75c9b41e27fa8670338f5c4ba94 ""
+  "build/main.toc" 1543256986 1969 5abe4e5954ff6205a4debd048977111b ""
   "build/praezession.pdf" 1543248985 13572 420234ae7cd3c4f3c330d28d88436c9c ""
   "build/schwingung.pdf" 1543248985 14059 df832e9db1d7936ad0e0e42e893b7955 ""
   "content/Zielsetzung.tex" 1543248985 202 24f458147bfe4a2213a651539225ce48 ""
-  "content/auswertung.tex" 1543248985 6110 11f1ac5288dffe3e1fac11adf35287ef ""
+  "content/auswertung.tex" 1543256953 6117 a9888636a23190a86c1b0953396dbc82 ""
   "content/diskussion.tex" 1543248985 1149 a8492b0dd5f4353914bbf21f147239d9 ""
   "content/durchfuehrung.tex" 1543250356 3251 0822eedc7629fe09113171b99ebd1989 ""
   "content/theorie.tex" 1543248985 4381 07a79b566b4b9a9c17c331c413ea18fe ""
   "header.tex" 1543248985 3631 b820c5efb1a517dbc9dfd8ca912d4367 ""
   "main.tex" 1543248985 413 2438831f1b74fa4598e3524e7ac32f33 ""
   (generated)
-  "build/main.log"
-  "build/main.bcf"
   "build/main.toc"
   "build/main.pdf"
   "build/main.aux"
+  "build/main.bcf"
   "build/main.run.xml"
+  "build/main.log"

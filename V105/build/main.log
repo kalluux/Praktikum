@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.25)  26 NOV 2018 17:39
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.25)  26 NOV 2018 19:29
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -831,22 +831,22 @@ luatex-hyphen: using data file: /home/kalina/.local/texlive/2018/texmf-var/tex/g
 Lua module: polyglossia 2013/05/11 1.3 Polyglossia) (/home/kalina/.local/texlive/2018/texmf-dist/tex/latex/polyglossia/gloss-german.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
+(polyglossia)            synonyms	table: 0x4c502c0
 (polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            hyphenation	
-(polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            righthyphenmin	2
-(polyglossia)            synonyms	table: 0x4f5f150
+(polyglossia)            hyphenation	
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 on input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 Module polyglossia Info: Language data for ngerman
+(polyglossia)            synonyms	table: 0x4c50490
 (polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            hyphenation	
-(polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            righthyphenmin	2
-(polyglossia)            synonyms	table: 0x4f5f320
+(polyglossia)            hyphenation	
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 on input line 68
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 68
@@ -2211,7 +2211,7 @@ Overfull \hbox (44.27129pt too wide) in paragraph at lines 53--54
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8]
-Overfull \hbox (103.45128pt too wide) in paragraph at lines 80--97
+Overfull \hbox (63.39441pt too wide) in paragraph at lines 81--98
  [][] 
  []
 
@@ -2219,21 +2219,21 @@ Overfull \hbox (103.45128pt too wide) in paragraph at lines 80--97
 <schwingung.pdf, id=190, 462.52798pt x 346.89601pt>
 File: schwingung.pdf Graphic file (type pdf)
 <use schwingung.pdf>
-Package luatex.def Info: schwingung.pdf  used on input line 101.
+Package luatex.def Info: schwingung.pdf  used on input line 102.
 (luatex.def)             Requested size: 462.52684pt x 346.89516pt.
 
-Overfull \hbox (44.27129pt too wide) in paragraph at lines 101--102
+Overfull \hbox (44.27129pt too wide) in paragraph at lines 102--103
  [] 
  []
 
 [10]
-<praezession.pdf, id=196, 462.52798pt x 346.89601pt>
+<praezession.pdf, id=197, 462.52798pt x 346.89601pt>
 File: praezession.pdf Graphic file (type pdf)
 <use praezession.pdf>
-Package luatex.def Info: praezession.pdf  used on input line 142.
+Package luatex.def Info: praezession.pdf  used on input line 143.
 (luatex.def)             Requested size: 462.52684pt x 346.89516pt.
 
-Overfull \hbox (44.27129pt too wide) in paragraph at lines 142--143
+Overfull \hbox (44.27129pt too wide) in paragraph at lines 143--144
  [] 
  []
 
@@ -2250,7 +2250,7 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 4E28138223460483C9ACAC7F0D4EB588;18117.
+(rerunfilecheck)             Checksum: 1C1E8DB6EFDE55AFE65CCEF2F0076122;18117.
 Package rerunfilecheck Info: File `main.toc' has not changed.
 (rerunfilecheck)             Checksum: 5ABE4E5954FF6205A4DEBD048977111B;1969.
 
@@ -2269,10 +2269,10 @@ Here is how much of LuaTeX's memory you used:
    7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 37 attribute, 78 glue_spec, 37 attribute_list, 1 write, 6 pdf_action nodes
    avail lists: 1:5,2:971,3:136,4:42,5:166,6:29,7:2028,8:121,9:339,10:26,11:217
  45561 multiletter control sequences out of 65536+600000
- 317 fonts using 117057215 bytes
+ 317 fonts using 117058239 bytes
  61i,27n,107p,9101b,3200s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (14 pages, 1182219 bytes).
+Output written on main.pdf (14 pages, 1182343 bytes).
 
 PDF statistics: 443 PDF objects out of 1000 (max. 8388607)
  283 compressed objects within 3 object streams
