@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber build/main"] 1543249212 "build/main.bcf" "build/main.bbl" "build/main" 1543252459
-  "build/main.bcf" 1543252458 90994 d1d766bc1a3746458e577237a105dfd3 ""
+["biber build/main"] 1543249212 "build/main.bcf" "build/main.bbl" "build/main" 1543253594
+  "build/main.bcf" 1543253594 90994 d1d766bc1a3746458e577237a105dfd3 ""
   "lit.bib" 1543249147 200 48a791e9044cb5bc6d9d86e9548f044b ""
   (generated)
   "build/main.blg"
   "build/main.bbl"
-["lualatex"] 1543252449 "main.tex" "build/main.pdf" "main" 1543252459
+["lualatex"] 1543253584 "main.tex" "build/main.pdf" "main" 1543253594
   "/home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1480098679 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1480098679 64684 15a2082c8e31f411875a86ea2d29a0ee ""
   "/home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1480098679 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
@@ -220,13 +220,13 @@
   "/home/kalina/.local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt" 1537899520 1362411 917f6a7a4dc9fe7a45919025b3afc426 ""
   "Screenshot (10).png" 1543248984 16253 884780aadd97677f5eda46c2a076bf2c ""
   "Screenshot (11).png" 1543248984 45486 f03b78eb1603a6062b232159bcfee2af ""
-  "Screenshot (12).png" 1543248984 26366 e12d442c3124542dc9bd1f8cb83f6977 ""
+  "Screenshot (12).png" 1543253575 26019 6a0575baf635a57f0f4f089f6d0b980f ""
   "Screenshot (7).png" 1543248984 10174 d3bfc43e067f82ff4abf129299aab382 ""
   "Screenshot (9).png" 1543248984 14507 82283ee807a4ba932864be4ae1ff39c0 ""
-  "build/main.aux" 1543252458 7962 09fbe837c6e56755b6ca82a581e0f3d4 ""
+  "build/main.aux" 1543253594 7962 09fbe837c6e56755b6ca82a581e0f3d4 ""
   "build/main.bbl" 1543249215 1731 e1e03ad477032d6a650abe5d4b83e51f "biber build/main"
-  "build/main.run.xml" 1543252458 2365 9506e75c9b41e27fa8670338f5c4ba94 ""
-  "build/main.toc" 1543252458 911 14e1369a591ceca3e968ddf42cd3f7cb ""
+  "build/main.run.xml" 1543253594 2365 9506e75c9b41e27fa8670338f5c4ba94 ""
+  "build/main.toc" 1543253594 911 14e1369a591ceca3e968ddf42cd3f7cb ""
   "build/plot.pdf" 1543249194 11684 4785ea2fcea2985a1f7714b9ac38639f ""
   "content/auswertung.tex" 1543248985 152 97ae225ee56f13a4920865cadcc34f8d ""
   "content/diskussion.tex" 1543248985 44 402cc6c9751419c0f1a455b2d4ed1f51 ""
@@ -235,9 +235,9 @@
   "header.tex" 1543248985 3631 b820c5efb1a517dbc9dfd8ca912d4367 ""
   "main.tex" 1543248985 375 bfe290b93341915412737ede947af4ae ""
   (generated)
-  "build/main.run.xml"
+  "build/main.toc"
+  "build/main.pdf"
   "build/main.log"
   "build/main.bcf"
-  "build/main.toc"
   "build/main.aux"
-  "build/main.pdf"
+  "build/main.run.xml"
