@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber build/main"] 1543074988 "build/main.bcf" "build/main.bbl" "build/main" 1543080339
-  "build/main.bcf" 1543079854 91907 6f9f02a2bdf4fafaaca1d413efd6a511 ""
+["biber build/main"] 1543074988 "build/main.bcf" "build/main.bbl" "build/main" 1543248723
+  "build/main.bcf" 1543248723 91907 6f9f02a2bdf4fafaaca1d413efd6a511 ""
   "lit.bib" 1543079854 212 f69bb47e95deb5632fcb3648df8821c4 ""
   (generated)
-  "build/main.blg"
   "build/main.bbl"
-["lualatex"] 1543079668 "main.tex" "build/main.pdf" "main" 1543080339
+  "build/main.blg"
+["lualatex"] 1543248698 "main.tex" "build/main.pdf" "main" 1543248723
   "/home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1480098679 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1480098679 64684 15a2082c8e31f411875a86ea2d29a0ee ""
   "/home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1480098679 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
@@ -194,23 +194,23 @@
   "Screenshot (5).png" 1542655067 113974 6b0c915b819ff1378e3a96fd4b4aa3af ""
   "Screenshot (6).png" 1542655067 9270 f45c9ff0c99358d151a00aa81af39201 ""
   "build/feldstaerke.pdf" 1542655067 15413 8bd6ac348a54a3237cc982b05d468591 ""
-  "build/main.aux" 1543079854 18117 a7daee2b47f2adc096738fe895d749c0 ""
+  "build/main.aux" 1543248723 18117 a7daee2b47f2adc096738fe895d749c0 ""
   "build/main.bbl" 1543079854 1749 9115e81179564061f4f3fb9657b76457 "biber build/main"
-  "build/main.run.xml" 1543079693 2365 9506e75c9b41e27fa8670338f5c4ba94 ""
-  "build/main.toc" 1543079854 1969 5abe4e5954ff6205a4debd048977111b ""
+  "build/main.run.xml" 1543248723 2365 9506e75c9b41e27fa8670338f5c4ba94 ""
+  "build/main.toc" 1543248723 1969 5abe4e5954ff6205a4debd048977111b ""
   "build/praezession.pdf" 1542655067 13572 420234ae7cd3c4f3c330d28d88436c9c ""
   "build/schwingung.pdf" 1542655067 14059 df832e9db1d7936ad0e0e42e893b7955 ""
   "content/Zielsetzung.tex" 1543079854 202 24f458147bfe4a2213a651539225ce48 ""
-  "content/auswertung.tex" 1543079854 5998 da4cd397caf6b40435007f75eb51f421 ""
+  "content/auswertung.tex" 1543248694 6110 11f1ac5288dffe3e1fac11adf35287ef ""
   "content/diskussion.tex" 1543079854 1149 a8492b0dd5f4353914bbf21f147239d9 ""
   "content/durchfuehrung.tex" 1543079854 3141 5619fc8878ff896a22f066fa2745b754 ""
   "content/theorie.tex" 1543079854 4381 07a79b566b4b9a9c17c331c413ea18fe ""
   "header.tex" 1542655067 3631 b820c5efb1a517dbc9dfd8ca912d4367 ""
   "main.tex" 1542655067 413 2438831f1b74fa4598e3524e7ac32f33 ""
   (generated)
+  "build/main.aux"
   "build/main.bcf"
   "build/main.toc"
   "build/main.run.xml"
-  "build/main.pdf"
   "build/main.log"
-  "build/main.aux"
+  "build/main.pdf"
