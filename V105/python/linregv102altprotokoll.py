@@ -4,8 +4,8 @@ from scipy.stats import sem
 from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
 
-x = np.array([0.041, 0.049, 0.053, 0.056, 0.061, 0.072, 0.080, 0.089, 0.093, 0.10])
-y = np.array([0.000194, 0.0002384, 2.14, 2.17, 2.41, 2.71, 2.97, 3.19, 3.34, 3.58])
+x = np.array([0.00045, 0.000899, 0.00135, 0.0018, 0.00225])
+y = np.array([0.0000379, 0.0000612, 0.0000882, 0.0000962, 0.000119])
 
 def f(x, a, b):
 
@@ -21,9 +21,9 @@ print('A Konstante: ', a)
 print('B Konstante: ', b)
 plt.plot(x, y, 'rx', label='Messwerte')
 plt.plot(x, f(x, *params), 'b-', label='lineare Regression')
-plt.xlabel(r"$r\:/\:\,$m")
-plt.ylabel(r"$B\:/\:10^{-3}\,$T")
+plt.xlabel(r"$B\:/\:10^{-3}\,$T")
+plt.ylabel(r"Ψ")
 plt.grid()
 plt.legend()
-#plt.show()
-plt.savefig('feldstaerke.pdf')
+plt.show()
+#plt.savefig('linreg.pdf')
