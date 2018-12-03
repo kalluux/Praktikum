@@ -1,4 +1,80 @@
 \section{Theorie}
 \label{sec:Theorie}
 
-\cite{sample}
+Als Relaxationszeit bezeichnet man die Zeit, die zwischen dem Auslenken eines Systems aus 
+seinem Ausgangszustand und dem nicht-oszillatorischem Zurückkehren in diesen vergeht.
+In diesem Versuch wird das Entladen eines Kondensators über einen Widerstand als 
+Beispiel für eine Relaxationserscheinung betrachtet.
+Allgemein ist die Änderungsgeschwindigkeit zur Zeit $t$ einer physikalischen Größe $A$
+\begin{align}
+\frac{dA}{dt} = c[A(t)-A(\infty)]
+\end{align}
+proportional zur Auslenkung der Größe $A$ vom (nicht erreichbaren) Endzustand $A(\infty)$.
+Hieraus folgt
+\begin{align}
+A(t) = A(\infty)+[A(0) - A(\infty)]e^{ct},
+\end{align}
+wobei $c < 0$ sein muss, damit A beschränkt bleibt.
+
+\subsection{Entladevorgang eines Plattenkondensators}
+Befindet sich auf den Platten eines Kondensators mit der Kapazität $C$ eine Ladung $Q$, 
+so liegt zwischen diesen die Spannung
+\begin{align*}
+U_\text{C} = \frac{Q}{C}.
+\end{align*}
+Diese bedingt nach dem Ohm'schen Gesetz einen Strom
+\begin{align*}
+I = \frac{U_\text{C}}{R}
+\end{align*}
+durch den Widerstand R um die Ladungen auszugleichen, wodurch sich die Ladung $Q$ 
+pro Zeiteinheit $t$ um
+\begin{align*}
+dQ = -Idt
+\end{align*}
+verändert. Hieraus ergibt sich die zur Gleichung (1) ähnliche Gleichung
+\begin{align}
+\frac{dQ}{dt} = -\frac{Q(t)}{RC},
+\end{align}
+sodass auch für diese durch Integration und Beachtung des unerreichbaren Grenzwertes $Q(\infty) = 0$
+\begin{align}
+Q(t) = Q(0)e^{\frac{1}{RC}}
+\end{align}
+folgt. Der Ausdruck $RC$ wird als Zeitkonstante des Relaxationsvorgangs bezeichnet und 
+ist maßgebend für die Geschwindigkeit, mit der dieser gegen den Endzustand $Q(\infty)$ strebt.
+
+\subsection{Relaxationsverhalten bei angelegter Wechselspannung}
+Im Allgemeinen lässt sich eine von der Kreisfrequenz $\omega$ abhängige Wechselspannung durch
+\begin{align}
+U(t) = U_\text{0} \cdot cos(\omega t)
+\end{align}
+beschreiben.
+Mit zunehmender Kreisfrequenz $\omega$ bildet sich eine Phasenverschiebung $\phi$ zwischen der 
+eingehenden Wechselspannung $U_\text{0}$ und der verzögerten Kondensatorspannung $U_\text{C}$
+aus, sodass diese sich als
+\begin{align}
+U_\text{C}(t) = A(\omega) \cdot cos(\omega t + \phi(\omega))
+\end{align}
+ausdrücken lässt, wobei $A$ die Amplitude der Kondensatorspannung ist.
+Die Stromstärke $I(t)$ lässt sich über
+\begin{align}
+I(t) = \frac{dQ}{dt} = C \frac{dU_\text{C}}{dt}
+\end{align}
+in Abhängigkeit von der Kondensatorspannung $U_\text{C}$ ausdrücken, sodass aus 
+Gleichung (3) und (7) sowie den Kirchhoff'schen Regeln für die Amplitude
+\begin{align}
+A(\omega) = \frac{U_\text{0}}{\sqrt{1+\omega^2R^2C^2}}
+\end{align}
+folgt.
+
+\subsection{Der RC-Kreis als Integrator}
+Ein RC-Kreis kann unter bestimmten Umständen dazu dienen, eine zeitlich veränderliche Spannung 
+$U(t)$ zu integrieren. Damit dies möglich ist, muss die Kreisfrequenz $\omega \ll \frac{1}{RC}$ sein.
+Aus der Gleichung für die Gesamtspannung
+\begin{align*}
+U(t) = {} & U_\text{R}(t) + U_\text{C}(t) = R \cdot I(t) + U_\text{C}(t) \\
+     = {} & RC \cdot \frac{dU_\text{C}(t)}{dt} + U_\text{C}(t)
+\end{align*}
+folgt dann
+\begin{align}
+U_\text{C}(t) = \frac{1}{RC} \int_0^t U(t')dt'.
+\end{align}
