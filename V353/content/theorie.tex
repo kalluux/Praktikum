@@ -37,7 +37,7 @@ verändert. Hieraus ergibt sich die zur Gleichung (1) ähnliche Gleichung
 \end{align}
 sodass auch für diese durch Integration und Beachtung des unerreichbaren Grenzwertes $Q(\infty) = 0$
 \begin{align}
-Q(t) = Q(0)e^{\frac{1}{RC}}
+Q(t) = Q(0)e^{-\frac{t}{RC}}
 \end{align}
 folgt. Der Ausdruck $RC$ wird als Zeitkonstante des Relaxationsvorgangs bezeichnet und 
 ist maßgebend für die Geschwindigkeit, mit der dieser gegen den Endzustand $Q(\infty)$ strebt.
@@ -48,7 +48,10 @@ Im Allgemeinen lässt sich eine von der Kreisfrequenz $\omega$ abhängige Wechse
 U(t) = U_\text{0} \cdot cos(\omega t)
 \end{align}
 beschreiben.
-Mit zunehmender Kreisfrequenz $\omega$ bildet sich eine Phasenverschiebung $\phi$ zwischen der 
+Mit zunehmender Kreisfrequenz $\omega$ bildet sich eine Phasenverschiebung 
+\begin{align}
+\phi = \frac{a}{b} 2 \pi
+\end{align} zwischen der 
 eingehenden Wechselspannung $U_\text{0}$ und der verzögerten Kondensatorspannung $U_\text{C}$
 aus, sodass diese sich als
 \begin{align}
@@ -60,7 +63,7 @@ Die Stromstärke $I(t)$ lässt sich über
 I(t) = \frac{dQ}{dt} = C \frac{dU_\text{C}}{dt}
 \end{align}
 in Abhängigkeit von der Kondensatorspannung $U_\text{C}$ ausdrücken, sodass aus 
-Gleichung (3) und (7) sowie den Kirchhoff'schen Regeln für die Amplitude
+Gleichung (3) und (8) sowie den Kirchhoff'schen Regeln für die Amplitude
 \begin{align}
 A(\omega) = \frac{U_\text{0}}{\sqrt{1+\omega^2R^2C^2}}
 \end{align}
