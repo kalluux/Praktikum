@@ -370,6 +370,8 @@ INPUT build/main.toc
 OUTPUT build/main.toc
 INPUT ./content/theorie.tex
 INPUT ./content/theorie.tex
+INPUT ./RLC.png
+INPUT ./RLC.png
 INPUT ./content/durchfuehrung.tex
 INPUT ./content/durchfuehrung.tex
 INPUT ./Schaltung1.png
