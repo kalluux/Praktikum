@@ -1,0 +1,54 @@
+\section{Durchführung}
+\label{sec:Durchführung}
+
+Für die Untersuchung der Zeitabhängigkeit der Amplitude, wird die in Abbildung () dargestellte Schaltung verwendet.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=5cm]{Schaltung1.png}
+  \caption{Messschaltung zur Bestimmung der zeitabhängigen Amplitude. \cite[S. 11]{kent}}
+\end{figure}
+\noindent Um gedämpfte Schwingungen zu erzeugen, wird durch eine Rechteckspannung ein Impuls an den Schwingkreis gegeben.
+Ein Tastkopf ist notwendig, um den Eingangswiderstand des Oszillographen verschwindend gering zu halten. 
+Es werden für zehn verschiedene Zeiten die Amplitude am Oszilloskop abgelesen und damit der effektive Dämpfungswiderstand ermittelt.
+Die gegebenen Daten für die Bauteile sind durch 
+\begin{align*}
+&L = 16.78 \pm 0.009 \, mH \\
+&C = 2.066 \pm 0.006 \, nF \\
+&R_1 = 67.2 \pm 0.2 \, \Omega \\
+&R_2 = 682 \pm 1 \, \Omega \\
+\end{align*}
+gegeben. Bei diesem Messvorgang wird der Widerstand $R_1$ genommen.
+
+
+\noindent Als nächstes wird der Dämpfungswiderstand für den aperiodischen Grenzfall bestimmt. Das geschieht durch Aufbau der Schaltung in Abbildung ().
+Der regelbare Widerstand wird auf seinen Maximalwert gestellt und dann runter gedreht. Dabei wird der Graph auf dem Oszillosgraph 
+beobachtet, denn stellt sich ein Überschwingen ein, muss der Widerstand wieder höher gestellt werden. Wenn kein Überschwingen mehr
+auftritt, wird der Wert für den Widerstand abgelesen.
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=5cm]{Schaltung2.png}
+  \caption{Messschaltung für den aperiodischen Grenzfall. \cite[S. 11]{kent}}
+\end{figure}
+
+\noindent Soll nun die Frequenzabhängigkeit der Kondensatorspannung untersucht werden, wird der Schaltkreis wie in Abbildung () aufgebaut.
+Es wird diesmal eine Sinusspannung angelegt. Da der dort zusehende Tastkopf einen Frequenzgang besitzt, muss auch die Erregerspannung $U_0$ in Abhängigkeit der Frequenz gemessen werden.
+Es werden für folgende Intervalle Erregerspannung und Kondensatorpannnung gemessen: 2 $kHz$ bis 22 $kHz$ in 2 $kHz$ Schritten, 22 $kHz$ bis 32 $kHz$ in 1 $kHz$ Schritten,
+32 $kHz$ bis 52 $kHz$ in 2 $kHz$ Schritten, und daraus der Quotient gebildet. Diesmal wird der Widerstand  $R_2$ benutzt.
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=5cm]{Schaltung3.png}
+  \caption{Messschaltung zur Bestimmung der frequenzabhängigen Amplitude. \cite[S. 11]{kent}}
+\end{figure}
+
+
+\noindent Im letzten Versuchsteil wird die Frequenzabhängigkeit der Phase ermittelt. Die Schaltung ist in Abbildung () dargestellt.
+Es wird der zeitliche Abstand $a$ der Nulldurchgänge von Kondensatorspannung und Erregerspannung gemessen, wie in Abbildung () dargestellt.
+Die außerdem benötigte Periodendauer wird durch die Frequenz bestimmt, die vorher schon gemessen wurde.
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=5cm]{Schaltung4.png}
+  \caption{Messschaltung zur Bestimmung der frequenzabhängigen Phase. \cite[S. 11]{kent}}
+\end{figure}
+
+
