@@ -372,6 +372,12 @@ INPUT ./content/theorie.tex
 INPUT ./content/theorie.tex
 INPUT ./RLC.png
 INPUT ./RLC.png
+INPUT ./grenzfall.png
+INPUT ./grenzfall.png
+INPUT ./aperiodisch.png
+INPUT ./aperiodisch.png
+INPUT ./erzwungen.png
+INPUT ./erzwungen.png
 INPUT ./content/durchfuehrung.tex
 INPUT ./content/durchfuehrung.tex
 INPUT ./Schaltung1.png
@@ -382,6 +388,8 @@ INPUT ./Schaltung3.png
 INPUT ./Schaltung3.png
 INPUT ./Schaltung4.png
 INPUT ./Schaltung4.png
+INPUT ./phi.png
+INPUT ./phi.png
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
 INPUT build/plot.pdf
