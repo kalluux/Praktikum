@@ -5,13 +5,13 @@
 Besteht ein Schaltkreis aus einer Induktivität $L$, realisiert durch eine Spule, und einem Kondensator mit der Kapaziät $C$, führt das System
 ungedämpfte Schwingungen durch. Die Energie pendelt zwischen den Speichern hin und her und führt deshalb periodische Schwingungen durch.
 Wird dem Schaltkreis ein ohmscher Widerstand $R$ hinzugefügt, nimmt die Energie mit der Zeit ab, die Amplituden von Strom und Spannung fallen,
-und das System führt Gedämpfte Schwingungen aus. Ein Aufbau eines solches Schwingkreises ist in Abbildung (1) dargestellt. Dieses System führt
+und das System führt gedämpfte Schwingungen aus. Ein Aufbau eines solches Schwingkreises ist in Abbildung (1) dargestellt. 
 \begin{figure}[H]
   \centering
   \includegraphics[height=5cm]{RLC.png}
   \caption{Aufbau eins RLC-Schwingkreises. \cite[S.1]{kent}}
 \end{figure}
-\noindent Mit Hilfe des 2. Kirchhoffschen Gesetzes kann man die Differentialgleichung für den Schaltkreis aufstellen.
+\noindent Mit Hilfe des 2. Kirchhoffschen Gesetzes kann man die Differentialgleichung für den Schaltkreis aufstellen:
 \begin{equation}
 U_R (t) + U_C (t) + U_L (t) = 0 .
 \end{equation}
@@ -44,10 +44,10 @@ I(t) = e^{-2\pi \mu t}(U_1 e^{j2\pi \nu t} + U_2 e^{-j2\pi \nu t})
 \end{equation}
 \noindent mit den Abkürzungen 
 \begin{align}
-2\pi \mu = \frac{R}{2L} \\
+&2\pi \mu = \frac{R}{2L} \\
 &2\pi \nu = \sqrt{\frac{1}{LC} - \frac{R^{2}}{4L^{2}}} .
 \end{align}
-\noindent Je nachdem ob $\frac{1}{LC}$ größer oder kleiner $\frac{R^2}{4L^2]}$ ist, also $\nu$ reell oder imaginär ist,
+\noindent Je nachdem ob $\frac{1}{LC}$ größer oder kleiner $\frac{R^2}{4L^2}$ ist, also $\nu$ reell oder imaginär ist,
 sieht $I(t)$ anders aus. Somit muss eine Fallunterscheidung getroffen werden.
 Im Ersten Fall sei $\nu$ reell. Die DGL ergibt sich dann zu
 \begin{equation}
@@ -116,11 +116,11 @@ Im Falle der schwachen Dämpfung
 \begin{align*}
 \frac{R^2}{2L^2} \ll \frac{1}{LC}
 \end{align*}
-Kann $U_C$ die Spannung $U_0$ um den Gütefaktor $\frac{1}{\omega_0 RC}$ übertreffen 
+kann $U_C$ die Spannung $U_0$ um den Gütefaktor $\frac{1}{\omega_0 RC}$ übertreffen 
 \begin{equation}
 U_{C,max} = \frac{1}{\omega_0 RC}U_0
 \end{equation}
-und gegen unendlich gehen, liegt die Resonanzkatastrophe vor.
+und gegen unendlich gehen, wobei dann die Resonanzkatastrophe vorliegt.
 Die Schärfe der Resonanz kann man durch die Breite der Resonanzkurve beschrieben, für welche gilt:
 \begin{align*}
 \omega _+ - \omega _- \approx \frac{R}{L} .

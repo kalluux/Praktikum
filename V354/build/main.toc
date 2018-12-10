@@ -1,10 +1,11 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {german}
-\contentsline {section}{\numberline {1}Theorie}{3}{section.1}
-\contentsline {subsection}{\numberline {1.1}Gedämpfte Schwingungen}{3}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Erzwungene Schwingungen}{5}{subsection.1.2}
-\contentsline {section}{\numberline {2}Durchführung}{6}{section.2}
-\contentsline {section}{\numberline {3}Auswertung}{9}{section.3}
-\contentsline {section}{\numberline {4}Diskussion}{10}{section.4}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Gedämpfte Schwingungen}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Erzwungene Schwingungen}{5}{subsection.2.2}
+\contentsline {section}{\numberline {3}Durchführung}{7}{section.3}
+\contentsline {section}{\numberline {4}Auswertung}{9}{section.4}
+\contentsline {section}{\numberline {5}Diskussion}{10}{section.5}
 \contentsline {section}{\nonumberline Literatur}{10}{section*.12}
