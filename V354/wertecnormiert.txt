@@ -72,3 +72,48 @@ $\mathit{U_c \: \text{in} \: \mathrm{V}}$ & $\frac{U_c}{U_0}$ & $\mathit{f \: \t
 \bottomrule
 \end{tabular}
 \end{table}
+
+R_\text{eff} &= 4 \pi L \mu\\
+       &= (\num{41.0 +- 2.8})\,\si{\ohm}\\
+R_1 = 67.2 \pm 0.2 \, \Omega \\
+
+T_\text{ex} &= (\num{820 +- 60})\,\mathrm{µs}
+
+
+R_\text{ap,ex} = \SI{3,05}{\kilo\ohm}
+R_\text{ap,th} = \SI{5.7 \pm 0.02}{\kilo\ohm}.
+
+
+q_\text{ex} &= \num{3.8}
+q_\text{th} &= \num{4.179 +-0.014}
+
+b_\text{ex} = 6\,500\frac{1}{s}
+b_\text{th} &= (6\,470 \pm 40)\frac{1}{s}
+
+f_\text{res,ex} &= 31,5\, \si{\kilo\hertz}\\
+f_\text{res,th} &= (26,64 \pm 0,08)\,\si{\kilo\hertz}\\
+f_\text{1,ex} &= 23\,\si{\kilo\hertz}\\
+f_\text{1,th} &= (23,99 \pm 0,07)\,\si{\kilo\hertz}\\
+f_\text{2,ex} &= 30\,\si{\kilo\hertz}\\
+f_\text{2,th} &= (30,46 \pm 0,1)\,\si{\kilo\hertz}.
+
+R_\text{eff} &= (\num{41.0 +- 2.8})\,\si{\ohm} & R_1 &= (67.2 \pm 0.2 )\,\si{\ohm} \\
+\implies \text{Relative Abweichung} &= 38,99\% \\
+
+R_\text{ap,ex} &= \SI{3,05}{\kilo\ohm} & R_\text{ap,th} &= \SI{5.7 \pm 0.02}{\kilo\ohm}\\
+\implies \text{Relative Abweichung} &= 46,49\% \\
+
+q_\text{ex} &= \num{3.8} & q_\text{th} &= \num{4.179 +-0.014}\\
+\implies \text{Relative Abweichung} &= 9,07\% \\
+
+b_\text{ex} &= 6\,500\frac{1}{s} & b_\text{th} &= (6\,470 \pm 40)\frac{1}{s} \\
+\implies \text{Relative Abweichung} &= 0,46\% \\
+
+f_\text{res,ex} &= 31,5\, \si{\kilo\hertz} & f_\text{res,th} &= (26,64 \pm 0,08)\,\si{\kilo\hertz}\\
+\implies \text{Relative Abweichung} &= 18,24\% \\
+
+f_\text{1,ex} &= 23\,\si{\kilo\hertz} & f_\text{1,th} &= (23,99 \pm 0,07)\,\si{\kilo\hertz}\\
+\implies \text{Relative Abweichung} &= 4,13\% \\
+
+f_\text{2,ex} &= 30\,\si{\kilo\hertz} & f_\text{2,th} &= (30,46 \pm 0,1)\,\si{\kilo\hertz} \\
+\implies \text{Relative Abweichung} &= 1,51\%.

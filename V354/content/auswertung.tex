@@ -4,7 +4,7 @@
 \subsection{Zeitabhängigkeit der Amplitude}
 
 %Aufgabe a
-Die Form der Einhüllenden ist, da $\mathit{U(t) \propto I(t)}$, nach Gleichung xy durch
+Die Form der Einhüllenden ist, da $\mathit{U(t) \propto I(t)}$, durch
 \begin{align*}
 A = A_\text{0} \mathrm{e}^{-2 \pi \mu t}
 \end{align*}
@@ -37,10 +37,11 @@ $U_\text{C} \:/\: V$ & $t \:/\: 10^{-6}\si{\second}$ & $U_\text{C} \:/\: V$ & $t
 \end{tabular}
 \end{table}
 
-Über Gleichung xy ergibt sich dann für den effektiven Dämpfungswiderstand
-$R_\text{eff}$ und der Abklingdauer $T_\text{ex}$ 
+Über Gleichung (10) und (13) ergibt sich dann für den effektiven Dämpfungswiderstand
+$R_\text{eff}$ und die Abklingdauer $T_\text{ex}$ 
 \begin{align*}
-R_\text{eff} &= (\num{41.0 +- 2.8})\,\si{\ohm}\\
+R_\text{eff} &= 4 \pi L \mu\\
+       &= (\num{41.0 +- 2.8})\,\si{\ohm}\\
 T_\text{ex} &= (\num{820 +- 60})\,\mathrm{µs}.
 \end{align*}
 Die zugehörigen Fehler ergeben sich durch die Gauß'sche Fehlerfortpflanzung der Form
@@ -63,7 +64,7 @@ Der Dämpfungswiderstand, für den der aperiodische Grenzfall eintrifft, wird al
 R_\text{ap,ex} = \SI{3,05}{\kilo\ohm}
 \end{align*}
 gemessen.
-Der theoretische Wert des Dämpfungswiderstandes wird mit Gleichung xy berechnet.
+Der theoretische Wert des Dämpfungswiderstandes wird mit Gleichung (13) berechnet.
 Der Fehler errechnet sich über die Gauß'sche Fehlerfortpflanzung:
 \begin{align*}
 \sigma_{R_\text{ap,th}} = \sqrt{\frac{\sigma_{L}^{2}\frac{L}{C}}{L^{2}} + \frac{\sigma_{C}^{2} \frac{L}{C}}{C^{2}}}
@@ -76,12 +77,12 @@ R_\text{ap,th} = \SI{5.7 \pm 0.02}{\kilo\ohm}.
 %Aufgabe c
 \subsection{Frequenzabhängigkeit der Kondensatorspannung}
 Die zur Berechnung der Resonanzüberhöhung $q$ aufgenommenen Wertepaare, bestehend aus der Spannungsamplitude $U_c$ und der Frequenz $f$, befinden sich zusammen mit der
-normierten Spannungsamplitude in Tabelle 2. Ferner sind sie normierten Kondensatorspannungen in Abbildung 2 gegen die Frequenz aufgetragen.
+normierten Spannungsamplitude in Tabelle 2. Ferner werden die normierten Kondensatorspannungen in Abbildung 2 gegen die Frequenz aufgetragen.
 Die Resonanzüberhöhung 
 \begin{align*}
 q_\text{ex} &= \num{3.8}
 \end{align*}
-wird dem Graphen entnommen. Mit der Gleichung xy ergibt sich für den theoretischen Wert der Resonanzüberhöhung 
+wird Abbildung 11 entnommen. Mit der Gleichung (22) ergibt sich für den theoretischen Wert der Resonanzüberhöhung 
 \begin{align*}
 q_\text{th} &= \num{4.179 +-0.014},
 \end{align*}
@@ -125,7 +126,7 @@ Der experimentelle Wert der Halbwertsbreite $b_\text{ex}$ wird aus der Abbildung
 \begin{align*}
 b_\text{ex} = 6\,500\frac{1}{s}
 \end{align*}
-abgelesen. Mit Gleichung xy wird die theoretiche Halbwertsbreite 
+abgelesen. Mit Gleichung (24) wird die theoretiche Halbwertsbreite 
 \begin{align*}
 b_\text{th} &= (6\,470 \pm 40)\frac{1}{s}
 \end{align*}
@@ -134,41 +135,57 @@ bestimmt. Der zugehörige Fehler wird über die Gauß'sche Fehlerfortpflanzung
 \sigma_{b_\text{th}} = \sqrt{\frac{\sigma_{R}^{2}}{2 \pi L^{2}} + \frac{R^{2} \sigma_{L}^{2}}{2 \pi L^{4}}}
 \end{align*}
 ermittelt.
+
+
 %Aufgabe d
-\subsection{ Frequenzabhängigkeit der Phasenverschiebung}
-In Abbildung 3 erkennt man für die Phasenverschiebung benötigten Parameter a und b. Die Phasenverschiebung lässt sich nun wie folgt errechnen:
+\subsection{Frequenzabhängigkeit der Phasenverschiebung}
+In Abbildung 9 erkennt man die für die Phasenverschiebung benötigten Parameter a und b. Die Phasenverschiebung lässt sich nun durch
 \begin{align*}
 \phi = \frac{a}{b} \cdot 2\pi
 \end{align*}
-Leider können wir an dieser Stelle durch die Annahme, dass der Parameter a konstant Null ist, keine brauchbaren Ergebnissen liefern. In Tabelle 3
-befinden sich die dazugehörigen Messwerte.
+berechnen und wird zusammen mit den Messwerten für die Frequenzabhängigkeit der Phasenverschiebung in Tabelle 3 festgehalten.
+Ferner wird in Abbildung 12 die Phasenverschiebung $\phi$ halblogarithmischer gegen die Frequenz $f$ aufgetragen.
+
+
+Mittels Gleichung (21) wird die Resonanzfrequenz $f_\text{res}$ bestimmt. 
+Die Frequenzen $f_\text{1}$ und $f_\text{2}$ für die Phasenverschiebung $\frac{\pi}{4}$
+und $\frac{3\pi}{4}$ werden nach Gleichung (19) berechnet. Die entsprechenden experimentell
+ermittelten Werte werden Abbildung 12 entnommen. Es ergibt sich:
+\begin{align*}
+f_\text{res,ex} &= 31,5\, \si{\kilo\hertz}\\
+f_\text{res,th} &= (26,64 \pm 0,08)\,\si{\kilo\hertz}\\
+f_\text{1,ex} &= 23\,\si{\kilo\hertz}\\
+f_\text{1,th} &= (23,99 \pm 0,07)\,\si{\kilo\hertz}\\
+f_\text{2,ex} &= 30\,\si{\kilo\hertz}\\
+f_\text{2,th} &= (30,46 \pm 0,1)\,\si{\kilo\hertz}.
+\end{align*}
 
 \begin{table}
 \centering
 \caption{Messdaten zur Bestimmung der frequenzabhängigen Phasenverschiebung.}
 \label{tab:some_data}
-\begin{tabular}{c c}
+\begin{tabular}{c c c c c c c c c}
 \toprule
-$\mathit{f \: / \: \mathrm{KHz}}$ & $\mathit{T \: \text{in $10^{-6}$} \: \mathrm{s}}$ \\
+$f\:/\:\si{\kilo\hertz}$ & $a\:/\:\si{\micro\second}$ & $\phi\:/\:\text{rad}$ & $f\:/\:\si{\kilo\hertz}$ & $a\:/\:\si{\micro\second}$ & $\phi\:/\:\text{rad}$ & $f\:/\:\si{\kilo\hertz}$ & $a\:/\:\si{\micro\second}$ & $\phi\:/\:\text{rad}$ \\
 \midrule
-15 & 67 \\
-20 & 50 \\
-25 & 40 \\
-30 & 33.6 \\
-31 & 32.4 \\
-32 & 31.2 \\
-33 & 30.4 \\
-34 & 29.6 \\
-35 & 28.8 \\
-36 & 27.6 \\
-37 & 27.2 \\
-38 & 26.4 \\
-39 & 26 \\
-40 & 25.2 \\
-45 & 22.4 \\
-50 & 20.4 \\
-55 & 18.4 \\
-60 & 16.8 \\
+2  & 1,64 & 0,0206  & 23 & 5,20 & 0,7515 & 36 & 12,3 & 2,7822 \\
+4  & 1,48  & 0,0372 & 24 & 6,32 & 0,9530 & 38 & 12 &  2,8651 \\
+6  & 1,68  & 0,0633 & 25 & 7,60 & 1,1939 & 40 & 11,5 &  2,8903 \\
+8  & 1,53  & 0,0769 & 26 & 9,20 & 1,5029 & 42 & 11,1  &  2,9292 \\
+10 & 1,68  & 0,1056 & 27 & 10,60 & 1,7982 & 44 & 10,7  &  2,9581 \\
+12 & 1,84  & 0,1387 & 28 & 11,7 & 2,0584 & 46 & 10,3  &  2,9770 \\
+14 & 1,91  & 0,1680 & 29 & 12,3 & 2,2412 & 48 & 10  &  3,0160 \\
+16 & 2,06  & 0,2071 & 30 & 12,8 & 2,4127 & 50 & 9,5  &  2,9845 \\
+18 & 2,28  & 0,2579 & 31 & 12,9 & 2,5126 & 52 & 9,4  &  3,0712 \\
+20 & 2,66  & 0,3343 & 32 & 12,9 & 2,5937 & & & \\
+22 & 3,40  & 0,4700 & 34 & 12,7 & 2,7131 & & & \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\begin{figure}
+  \centering
+  \includegraphics{plotd.pdf}
+  \caption{Phasenverschiebung $\phi$ in Abhängigkeit der Frequenz $f$.}
+  \label{fig:Plot d}
+\end{figure}
