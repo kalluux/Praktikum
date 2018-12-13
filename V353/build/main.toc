@@ -11,9 +11,9 @@
 \contentsline {subsection}{\numberline {2.3}Messreihe zur Bestimmung der Phasenverschiebung im RC-Kreis}{5}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Messreihe zur Bestätigung der Integratorfunktion des RC-Kreises}{6}{subsection.2.4}
 \contentsline {section}{\numberline {3}Auswertung}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Bestimmung der Konstanten durch Beobachtung des Entladevorgangs}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Bestimmung der Konstanten durch die Frequenz}{8}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Bestimmung der Konstanten durch die Phasenverschiebung}{10}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.1}Bestimmung der Zeitkonstanten durch Beobachtung des Entladevorgangs des Kondensators}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Bestimmung der Zeitkonstanten durch die Frequenz der Kondensatorspannung}{8}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Bestimmung der Zeitkonstanten durch die Phasenverschiebung zwischen Generator- und Kondensatorspannung}{10}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}RC-Kreis als Integrator}{12}{subsection.3.4}
 \contentsline {section}{\numberline {4}Diskussion}{14}{section.4}
-\contentsline {section}{\nonumberline Literatur}{14}{section*.14}
+\contentsline {section}{\nonumberline Literatur}{15}{section*.14}

@@ -4,7 +4,7 @@
 Im folgenden wird auf drei verschiedene Arten die Zeitkonstante $RC$ bestimmt. 
 Außerdem wird die Integration von drei Spannungen dargestellt.
 
-\subsection{Bestimmung der Konstanten durch Beobachtung des Entladevorgangs}
+\subsection{Bestimmung der Zeitkonstanten durch Beobachtung des Entladevorgangs des Kondensators}
 Es werden bei einer angelegten Rechteckspannung die Spannung $U_c$ und die zugehörige Zeit $t$ gemessen.
 Für eine lineare Ausgleichsrechnung wird der Logarithmus der Spannung berechnet, und dieser wird gegen t aufgetragen.
 Alle Werte sind in Tabelle (1) aufgelistet. Der Wert für $U_0$ beträgt 18 V.
@@ -13,17 +13,17 @@ Alle Werte sind in Tabelle (1) aufgelistet. Der Wert für $U_0$ beträgt 18 V.
 \begin{equation}
     y = ax+b .
 \end{equation}
-Die Werte für $a$ und $b$ bestimmen sich folgendermaßen:
-\begin{align}
-a = \frac{\overline{xy}-\overline{x}\cdot\overline{y}}{\overline{x^2}-\overline{x}^2}, \\
-  b = \frac{\overline{x^2}\overline{y}-\overline{xy}\cdot\overline{x}}{\overline{x^2}-\overline{x}^2} .
-\end{align}
+%Die Werte für $a$ und $b$ bestimmen sich folgendermaßen:
+%\begin{align}
+%a = \frac{\overline{xy}-\overline{x}\cdot\overline{y}}{\overline{x^2}-\overline{x}^2}, \\
+%  b = \frac{\overline{x^2}\overline{y}-\overline{xy}\cdot\overline{x}}{\overline{x^2}-\overline{x}^2} .
+%\end{align}
 Der Plot, die Parameter und die Fehler werden mit Python berechnet.
 
 \begin{figure}
   \centering
   \includegraphics{plot1.pdf}
-  \caption{Lineare Ausgleichsrechnung zur Bestimmung von RC.}
+  \caption{Logarithmus der Kondensatorspannung in Abhängigkeit der Zeit.}
   \label{fig:plot}
 \end{figure}
 \noindent Um die Ausgleichsgerade zu bestimmen, wird Gleichung (4) entsprechend umgeformt:
@@ -37,15 +37,20 @@ Somit hat die Gerade folgende Gestalt:
 \begin{equation}
     ln{(\frac{U_c}{U_0})} = \underbrace{-\frac{1}{RC}}_{Steigung \: a}t + b .
 \end{equation}
-Daraus ergeben sich $a = (-824.913 \pm 20.909) s$ und $b = (3.123 \pm 0.616) \cdot 10^{-2} $ .
+Daraus ergeben sich $a = (-824.913 \pm 20.909)s$ und $b = (3.123 \pm 0.616) \cdot 10^{-2} $ .
 Daraus folgt für $RC$:
 \begin{equation*}
-    RC = -\frac{1}{a} = (1.21 \pm 0.04)\cdot 10^{-3} s.
+    RC = -\frac{1}{a} = (1.21 \pm 0.04)\cdot 10^{-3} s , 
 \end{equation*}
+wobei der Fehler berechnet wird mit
+\begin{equation*}
+   \Delta RC = \sqrt{(\frac{dRC}{da})^2\Delta a^2} = \sqrt{(\frac{1}{a^2})^2 \Delta a^2} ,
+\end{equation*}
+mit $\Delta a$ als der oben aufgelistete Fehler des Parameters $a$.
 
 \begin{table}[H]
   \centering
-  \caption{Daten für die Ausgleichsrechnung.}
+  \caption{Gemessene Spannung und Logarithmus der Spannung zum Zeitpunkt $t$ beim Entladevorgang des Kondensators. }
   \label{tab:Parameter}
   \begin{tabular}{c c c}
     \toprule
@@ -68,18 +73,18 @@ Daraus folgt für $RC$:
   \end{tabular}
 \end{table}
 
-\subsection{Bestimmung der Konstanten durch die Frequenz}
+\subsection{Bestimmung der Zeitkonstanten durch die Frequenz der Kondensatorspannung}
 Die für diese Methode gemessenen Daten finden sich in Tabelle (2). 
 In einem halblogarithmischen Diagramm wird die Amplitude gegen die Frequenz aufgetragen.
 
 \begin{figure}[H]
   \centering
   \includegraphics{plot2.pdf}
-  \caption{Spannung in Abhängigkeit der Frequenz.}
+  \caption{Kondensatorspannung in Abhängigkeit der Frequenz.}
   \label{fig:plot}
 \end{figure}
 
-\noindent Diesmal hat die Geradengleichung folgende Gestalt
+\noindent Die Ausgleichsgleichung hat folgende Gestalt
 \begin{equation*}
     \frac{A(\omega)}{U_0} = \frac{1}{ \sqrt{1+\omega^2R^2C^2}} ,
 \end{equation*}
@@ -95,7 +100,7 @@ Somit wird der Graph durch
 beschrieben.
 Der Parameter lautet:
 \begin{align*}
-   d = RC = (-9.256\pm  0.785)\cdot 10^{-4} s .
+   d = RC = (0.9256\pm  0.0785)\cdot 10^{-3} s .
 \end{align*}
 
 
@@ -127,10 +132,10 @@ Der Parameter lautet:
     \bottomrule
   \end{tabular}
 \end{table}
-\noindent Die Werte für $\phi$ wurden dabei mit Gleichung (6) berechnet.
+\noindent Die Werte für $\phi$ wurden dabei mit Gleichung (6) berechnet, wobei $b$ als Kehrwert der Frequenz berechnet wird.
 
 
-\subsection{Bestimmung der Konstanten durch die Phasenverschiebung}
+\subsection{Bestimmung der Zeitkonstanten durch die Phasenverschiebung zwischen Generator- und Kondensatorspannung}
 In diesem Auswertungsteil wird wie in 3.2 verfahren, nur dass die Phasenverschiebung gegen die Frequenz aufgetragen wird.
 Die dafür benötigten Werte sind in Tabelle (2) aufgelistet.
 
@@ -141,7 +146,7 @@ Die dafür benötigten Werte sind in Tabelle (2) aufgelistet.
 \begin{figure}[H]
   \centering
   \includegraphics{plot3.pdf}
-  \caption{Phasenverschiebung in Abhängigkeit von f.}
+  \caption{Phasenverschiebung in Abhängigkeit der Frequenz.}
   \label{fig:plot}
 \end{figure}
 \noindent Die Zeitkonstante beträgt:
@@ -169,7 +174,7 @@ gilt. Dies führt auf
 \begin{figure}[H]
   \centering
   \includegraphics{plot4.pdf}
-  \caption{Polarplot.}
+  \caption{Abhängigkeit der Amplitude und Phase in einem Polarplot.}
   \label{fig:plot}
 \end{figure}
 
@@ -179,31 +184,31 @@ gilt. Dies führt auf
 \begin{figure}[H]
   \centering
   \includegraphics{Rechteck.JPG}
-  \caption{Integrierte Rechteckspannung.}
+  \caption{Darstellung der Rechtecktspannung und ihrer Integrierten in einem Oskilloskop-Druck.}
   \label{fig:plot}
 \end{figure}
 \noindent Wie zu erkennen ist, ist die Integrierte einer Rechteckspannung eine Dreieckspannung.
 Folgende konstane Funktion
 \begin{equation*}
-  f(x) =
+  f(t) =
   \begin{cases}
-    U & \text 0 < x < a \\
-    U & \text a < x < 2a \\
+    U & \text 0 < t < a \\
+    -U & \text a < t < 2a \\
   \end{cases}
 \end{equation*}
 liefert diese Stammfunktion:
 \begin{equation*}
-  F(x) =
+  F(t) =
   \begin{cases}
-    Ux & \text 0 < x < a \\
-    -Ux & \text a < x < 2a .\\
+    Ut & \text 0 < t < a \\
+    -Ut & \text a < t < 2a .\\
   \end{cases}
 \end{equation*}
 
 \begin{figure}[H]
   \centering
   \includegraphics{Dreieck.JPG}
-  \caption{Integrierte Dreieckspannung.}
+  \caption{Darstellung der Dreiecksspannng und ihrer Integrierten in einem Oszilloskop-Druck.}
   \label{fig:plot}
 \end{figure}
 
@@ -227,7 +232,7 @@ ergibt integriert:
 \begin{figure}[H]
   \centering
   \includegraphics{Sinus.JPG}
-  \caption{Integrierte Sinusspannung.}
+  \caption{Darstellung der Sinusspannung und ihrer Integrierten in einem Oszilloskop-Druck.}
   \label{fig:plot}
 \end{figure}
 \noindent Eine Kosinusspannung ist die Integrierte der Sinusspannung.

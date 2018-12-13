@@ -10,7 +10,7 @@ U, v = np.genfromtxt('werteb.txt', unpack=True)
 
 #Definiert Funktion mit der ihr fitten wollt (hier eine Gerade)
 def f(c,d):
-   return 1/np.sqrt(1+d**2*(c*2*np.pi)**2)
+   return 1/(np.sqrt(1+d**2*(c*2*np.pi)**2))
 
 #Erstellt linspace von Bereich, in dem Ausgleichsfunktion erstellt wird
 x_plot = np.linspace(9, 10800, 1000)
@@ -34,6 +34,6 @@ plt.plot(v , U, 'r.', label='Messwerte', Markersize=4)
 plt.xlim(9,10800)
 plt.legend()
 plt.grid()
-plt.xlabel('f / s')
+plt.xlabel('$f$ / s')
 plt.ylabel('$U_c/U_0$')
 plt.savefig('plot2.pdf')
