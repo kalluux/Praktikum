@@ -4,12 +4,11 @@
 %2.1
 \subsection{Messreihe zur Bestimmung der Zeitkonstanten im RC-Kreis anhand des Entladevorgangs}
 
-In der ersten Messreihe wird zur Bestimmung der Zeitkonstante ein Spannungsgenerator
+Zunächst wird zur Bestimmung der Zeitkonstante ein Spannungsgenerator
 wie in Abbildung \ref{fig:v353_1} dargestellt an das RC-Glied angeschlossen und eine Rechteckspannung angelegt.
 Mithilfe eines digitalen Oszilloskops und der Trigger-Funktion wird die abfallende 
-Flanke dargestellt. Es werden logarithmisch 30 Frequenzen $\omega$ im Bereich von 100 bis 10000
-$\si{\hertz}$ eingestellt und mit der Cursor-Funktion die dazugehörige Kondensatorspannung 
-$U_\text{C}(t)$ festgehalten.
+Flanke dargestellt. Die Spannung am Kondensator wird in Abhängigkeit der Zeit gemessen, und es werden mindestens 10 Werte notiert.
+Dass die Entladung beginnt erkennt man daran, dass die Spannung von ihrem Maximalwert auf Null zurück springt.
 \begin{figure}[H]
   \centering
   \includegraphics{V353_1.png}
@@ -21,8 +20,11 @@ $U_\text{C}(t)$ festgehalten.
 %2.2
 \subsection{Messreihe zur Bestimmung der Spannungsamplitude des Kondensators
 im RC-Kreis}
-Für die zweite Messreihe wird eine Sinusspannung $U_\text{0}(t)$ angelegt und die 
-Amplitude $A$ der Kondensatorspannung $U_\text{C}(t)$ für dieselben Frequenzen $\omega$ festgehalten.
+Als nächstes wird eine Sinusspannung $U_\text{0}(t)$ angelegt und die 
+Amplitude $A$ der Kondensatorspannung $U_\text{C}(t)$ in Abhängikeit der Frequenz gemessen.
+Es werden logarithmisch 30 Frequenzen $\omega$ im Bereich von 100 bis 10000
+$\si{\hertz}$ eingestellt und mit der Cursor-Funktion die dazugehörige Kondensatorspannung 
+$U_\text{C}(t)$ festgehalten. Dabei werden für jede Zehnerpotenz je 10 Werte gemessen.
 
 %2.3
 \subsection{Messreihe zur Bestimmung der Phasenverschiebung im RC-Kreis}
@@ -31,9 +33,10 @@ Spannung $U_\text{G}(t)$ und der Kondensatorspannung $U_\text{C}(t)$ bestimmt.
 Hierzu wird die Schaltung so verändert, dass die generierte Spannung ebenfalls auf 
 dem Oszilloskopen dargestellt werden kann (Abbildung \ref{fig:v353_3}) und die Signale 
 werden übereinander 
-symmetrisch zur $t$-Achse ausgelegt. Mithilfe der Cursor-Funktion wird nun der Abstand
+symmetrisch zur $t$-Achse ausgelegt. Mithilfe der Cursor-Funktion wird dazu der Abstand
 $a$ zwischen den zugehörigen Nulldurchläufen gemessen (Abbildung \ref{fig:phi}), wobei
-die Periodendauer $b$ durch die Frequenz $\omega$ gegeben ist.
+die Periodendauer $b$ durch die Frequenz $\omega$ gegeben ist. Die eingestellte Frequenz
+ist dabei die gleiche wie im vorherigen Durchführungsteil.
 \begin{figure}[H]
   \centering
   \includegraphics{V353_2.png}
@@ -50,8 +53,8 @@ Zweistrahloszilloskopen. \cite[S. 7]{kent}}
 
 %2.4
 \subsection{Messreihe zur Bestätigung der Integratorfunktion des RC-Kreises}
-Um die Integratorfunktion des RC-Kreises zu überprüfen, wird nun eine ausreichend hohe
+Um die Integratorfunktion des RC-Kreises zu überprüfen, wird eine ausreichend hohe
 Frequenz $\omega$ eingestellt und eine Rechteckspannung angelegt. Das Oszilloskop 
-zeigt nun sowohl die angelegte als auch die integrierte Spannung an. Als zweites wird eine
+zeigt sowohl die angelegte als auch die integrierte Spannung an. Als zweites wird eine
 Dreieckspannung angelegt. Die letzte Einstellung ist eine Sinusspannung. Die Ergebnisse
 werden als Bilder gespeichert.
