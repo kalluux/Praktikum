@@ -1,9 +1,121 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+Im folgenden werden Schwingungen in ihre Einzelsignale zerlegt, und umgekehrt ihre Komponenten zu einer Schwingung zusammengesetzt.
+
+\subsection{Fourier-Analyse}
+In Tabelle (1) finden sich die gemessenen Spannungen, und der Quotient $\frac{U_n}{U_1}$. $U_1$ ist dabei die erste Oberwelle. Mit Hilfe einer linearen Ausgleichgsrechnung werden die Werte mit den theoretischen
+Werten verglichen. Dazu wird je die Steigung überprüft. Der Theoriewert für die Rechteck- und Sägezahnspannung beträgt $-1$ und für
+die Dreieckspannung $-2$. Dies ergibt sich aus der vorbereitenden Berechnung der Fourier-Koeffizienten, also aus den Gleichungen ().
+
+
+\begin{table}[H]
+  \centering
+  \caption{Amplituden und normierte Amplituden der drei Spannungsformen.}
+  \label{tab:Rechteckspannung}
+  \begin{tabular}{c c | c c | c c}
+    \toprule
+    $U_R/V$ & $\frac{U_n}{U_1}$ & $U_S/V$ & $\frac{U_n}{U_1}$ & $U_D/V$ & $\frac{U_n}{U_1}$ \\
+    \midrule
+    6.92 & 1.000 & 3.44 & 1.000 & 4.400 &  1.000\\
+    2.70 & 0.390 & 2.00 & 0.581 & 0.608 &  0.138\\
+    1.70 & 0.246 & 1.40 & 0.407 & 0.224 &  0.051\\
+    1.04 & 0.150 & 0.74 & 0.215 & 0.108 &  0.025\\
+    0.60 & 0.087 & 0.84 & 0.244 & 0.048 &  0.011\\
+    0.68 & 0.098 & 0.58 & 0.169 & 0.044 &  0.010\\
+    0.52 & 0.075& 0.52 & 0.151 & 0.044 &  0.010\\
+    0.32 & 0.046 & 0.50 & 0.145 & 0.040 &  0.009\\
+    0.36 & 0.052& 0.32 & 0.093 \\
+    0.38 & 0.055& 0.40 & 0.116 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\noindent In den folgenden Graphen werden die Amplituden gegen $n$ doppellogarithmisch aufgetragen.
+
 \begin{figure}
   \centering
-  \includegraphics{plot.pdf}
-  \caption{Plot.}
-  \label{fig:plot}
+  \includegraphics{plot1.pdf}
+  \caption{Amplituden der Rechteckspannung aufgetragen gegen die Zahl der Oberwelle.}
+  \label{fig:rechteck}
 \end{figure}
+\noindent Der Ansatz der linearen Regression lautet $y = mx + b$ , und mit Hilfe von Python werden die Parameter und Fehler berechnet, die für die Rechteckschwingung lauten
+\begin{align*}
+  m &= -1.35 \pm 0.07 \\
+  b &= -0.17 \pm 0.12 .
+\end{align*}
+
+\begin{figure}
+  \centering
+  \includegraphics{plot2.pdf}
+  \caption{Amplituden der Sägezahnspannung aufgetragen gegen die Zahl der Oberwelle.}
+  \label{fig:rechteck}
+\end{figure}
+Für die Sägezahnspannung betragen die Parameter
+\begin{align*}
+  m &= -1.01 \pm 0.07 \\
+  b &= 0.08 \pm 0.11 .
+\end{align*}
+
+\begin{figure}
+  \centering
+  \includegraphics{plot3.pdf}
+  \caption{Amplituden der Dreieckspannung aufgetragen gegen die Zahl der Oberwelle.}
+  \label{fig:rechteck}
+\end{figure}
+Zuletzt die Parameter der Dreieckspannung:
+\begin{align*}
+  m &= -2.35 \pm 0.17 \\
+  b &= -0.27 \pm 0.25 .
+\end{align*}
+
+
+\subsection{Fourier-Synthese}
+Die Abbildungen ... zeigen die synthetisierten Funktionen. Dabei wird beachtet,
+dass die Amplituden der Rechteck- und der Sägezahnspannung mit dem Faktor $\frac{1}{n}$ fallen
+und die der Dreieckspannung um den Faktor $\frac{1}{n^2}$. Die Berechnung der notwendigen Spannung erfolgt also durch
+Multiplikation der ersten Oberschwingung mit dem jeweiligen Faktor.
+Außerdem fallen die Oberschwingungen mit geradem $n$
+bei der Rechteck und Dreiecksspannung weg. In Tabelle () sind die eingestellten Spannungen aufgelistet.
+Bei der Dreieckspannung war es nicht möglich, mehr als 4 Oberwellen einzustellen.
+\begin{figure}
+  \centering
+  \includegraphics[height=5cm]{rechteck.png}
+  \caption{Die synthetisierte Rechteckspannung.}
+  \label{fig:rechteck}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[height=5cm]{Dreieck.png}
+  \caption{Die synthetisierte Dreieckspannung.}
+  \label{fig:rechteck}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[height=5cm]{Säge.png}
+  \caption{Die synthetisierte Sägezahnspannung.}
+  \label{fig:rechteck}
+\end{figure}
+
+
+
+\begin{table}[H]
+  \centering
+  \caption{Die für die Synthese der Funktionen notwendigen Spannungen.}
+  \label{tab:Rechteckspannung}
+  \begin{tabular}{c | c | c c}
+    \toprule
+    Oberwellenzahl $n$ & $U_R/V$ und $U_S/V$ & $U_D/V$   \\
+    \midrule
+    1 & 0.621 & 0.617\\
+    2 & 0.311 & 0.154\\
+    3 & 0.207 & 0.069\\
+    4 & 0.155 & 0.039\\
+    5 & 0.124\\
+    6 & 0.104\\
+    7 & 0.089\\
+    8 & 0.078\\
+    9 & 0.069\\
+    \bottomrule
+  \end{tabular}
+\end{table}
