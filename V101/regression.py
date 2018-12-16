@@ -13,12 +13,13 @@ def f(x, A, B):
    return A*x + B
 
 #Erstellt linspace von Bereich, in dem Ausgleichsfunktion erstellt wird
-x_plot = np.linspace(0.003, 0.06, 400)
+x_plot = np.linspace(-0.01, 0.06, 400)
 #Fittet
 params, covariance_matrix = curve_fit(f, a, T)
 errors = np.sqrt(np.diag(covariance_matrix))
 #Plottet Fit
 plt.plot(x_plot, f(x_plot, *params), 'k-', label='Anpassungsfunktion', linewidth=0.5)
+plt.plot(0, f(0, *params), 'b.', label='y-Achsenabschnitt', linewidth=0.5)
 #Gibt berechnete Parameter aus
 print(params)
 print(np.sqrt(np.diag(covariance_matrix)))
@@ -34,4 +35,5 @@ plt.legend()
 plt.grid()
 plt.xlabel('$a^2$/$m^2$')
 plt.ylabel('$T^2$/$s^2$')
+plt.xlim(-0.01, 0.06)
 plt.savefig('build/plot1.pdf')
