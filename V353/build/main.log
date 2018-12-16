@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.25)  16 DEC 2018 17:58
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.25)  16 DEC 2018 20:45
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -22,7 +22,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.160 seconds (./header.tex (/home/kalina/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
+luaotfload | main : initialization completed in 0.158 seconds (./header.tex (/home/kalina/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2018/03/30 v3.25 KOMA-Script document class (article)
 (/home/kalina/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrkbase.sty
 Package: scrkbase 2018/03/30 v3.25 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
@@ -831,22 +831,22 @@ luatex-hyphen: using data file: /home/kalina/.local/texlive/2018/texmf-var/tex/g
 Lua module: polyglossia 2013/05/11 1.3 Polyglossia) (/home/kalina/.local/texlive/2018/texmf-dist/tex/latex/polyglossia/gloss-german.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	table: 0x50794e0
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	table: 0x43f30c0
+(polyglossia)            righthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 on input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	table: 0x50796b0
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	table: 0x43f3290
+(polyglossia)            righthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 on input line 68
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 68
@@ -2210,30 +2210,30 @@ Package luatex.def Info: plot2.pdf  used on input line 82.
 <plot3.pdf, id=238, 417.7206pt x 258.0039pt>
 File: plot3.pdf Graphic file (type pdf)
 <use plot3.pdf>
-Package luatex.def Info: plot3.pdf  used on input line 148.
+Package luatex.def Info: plot3.pdf  used on input line 152.
 (luatex.def)             Requested size: 417.71957pt x 258.00327pt.
  [10]
 <plot4.pdf, id=245, 417.7206pt x 258.0039pt>
 File: plot4.pdf Graphic file (type pdf)
 <use plot4.pdf>
-Package luatex.def Info: plot4.pdf  used on input line 176.
+Package luatex.def Info: plot4.pdf  used on input line 180.
 (luatex.def)             Requested size: 417.71957pt x 258.00327pt.
  [11<./plot3.pdf>]
 <Rechteck.JPG, id=297, 256.96pt x 192.72pt>
 File: Rechteck.JPG Graphic file (type jpg)
 <use Rechteck.JPG>
-Package luatex.def Info: Rechteck.JPG  used on input line 186.
+Package luatex.def Info: Rechteck.JPG  used on input line 190.
 (luatex.def)             Requested size: 256.95937pt x 192.71951pt.
  [12<./plot4.pdf><./Rechteck.JPG>]
 <Dreieck.JPG, id=322, 256.96pt x 192.72pt>
 File: Dreieck.JPG Graphic file (type jpg)
 <use Dreieck.JPG>
-Package luatex.def Info: Dreieck.JPG  used on input line 210.
+Package luatex.def Info: Dreieck.JPG  used on input line 214.
 (luatex.def)             Requested size: 256.95937pt x 192.71951pt.
 <Sinus.JPG, id=323, 256.96pt x 192.72pt>
 File: Sinus.JPG Graphic file (type jpg)
 <use Sinus.JPG>
-Package luatex.def Info: Sinus.JPG  used on input line 234.
+Package luatex.def Info: Sinus.JPG  used on input line 238.
 (luatex.def)             Requested size: 256.95937pt x 192.71951pt.
  [13<./Dreieck.JPG>]) (./content/diskussion.tex)(load luc: /home/kalina/.local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc) [14<./Sinus.JPG>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
@@ -2245,7 +2245,7 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 87A4F1AC1D1E0157A3A4318E4F0FE713;17882.
+(rerunfilecheck)             Checksum: E9DD6C7C96A057AA918A820C17E2E12B;17882.
 Package rerunfilecheck Info: File `main.toc' has not changed.
 (rerunfilecheck)             Checksum: 9D70D673076D94064C172E5A5E91423F;1889.
 
@@ -2260,14 +2260,14 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of LuaTeX's memory you used:
  42358 strings out of 494412
  100000,1648299 words of node,token memory allocated
- 750 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 36 attribute, 77 glue_spec, 36 attribute_list, 1 write, 6 pdf_action nodes
-   avail lists: 1:2,2:871,3:124,4:38,5:215,6:27,7:2577,8:78,9:289,10:24,11:294
+ 754 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 37 attribute, 77 glue_spec, 37 attribute_list, 1 write, 6 pdf_action nodes
+   avail lists: 1:2,2:869,3:124,4:38,5:215,6:27,7:2577,8:78,9:289,10:24,11:294
  45223 multiletter control sequences out of 65536+600000
- 157 fonts using 56066247 bytes
+ 157 fonts using 56066015 bytes
  61i,13n,107p,9101b,3200s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (15 pages, 443009 bytes).
+Output written on main.pdf (15 pages, 443133 bytes).
 
 PDF statistics: 473 PDF objects out of 1000 (max. 8388607)
  299 compressed objects within 3 object streams
