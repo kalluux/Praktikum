@@ -6,7 +6,7 @@ Im folgenden werden Schwingungen in ihre Einzelsignale zerlegt, und umgekehrt ih
 \subsection{Fourier-Analyse}
 In Tabelle (1) finden sich die gemessenen Spannungen, und der Quotient $\frac{U_n}{U_1}$. $U_1$ ist dabei die erste Oberwelle. Mit Hilfe einer linearen Ausgleichgsrechnung werden die Werte mit den theoretischen
 Werten verglichen. Dazu wird je die Steigung überprüft. Der Theoriewert für die Rechteck- und Sägezahnspannung beträgt $-1$ und für
-die Dreieckspannung $-2$. Dies ergibt sich aus der vorbereitenden Berechnung der Fourier-Koeffizienten, also aus den Gleichungen ().
+die Dreieckspannung $-2$. Dies ergibt sich aus der vorbereitenden Berechnung der Fourier-Koeffizienten, also aus den Gleichungen (4) und (5).
 
 
 \begin{table}[H]
@@ -39,11 +39,12 @@ die Dreieckspannung $-2$. Dies ergibt sich aus der vorbereitenden Berechnung der
   \caption{Amplituden der Rechteckspannung aufgetragen gegen die Zahl der Oberwelle.}
   \label{fig:rechteck}
 \end{figure}
-\noindent Der Ansatz der linearen Regression lautet $y = mx + b$ , und mit Hilfe von Python werden die Parameter und Fehler berechnet, die für die Rechteckschwingung lauten
+\noindent Der Ansatz der linearen Regression lautet $y = mx + b$ , und mit Hilfe von Python werden die Parameter und Fehler berechnet, die für die Rechteckschwingung
 \begin{align*}
   m &= -1,35 \pm 0,07 \\
-  b &= -0,17 \pm 0,12 .
+  b &= -0,17 \pm 0,12 
 \end{align*}
+lauten.
 
 \begin{figure}
   \centering
@@ -51,7 +52,7 @@ die Dreieckspannung $-2$. Dies ergibt sich aus der vorbereitenden Berechnung der
   \caption{Amplituden der Sägezahnspannung aufgetragen gegen die Zahl der Oberwelle.}
   \label{fig:rechteck}
 \end{figure}
-Für die Sägezahnspannung betragen die Parameter
+Für die Sägezahnspannung ergeben sich die Parameter
 \begin{align*}
   m &= -1,01 \pm 0,07 \\
   b &= 0,08 \pm 0,11 .
@@ -71,7 +72,7 @@ Zuletzt die Parameter der Dreieckspannung:
 
 
 \subsection{Fourier-Synthese}
-Die Abbildungen ... zeigen die synthetisierten Funktionen. Dabei wird beachtet,
+Die Abbildungen 8 bis 10 zeigen die synthetisierten Funktionen. Dabei wird beachtet,
 dass die Amplituden der Rechteck- und der Sägezahnspannung mit dem Faktor $\frac{1}{n}$ fallen
 und die der Dreieckspannung um den Faktor $\frac{1}{n^2}$. Die Berechnung der notwendigen Spannung erfolgt also durch
 Multiplikation der ersten Oberschwingung mit dem jeweiligen Faktor.
