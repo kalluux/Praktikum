@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.11.15)  11 DEC 2018 01:13
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.11.15)  2 JAN 2019 19:59
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.187 seconds
+luaotfload | main : initialization completed in 0.191 seconds
 (./header.tex (/home/daniel/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2018/03/30 v3.25 KOMA-Script document class (article)
 (/home/daniel/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -470,22 +470,22 @@ luatex-hyphen: using data file: /home/daniel/.local/texlive/2018/texmf-var/tex/g
 Lua module: polyglossia 2013/05/11 1.3 Polyglossia) (/home/daniel/.local/texlive/2018/texmf-dist/tex/latex/polyglossia/gloss-german.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            synonyms	table: 0x5c1b5c0
+(polyglossia)            synonyms	table: 0x5337a90
 (polyglossia)            hyphenation	
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            righthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 on input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            synonyms	table: 0x5c1b790
+(polyglossia)            synonyms	table: 0x5337c60
 (polyglossia)            hyphenation	
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            righthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 on input line 68
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 68
@@ -1392,48 +1392,48 @@ LaTeX Warning: Label `tab:some_data' multiply defined.
 )
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 11
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 13
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  TU/LatinModernMath(1)/m/n --> TU/lmr/m/n on input line 11.
+(Font)                  TU/LatinModernMath(1)/m/n --> TU/lmr/m/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 11.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 11.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 11.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 11.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 11.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 13.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 11.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 13.
  (/home/daniel/.local/texlive/2018/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/home/daniel/.local/texlive/2018/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
 
-Package chemgreek Info: Activating mapping `fontspec' on line 11.
+Package chemgreek Info: Activating mapping `fontspec' on line 13.
 
  (/home/daniel/.local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1463,7 +1463,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 11.
+LaTeX Info: Redefining \microtypecontext on input line 13.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1484,17 +1484,11 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = main.bcf
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (./build/main.bbl
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'l':
-(biblatex)                - Entry 'l' (lit.bib): Invalid format '2018-12-0' of date field 'date' - ignoring.
-
-)
-Package biblatex Info: Reference section=0 on input line 11.
-Package biblatex Info: Reference segment=0 on input line 11.
+ (./build/main.bbl)
+Package biblatex Info: Reference section=0 on input line 13.
+Package biblatex Info: Reference segment=0 on input line 13.
 \AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring OFF on input line 11.
+Package hyperref Info: Link coloring OFF on input line 13.
  (/home/daniel/.local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/home/daniel/.local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1502,9 +1496,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count450
 )
-LaTeX Info: Redefining \ref on input line 11.
-LaTeX Info: Redefining \pageref on input line 11.
-LaTeX Info: Redefining \nameref on input line 11.
+LaTeX Info: Redefining \ref on input line 13.
+LaTeX Info: Redefining \pageref on input line 13.
+LaTeX Info: Redefining \nameref on input line 13.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LatinModernMath' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -1527,21 +1521,21 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 14.4002pt on input line 14.
+(Font)              scaled to size 14.4002pt on input line 16.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 10.00015pt on input line 14.
+(Font)              scaled to size 10.00015pt on input line 16.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.0001pt on input line 14.
+(Font)              scaled to size 7.0001pt on input line 16.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 14.39977pt on input line 14.
+(Font)              scaled to size 14.39977pt on input line 16.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 9.99985pt on input line 14.
+(Font)              scaled to size 9.99985pt on input line 16.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 6.9999pt on input line 14.
+(Font)              scaled to size 6.9999pt on input line 16.
  [1
 
 {/home/daniel/.local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package tocbasic Info: character protrusion at toc deactivated on input line 15.
+Package tocbasic Info: character protrusion at toc deactivated on input line 17.
  (./build/main.toc
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 3
 )
@@ -1563,30 +1557,30 @@ File: grenzfall.png Graphic file (type png)
 Package luatex.def Info: grenzfall.png  used on input line 65.
 (luatex.def)             Requested size: 269.71219pt x 142.26378pt.
  [4]
-<aperiodisch.png, id=81, 244.41313pt x 157.58875pt>
+<aperiodisch.png, id=82, 244.41313pt x 157.58875pt>
 File: aperiodisch.png Graphic file (type png)
 <use aperiodisch.png>
 Package luatex.def Info: aperiodisch.png  used on input line 84.
 (luatex.def)             Requested size: 220.65599pt x 142.26378pt.
  [5<./grenzfall.PNG><./aperiodisch.PNG>]
-<erzwungen.png, id=96, 242.9075pt x 122.4575pt>
+<erzwungen.png, id=97, 242.9075pt x 122.4575pt>
 File: erzwungen.png Graphic file (type png)
 <use erzwungen.png>
 Package luatex.def Info: erzwungen.png  used on input line 139.
 (luatex.def)             Requested size: 282.20282pt x 142.26378pt.
 ) (./content/durchfuehrung.tex [6]
-<Schaltung1.png, id=112, 530.48187pt x 217.31187pt>
+<Schaltung1.png, id=113, 530.48187pt x 217.31187pt>
 File: Schaltung1.png Graphic file (type png)
 <use Schaltung1.png>
 Package luatex.def Info: Schaltung1.png  used on input line 8.
 (luatex.def)             Requested size: 347.30222pt x 142.26378pt.
  [7<./erzwungen.PNG><./Schaltung1.png>]
-<Schaltung2.png, id=124, 532.99126pt x 203.25937pt>
+<Schaltung2.png, id=125, 532.99126pt x 203.25937pt>
 File: Schaltung2.png Graphic file (type png)
 <use Schaltung2.png>
 Package luatex.def Info: Schaltung2.png  used on input line 30.
 (luatex.def)             Requested size: 373.0588pt x 142.26378pt.
-<Schaltung3.png, id=127, 508.90125pt x 166.12062pt>
+<Schaltung3.png, id=128, 508.90125pt x 166.12062pt>
 File: Schaltung3.png Graphic file (type png)
 <use Schaltung3.png>
 Package luatex.def Info: Schaltung3.png  used on input line 40.
@@ -1596,7 +1590,8 @@ Overfull \hbox (17.58946pt too wide) in paragraph at lines 40--41
  [][] 
  []
 
-<Schaltung4.png, id=130, 606.76688pt x 202.7575pt>
+[8<./Schaltung2.png>]
+<Schaltung4.png, id=138, 606.76688pt x 202.7575pt>
 File: Schaltung4.png Graphic file (type png)
 <use Schaltung4.png>
 Package luatex.def Info: Schaltung4.png  used on input line 50.
@@ -1606,14 +1601,13 @@ Overfull \hbox (7.48753pt too wide) in paragraph at lines 50--51
  [][] 
  []
 
-[8<./Schaltung2.png><./Schaltung3.png>]
-<phi.png, id=142, 290.58563pt x 137.7647pt>
+<phi.png, id=141, 290.58563pt x 137.7647pt>
 File: phi.png Graphic file (type png)
 <use phi.png>
 Package luatex.def Info: phi.png  used on input line 55.
 (luatex.def)             Requested size: 300.10464pt x 142.26378pt.
-) (./content/auswertung.tex [9<./Schaltung4.png><./phi.png>]
-<plota.pdf, id=158, 417.7206pt x 258.0039pt>
+[9<./Schaltung3.png><./Schaltung4.png>]) (./content/auswertung.tex [10<./phi.png>]
+<plota.pdf, id=164, 417.7206pt x 258.0039pt>
 File: plota.pdf Graphic file (type pdf)
 <use plota.pdf>
 Package luatex.def Info: plota.pdf  used on input line 55.
@@ -1622,8 +1616,8 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 5.00008pt on input line 56.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 4.99992pt on input line 56.
- [10] [11<./plota.pdf>]
-<plotc.pdf, id=199, 417.7206pt x 258.0039pt>
+ [11<./plota.pdf>]
+<plotc.pdf, id=200, 417.7206pt x 258.0039pt>
 File: plotc.pdf Graphic file (type pdf)
 <use plotc.pdf>
 Package luatex.def Info: plotc.pdf  used on input line 120.
@@ -1632,21 +1626,21 @@ Package luatex.def Info: plotc.pdf  used on input line 120.
 <plotd.pdf, id=240, 417.7206pt x 258.0039pt>
 File: plotd.pdf Graphic file (type pdf)
 <use plotd.pdf>
-Package luatex.def Info: plotd.pdf  used on input line 188.
+Package luatex.def Info: plotd.pdf  used on input line 190.
 (luatex.def)             Requested size: 417.71957pt x 258.00327pt.
-) (./content/diskussion.tex [14] [15<./plotd.pdf>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
- [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
+) (./content/diskussion.tex [14] [15<./plotd.pdf>]) [16]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
+ [17]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
  (./build/main.aux
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 26
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: DE9A91F42031CD3237D2F23F6D01C224;11584.
+(rerunfilecheck)             Checksum: E740A156B0425A499363049D50116EEF;11653.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 69A5457DE1F784BECEFC9D5562265FA3;1153.
+(rerunfilecheck)             Checksum: 6DF7B49BCA38E18893169B76652E0517;1155.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1657,19 +1651,19 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 42463 strings out of 494407
+ 42464 strings out of 494407
  100000,1648299 words of node,token memory allocated
  792 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 47 attribute, 77 glue_spec, 47 attribute_list, 1 write, 2 pdf_action nodes
-   avail lists: 1:2,2:882,3:135,4:27,5:208,6:23,7:2093,8:88,9:411,10:8,11:217
+   avail lists: 1:2,2:1013,3:137,4:22,5:218,6:23,7:2782,8:111,9:526,10:8,11:163
  45313 multiletter control sequences out of 65536+600000
- 166 fonts using 57484479 bytes
- 61i,14n,107p,9101b,3229s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman8-italic.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (16 pages, 726742 bytes).
+ 166 fonts using 57484711 bytes
+ 61i,14n,107p,9101b,3243s stack positions out of 5000i,500n,10000p,200000b,100000s
+</home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (17 pages, 724999 bytes).
 
-PDF statistics: 427 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 425 PDF objects out of 1000 (max. 8388607)
  312 compressed objects within 4 object streams
- 72 named destinations out of 1000 (max. 131072)
+ 73 named destinations out of 1000 (max. 131072)
  97 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -6,10 +6,10 @@
 \contentsline {subsection}{\numberline {2.1}Gedämpfte Schwingungen}{3}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Erzwungene Schwingungen}{5}{subsection.2.2}
 \contentsline {section}{\numberline {3}Durchführung}{7}{section.3}
-\contentsline {section}{\numberline {4}Auswertung}{9}{section.4}
-\contentsline {subsection}{\numberline {4.1}Zeitabhängigkeit der Amplitude}{9}{subsection.4.1}
+\contentsline {section}{\numberline {4}Auswertung}{10}{section.4}
+\contentsline {subsection}{\numberline {4.1}Zeitabhängigkeit der Amplitude}{10}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Bestimmung des Dämpfungswiderstands}{11}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Frequenzabhängigkeit der Kondensatorspannung}{11}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Frequenzabhängigkeit der Phasenverschiebung}{13}{subsection.4.4}
-\contentsline {section}{\numberline {5}Diskussion}{15}{section.5}
-\contentsline {section}{\nonumberline Literatur}{16}{section*.17}
+\contentsline {subsection}{\numberline {4.3}Frequenzabhängigkeit der Kondensatorspannung}{12}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Frequenzabhängigkeit der Phasenverschiebung}{14}{subsection.4.4}
+\contentsline {section}{\numberline {5}Diskussion}{16}{section.5}
+\contentsline {section}{\nonumberline Literatur}{17}{section*.17}

@@ -10,7 +10,7 @@ u = uc/u0
 #plt.xscale('log')
 #Formatiert etws schöner
 x_plot = np.linspace(22.5, 29, 500)
-y_plot = np.linspace(2.687, 2.687, 500)
+y_plot = np.linspace(2.673, 2.673, 500)
 plt.gcf().subplots_adjust(bottom=0.18)
 #Plot eurer eigentlichen Messwerte
 plt.plot(x_plot, y_plot, 'b-', label='b', Markersize=4)

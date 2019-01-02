@@ -22,7 +22,7 @@ U_C (t) = \frac{Q(t)}{C}  \\
 U_L (t) = L \frac{dI}{dt} \\
 I = \frac{dQ}{dt}
 \end{align}
-mit $Q(t)$ als Ladung in die DGL ein, und leitet einmal ab, ergibt sich 
+mit $Q(t)$ als Ladung in die DGL ein, und leitet einmal nach der Zeit $t$ ab, ergibt sich 
 \begin{equation}
 \frac{d^2I}{dt^2} + \frac{R}{L}\frac{dI}{dt} + \frac{1}{LC}I = 0 .
 \end{equation}
@@ -56,7 +56,7 @@ I(t) = Ae^{-2\pi \mu t}cos(2\pi \nu t + \eta) .
 Man erkennt, dass diese Gleichung eine harmonische Schwingung beschreibt, mit $\nu$ als Frequenz, und exponentiell abklingender Amplitude.
 Sie stellt die gedämpfte Schwingung dar. Die Abklingdauer dieser Schwingung, bestimmt sich durch
 \begin{equation}
-T_{ex} = \frac{1}{2\pi \mu} = \frac{2L}{R} ,
+T_\text{ex} = \frac{1}{2\pi \mu} = \frac{2L}{R} ,
 \end{equation}
 und nach dieser hat die Amplitude ihren ursprünglichen Wert angenommen.
 Darstellen lässt sich eine gedämpfte Schwingung durch die Abbildung (2).
@@ -65,7 +65,7 @@ Darstellen lässt sich eine gedämpfte Schwingung durch die Abbildung (2).
   \includegraphics[height=5cm]{grenzfall.png}
   \caption{Darstellung einer gedämpften Schwingung. \cite[S.4]{kent}}
 \end{figure}
-\noindent Betrachtet man nun den zweiten fall, also dass $\nu$ imaginär ist, verhält sich die Schwingung nicht mehr oszillatorisch, und die aperiodische Dämpfung tritt ein.
+\noindent Betrachtet man nun den zweiten Fall, also dass $\nu$ imaginär ist, verhält sich die Schwingung nicht mehr oszillatorisch, und die aperiodische Dämpfung tritt ein.
 Die aperiodische Dämpfung ist in Abbildung (3) dargestellt. $I(t)$ nähert sich in diesem Fall am schnellsten null an.
 Es gilt dann außerdem
 \begin{equation}
@@ -82,7 +82,7 @@ I(t) = A e^{-\frac{t}{\sqrt{LC}}} .
 \begin{figure}[H]
   \centering
   \includegraphics[height=5cm]{aperiodisch.png}
-  \caption{Darstellung des aperiodischen Grenzfalls. \cite[S.5]{kent}}
+  \caption{Darstellung möglicher zeitlicher Verläufe des Stromes in einem Schwingkreis mit aperiodischer Dämpfung. \cite[S.5]{kent}}
 \end{figure}
 
 
@@ -100,7 +100,7 @@ U = \frac{U_0(1-LC\omega^2 - j\omega RC)}{(1-LC\omega^2)^2 + \omega^2 R^2 C^2} .
 \end{equation}
 Die zugehörige Phase wird durch 
 \begin{equation}
-\phi(\omega) = arctan(\frac{-\omega RC}{1-LC\omega^2})
+\phi(\omega) = \text{arctan}\Bigl(\frac{-\omega RC}{1-LC\omega^2}\Bigr)
 \end{equation}
 beschrieben.
 Die Resonanzkurve, also die Abhängigkeit der Kondensatorspannung $U_C$ von der Frequenz der Erregerspannung, wird durch

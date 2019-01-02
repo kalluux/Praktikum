@@ -6,7 +6,7 @@
 %Aufgabe a
 Die Form der Einhüllenden ist, da $\mathit{U(t) \propto I(t)}$, durch
 \begin{align*}
-A = A_\text{0} \mathrm{e}^{-2 \pi \mu t}
+A = A_\text{0} \mathrm{e}^{-2 \pi \mu t} + b
 \end{align*}
 gegeben.
 
@@ -24,7 +24,7 @@ A_\text{0} &= (\num{31,32 +- 0,63})\,\mathrm{V} \\
 \label{tab:some_data}
 \begin{tabular}{c c c c}
 \toprule
-$U_\text{C} \:/\: V$ & $t \:/\: 10^{-6}\si{\second}$ & $U_\text{C} \:/\: V$ & $t \:/\: 10^{-6}\si{\second}$\\
+$U_\text{C}$ \:/\: V & $t \:/\: \si{\micro\second}$ & $U_\text{C}$ \:/\: V & $t \:/\: \si{\micro\second}$\\
 \midrule
 20  & 32,2 & 286 & 21,2\\
 58  & 29,8 & 322 & 20,6\\
@@ -32,7 +32,7 @@ $U_\text{C} \:/\: V$ & $t \:/\: 10^{-6}\si{\second}$ & $U_\text{C} \:/\: V$ & $t
 134 & 25,8 & 398 & 19,8\\
 172 & 24,6 & 436 & 19,4\\
 210 & 23,4 & 474 & 18,8\\
-248 & 22 \\
+248 & 22,0 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -64,7 +64,7 @@ Der Dämpfungswiderstand, für den der aperiodische Grenzfall eintrifft, wird al
 R_\text{ap,ex} = \SI{3,05}{\kilo\ohm}
 \end{align*}
 gemessen.
-Der theoretische Wert des Dämpfungswiderstandes wird mit Gleichung (13) berechnet.
+Der theoretische Wert des Dämpfungswiderstandes wird mit Gleichung (15) berechnet.
 Der Fehler errechnet sich über die Gauß'sche Fehlerfortpflanzung:
 \begin{align*}
 \sigma_{R_\text{ap,th}} = \sqrt{\frac{\sigma_{L}^{2}\frac{L}{C}}{L^{2}} + \frac{\sigma_{C}^{2} \frac{L}{C}}{C^{2}}}
@@ -80,11 +80,11 @@ Die zur Berechnung der Resonanzüberhöhung $q$ aufgenommenen Wertepaare, besteh
 normierten Spannungsamplitude in Tabelle 2. Ferner werden die normierten Kondensatorspannungen in Abbildung 2 gegen die Frequenz aufgetragen.
 Die Resonanzüberhöhung 
 \begin{align*}
-q_\text{ex} &= \num{3.8}
+q_\text{ex} &= 3,78
 \end{align*}
-wird Abbildung 11 entnommen. Mit der Gleichung (22) ergibt sich für den theoretischen Wert der Resonanzüberhöhung 
+wird Tabelle 2 entnommen und ist der maximale gemessene Wert, den $\frac{U_\text{C}}{U}$ annimmt. Mit der Gleichung (22) ergibt sich für den theoretischen Wert der Resonanzüberhöhung 
 \begin{align*}
-q_\text{th} &= \num{4.179 +-0.014},
+q_\text{th} &= (4.179 \pm 0.014),
 \end{align*}
 wobei der Fehler mit der Gauß'schen Fehlerfortpflanzung in der Form
 \begin{align*}
@@ -98,7 +98,7 @@ ermittelt wird.
 \label{tab:some_data}
 \begin{tabular}{c c c c c c c c c}
 \toprule
-$\mathit{U_c \: / \: \mathrm{V}}$ & $\frac{U_c}{U_0}$ & $\mathit{f \: / \: \mathrm{KHz}}$ & $\mathit{U_c \: / \: \mathrm{V}}$ & $\frac{U_c}{U_0}$ & $\mathit{f \: / \: \mathrm{KHz}}$ & $\mathit{U_c \: / \: \mathrm{V}}$ & $\frac{U_c}{U_0}$ & $\mathit{f \: / \: \mathrm{KHz}}$ \\
+$\mathit{U_\text{c} \: / \: \mathrm{V}}$ & $\frac{U_\text{c}}{U_0}$ & $\mathit{f \: / \: \mathrm{kHz}}$ & $\mathit{U_\text{c} \: / \: \mathrm{V}}$ & $\frac{U_\text{c}}{U_0}$ & $\mathit{f \: / \: \mathrm{kHz}}$ & $\mathit{U_\text{c} \: / \: \mathrm{V}}$ & $\frac{U_\text{c}}{U_0}$ & $\mathit{f \: / \: \mathrm{kHz}}$ \\
 \midrule
 2  & 1     & 10,2 & 23 & 2,980  & 30,4 & 36 & 1,019  & 10,6 \\
 4  & 1,019  & 10,4 & 24 & 3,333  & 34 & 38 & 0,846  &  8,8 \\
@@ -124,39 +124,41 @@ $\mathit{U_c \: / \: \mathrm{V}}$ & $\frac{U_c}{U_0}$ & $\mathit{f \: / \: \math
 
 Der experimentelle Wert der Halbwertsbreite $b_\text{ex}$ wird aus der Abbildung als
 \begin{align*}
-b_\text{ex} = 6\,500\frac{1}{s}
+b_\text{ex} = (6\,500 \pm 10\,000)\,\si{\hertz}
 \end{align*}
-abgelesen. Mit Gleichung (24) wird die theoretiche Halbwertsbreite 
+näherungsweise abgelesen, da auf der Höhe $\frac{U_\text{max}}{\sqrt{2}}$ keine zugehörigen Frequenzen gemessen wurden. Mit Gleichung (24) wird die theoretische Halbwertsbreite 
 \begin{align*}
-b_\text{th} &= (6\,470 \pm 40)\frac{1}{s}
+b_\text{th} &= (6\,470 \pm 40)\,\si{\hertz}
 \end{align*}
 bestimmt. Der zugehörige Fehler wird über die Gauß'sche Fehlerfortpflanzung 
 \begin{align*}
-\sigma_{b_\text{th}} = \sqrt{\frac{\sigma_{R}^{2}}{2 \pi L^{2}} + \frac{R^{2} \sigma_{L}^{2}}{2 \pi L^{4}}}
+\sigma_{b_\text{th}} = \sqrt{\frac{\sigma_{R}^{2}}{ L^{2}} + \frac{R^{2} \sigma_{L}^{2}}{L^{4}}}
 \end{align*}
 ermittelt.
 
 
 %Aufgabe d
 \subsection{Frequenzabhängigkeit der Phasenverschiebung}
-In Abbildung 9 erkennt man die für die Phasenverschiebung benötigten Parameter a und b. Die Phasenverschiebung lässt sich nun durch
+In Abbildung 9 erkennt man die für die Phasenverschiebung benötigten Parameter a und b. Die Phasenverschiebung lässt sich durch
 \begin{align*}
 \phi = \frac{a}{b} \cdot 2\pi
 \end{align*}
 berechnen und wird zusammen mit den Messwerten für die Frequenzabhängigkeit der Phasenverschiebung in Tabelle 3 festgehalten.
-Ferner wird in Abbildung 12 die Phasenverschiebung $\phi$ halblogarithmischer gegen die Frequenz $f$ aufgetragen.
+Ferner wird in Abbildung 12 die Phasenverschiebung $\phi$ halblogarithmisch gegen die Frequenz $f$ aufgetragen.
 
 
-Mittels Gleichung (21) wird die Resonanzfrequenz $f_\text{res}$ bestimmt. 
-Die Frequenzen $f_\text{1}$ und $f_\text{2}$ für die Phasenverschiebung $\frac{\pi}{4}$
+Mittels Gleichung (21) wird die theoretische Resonanzfrequenz $f_\text{res,th}$ bestimmt. 
+Die Frequenzen $f_\text{1,th}$ und $f_\text{2,th}$ für die Phasenverschiebung $\frac{\pi}{4}$
 und $\frac{3\pi}{4}$ werden nach Gleichung (19) berechnet. Die entsprechenden experimentell
-ermittelten Werte werden Abbildung 12 entnommen. Es ergibt sich:
+ermittelten Werte werden der Tabelle 3 entnommen, indem die Frequenz notiert wird,
+die am nähesten an dem erwünschten Wert, also dem Maximum oder der bestimmten Phasenverschiebung liegt.
+ Es ergibt sich:
 \begin{align*}
-f_\text{res,ex} &= 31,5\, \si{\kilo\hertz}\\
-f_\text{res,th} &= (26,64 \pm 0,08)\,\si{\kilo\hertz}\\
-f_\text{1,ex} &= 23\,\si{\kilo\hertz}\\
-f_\text{1,th} &= (23,99 \pm 0,07)\,\si{\kilo\hertz}\\
-f_\text{2,ex} &= 30\,\si{\kilo\hertz}\\
+f_\text{res,ex} &= (31,5 \pm 1)\, \si{\kilo\hertz},\\
+f_\text{res,th} &= (26,64 \pm 0,08)\,\si{\kilo\hertz},\\
+f_\text{1,ex} &= (23 \pm 1)\,\si{\kilo\hertz},\\
+f_\text{1,th} &= (23,99 \pm 0,07)\,\si{\kilo\hertz},\\
+f_\text{2,ex} &= (30 \pm 1)\,\si{\kilo\hertz},\\
 f_\text{2,th} &= (30,46 \pm 0,1)\,\si{\kilo\hertz}.
 \end{align*}
 
