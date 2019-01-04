@@ -5,7 +5,7 @@ from scipy.optimize import curve_fit
 from uncertainties import ufloat
 
 #Holt Werte aus Textdatei
-n, U = np.genfromtxt('rechteck.txt', unpack=True)
+n, U = np.genfromtxt('rechteckneu.txt', unpack=True)
 #T = T*10**(-3)
 
 #Definiert Funktion mit der ihr fitten wollt (hier eine Gerade)
@@ -25,10 +25,10 @@ print(np.sqrt(np.diag(covariance_matrix)))
 plt.gcf().subplots_adjust(bottom=0.18)
 #Plot eurer eigentlichen Messwerte
 plt.plot(np.log(n) , np.log(U), 'r.', label='Messwerte', Markersize=4)
-plt.xlim(-0.1,2.5)
+plt.xlim(-0.1,3)
 plt.ylim(-3.2,0.1)
 plt.legend()
 plt.grid()
-plt.xlabel('n')
+plt.xlabel('ln(n)')
 plt.ylabel('ln($U/U_1$)')
 plt.savefig('plot1.pdf')
