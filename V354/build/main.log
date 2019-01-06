@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.11.15)  2 JAN 2019 19:59
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.11.15)  6 JAN 2019 17:13
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.191 seconds
+luaotfload | main : initialization completed in 0.200 seconds
 (./header.tex (/home/daniel/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2018/03/30 v3.25 KOMA-Script document class (article)
 (/home/daniel/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -470,22 +470,22 @@ luatex-hyphen: using data file: /home/daniel/.local/texlive/2018/texmf-var/tex/g
 Lua module: polyglossia 2013/05/11 1.3 Polyglossia) (/home/daniel/.local/texlive/2018/texmf-dist/tex/latex/polyglossia/gloss-german.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            synonyms	table: 0x5337a90
-(polyglossia)            hyphenation	
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            righthyphenmin	2
+(polyglossia)            hyphenation	
 (polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            synonyms	table: 0x6f14540
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 on input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            synonyms	table: 0x5337c60
-(polyglossia)            hyphenation	
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            righthyphenmin	2
+(polyglossia)            hyphenation	
 (polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            synonyms	table: 0x6f14710
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 on input line 68
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 68
@@ -1626,7 +1626,7 @@ Package luatex.def Info: plotc.pdf  used on input line 120.
 <plotd.pdf, id=240, 417.7206pt x 258.0039pt>
 File: plotd.pdf Graphic file (type pdf)
 <use plotd.pdf>
-Package luatex.def Info: plotd.pdf  used on input line 190.
+Package luatex.def Info: plotd.pdf  used on input line 191.
 (luatex.def)             Requested size: 417.71957pt x 258.00327pt.
 ) (./content/diskussion.tex [14] [15<./plotd.pdf>]) [16]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
@@ -1638,7 +1638,7 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: E740A156B0425A499363049D50116EEF;11653.
+(rerunfilecheck)             Checksum: D63E9DCACCB6F4BE7ADAD46143825424;11653.
 Package rerunfilecheck Info: File `main.toc' has not changed.
 (rerunfilecheck)             Checksum: 6DF7B49BCA38E18893169B76652E0517;1155.
 
@@ -1655,12 +1655,12 @@ Here is how much of LuaTeX's memory you used:
  100000,1648299 words of node,token memory allocated
  792 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 47 attribute, 77 glue_spec, 47 attribute_list, 1 write, 2 pdf_action nodes
-   avail lists: 1:2,2:1013,3:137,4:22,5:218,6:23,7:2782,8:111,9:526,10:8,11:163
+   avail lists: 1:2,2:1015,3:137,4:22,5:218,6:23,7:2877,8:111,9:526,10:8,11:171
  45313 multiletter control sequences out of 65536+600000
- 166 fonts using 57484711 bytes
+ 166 fonts using 57484479 bytes
  61i,14n,107p,9101b,3243s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/daniel/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (17 pages, 724999 bytes).
+Output written on main.pdf (17 pages, 725104 bytes).
 
 PDF statistics: 425 PDF objects out of 1000 (max. 8388607)
  312 compressed objects within 4 object streams
