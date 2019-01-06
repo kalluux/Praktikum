@@ -5,6 +5,12 @@ Ein Lock-In-Verstärker dient zur Messung verrauschter Signale.
 Diese werden mit einem Referenzsignal moduliert, welches eine Referenzfrequenz $\omega_0$ und Phase besitzt.
 Der Verstärker besteht aus einem Bandpass- und einem Tiefpassfilter und einem Phasenverschieber, wie in Abbildung (1) zu erkennen ist.
 
+\begin{figure}[H]
+  \centering
+  \includegraphics{theorie.png}
+  \caption{Wichtige Bestandteile eines Lock-In-Verstärker. \cite[S. 1]{l}}
+\end{figure}
+
 \noindent Zuerst wird das verrauschte Signal $U_\text{sig}$ von hohen und niedrigen Frequenzen durch den Bandpassfilter befreit.
 Ein Mischer dient dazu, das Signal mit der Frequenz $\omega_0$ des Referenzsignals zu multiplizieren.
 Mit einem Phasenverschieber kann die Phase $\phi$ des verrauschten Signals mit der Phase des Referenzsignals synchronisieren ($\Delta \phi = 0$).
@@ -23,3 +29,9 @@ Sind die Spannungen nicht in Phase, ergibt sich
 \begin{align}
 U_\text{out} = \frac{2}{\pi} U_0 cos \phi .
 \end{align}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{bsp.png}
+  \caption{Verläufe des verrauschten Signals, der Referenzspannung, des Mischsignals, und der integrierten Spannung.  \cite[S. 2]{l}}
+\end{figure}
