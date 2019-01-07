@@ -2,9 +2,24 @@
 \label{sec:Auswertung}
 
 \subsection{Fourier-Analyse}
-In Tabelle (1) finden sich die gemessenen Spannungen, und der Quotient $\frac{U_n}{U_1}$, dabei ist $U_1$ die erste Oberwelle. Mit Hilfe einer linearen Ausgleichgsrechnung werden die Werte mit den theoretischen
+In Tabelle (1) finden sich die gemessenen Spannungen und der Quotient $\frac{U_n}{U_1}$, dabei ist $U_1$ die erste Oberwelle. Mit Hilfe einer linearen Ausgleichgsrechnung werden die Werte mit den theoretischen
 Werten verglichen. Dazu wird je die Steigung überprüft. Der Theoriewert für die Rechteck- und Sägezahnspannung beträgt $-1$ und für
-die Dreieckspannung $-2$. Dies ergibt sich aus der vorbereitenden Berechnung der Fourier-Koeffizienten, also aus den Gleichungen (4) und (5).
+die Dreieckspannung $-2$. Dies ergibt sich aus den berechneten Fourier-Koeffizienten. Beispielhaft wird die Steigung der Dreieckspannung berechnet:
+
+\begin{align*}
+  a_n &= -\frac{4}{\pi n^2} \\
+  \ln{(a_n)} &= \ln{(-\frac{4}{\pi n^2})} = \ln{(-\frac{4}{\pi})} - \ln{(n^2)} \\
+  \ln{(a_n)} &= \underbrace{-2}_{Steigung} \ln{(n)} + \underbrace{\ln{(-\frac{4}{\pi})}}_{Achsenabschnitt}
+\end{align*}
+\noindent Da die anderen Koeffizienten ein $n^1$ im Nenner haben, ist die Steigung analog zur Rechnung oben -1.
+
+
+%\begin{align}
+ %a_n = -2 \\
+%\ln{a_n} = \ln{-\frac{4}{\pi n^2}} = \ln{-\frac{4}{\pi}} - \ln{n^2}
+%\ln{a_n} = \underbrace{-2}_{Steigung} \ln{n} + \underbrace{\ln{-\frac{4}{\pi}}}_{Achsenabschnitt}
+
+%\end{align}
 
 
 
@@ -35,7 +50,7 @@ die Dreieckspannung $-2$. Dies ergibt sich aus der vorbereitenden Berechnung der
 \begin{figure}[H]
   \centering
   \includegraphics{plot1.pdf}
-  \caption{Amplituden der Rechteckspannung doppellogarithmisch aufgetragen gegen die Zahl der Oberwelle.}
+  \caption{Amplituden der Rechteckspannung doppellogarithmisch aufgetragen gegen die Zahl der Oberwelle in Form einer linearen Ausgleichsgeraden, und die zugehörigen Messwerte.}
   \label{fig:rechteck}
 \end{figure}
 \noindent Der Ansatz der linearen Regression lautet $y = mx + b$ , und mit Hilfe von Python werden die Parameter und Fehler berechnet, die für die Rechteckschwingung
@@ -48,7 +63,7 @@ lauten.
 \begin{figure}[H]
   \centering
   \includegraphics{plot2.pdf}
-  \caption{Amplituden der Sägezahnspannung aufgetragen gegen die Zahl der Oberwelle.}
+  \caption{Amplituden der Sägezahnspannung aufgetragen gegen die Zahl der Oberwelle in Form einer linearen Ausgleichsgeraden, und die zugehörigen Messwerte.}
   \label{fig:rechteck}
 \end{figure}
 Für die Sägezahnspannung ergeben sich die Parameter
@@ -60,12 +75,12 @@ Für die Sägezahnspannung ergeben sich die Parameter
 \begin{figure}[H]
   \centering
   \includegraphics{plot3.pdf}
-  \caption{Amplituden der Dreieckspannung aufgetragen gegen die Zahl der Oberwelle.}
+  \caption{Amplituden der Dreieckspannung aufgetragen gegen die Zahl der Oberwelle in Form einer linearen Ausgleichsgeraden, und die zugehörigen Messwerte.}
   \label{fig:rechteck}
 \end{figure}
 Zuletzt die Parameter der Dreieckspannung:
 \begin{align*}
-  m &= -1.84 \pm 0,09 \\
+  m &= -1,84 \pm 0,09 \\
   b &= -0,04 \pm 0,20 .
 \end{align*}
 
