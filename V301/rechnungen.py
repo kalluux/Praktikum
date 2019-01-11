@@ -13,3 +13,8 @@ print(P)
 
 R = U/I
 print(R)
+
+
+I = ufloat(5.58, 0.48)
+D = 1.4*(I/10000000)
+print(D)

@@ -7,28 +7,20 @@ from uncertainties import ufloat
 #Holt Werte aus Textdatei
 P, R = np.genfromtxt('leistung.txt', unpack=True)
 
+U0 = 1.46
+Ri = 5.58
+def f(R):
+    return R*U0**2 /(R+Ri)**2 
 
-#Definiert Funktion mit der ihr fitten wollt (hier eine Gerade)
-def f(x, A, B):
-   return A*x + B
 
-#Erstellt linspace von Bereich, in dem Ausgleichsfunktion erstellt wird
-x_plot = np.linspace(0.0004, 0.0025, 1000)
-#Fittet
-params, covariance_matrix = curve_fit(f, R, P)
-errors = np.sqrt(np.diag(covariance_matrix))
-#Plottet Fit
-plt.plot(x_plot, f(x_plot, *params), 'k-', label='Anpassungsfunktion', linewidth=0.5)
-#Gibt berechnete Parameter aus
-print(params)
-print(np.sqrt(np.diag(covariance_matrix)))
+x_plot = np.linspace(0, 100, 400)
+plt.plot((x_plot), f(x_plot), 'b-', label='Theoriekurve')
 plt.gcf().subplots_adjust(bottom=0.18)
-#Plot eurer eigentlichen Messwerte
-plt.plot(R, P, 'r.', label='Messwerte', Markersize=4)
-plt.xlim(0.0004, 0.0025)
-plt.ylim(3,1.6)
+plt.plot(R , P, 'r.', label='Messwerte', Markersize=4)
 plt.legend()
 plt.grid()
-plt.xlabel(r'$I/\mathrm{A}$')
-plt.ylabel(r'$U/\mathrm{V}$')
-plt.savefig('plot4.pdf')
+plt.xlim((0, 80))
+plt.xlabel(r'$R_a/ $ Ω')
+plt.ylabel(r'$P/\mathrm{W}$')
+plt.savefig('plot5.pdf')
+
