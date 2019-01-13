@@ -25,7 +25,7 @@ print(np.sqrt(np.diag(covariance_matrix)))
 plt.gcf().subplots_adjust(bottom=0.18)
 #Plot eurer eigentlichen Messwerte
 plt.plot(I , U, 'r.', label='Messwerte', Markersize=4)
-plt.xlim(0.0004, 0.0025)
+plt.xlim(0.4*10**(-3), 0.0025)
 plt.ylim(3,1.6)
 plt.legend()
 plt.grid()
