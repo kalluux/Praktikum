@@ -133,8 +133,8 @@ Die lineare Regression für die Rechteckspannung ist in Abbildung (6) aufgezeigt
 
 Die zugehörigen Paramter betragen:
 \begin{align*}
-a &= R_i = (-54,82 \pm 0,58)\Omega \\
-b &= U_0 =  (0,72 \pm 0,002)\si{\volt} .
+a &= (-54,82 \pm 0,58)\Omega \\
+b &= (0,72 \pm 0,002)\si{\volt} .
 \end{align*}
 
 Der Innenwiderstand und die Leerlaufspannung bei der Rechteckspannung lauten\begin{align*}
@@ -190,18 +190,18 @@ Den systematischen Fehler bei der Messung der Leerlaufspannung berechnet man aus
 \begin{equation}
 U_0 = I(R_i + R_V) = \frac{U_K}{R_V}(R_i + R_V) = U_K + \frac{U_K R_i}{R_V} .
 \end{equation}
-In dieser Gleichung ist $U_K$ die oben gemessene Leerlaufspannung.
-Der Wert für den Innenwiderstand $R_i$ wurde in Abschnitt 1 berechnet. 
+In dieser Gleichung ist $U_K$ die oben gemessene Leerlaufspannung, also $1,4 \si{\volt}$.
+Der Wert für den Innenwiderstand $R_i$ wurde in Abschnitt 4.1 berechnet. 
 Der Fehler ist dann
 \begin{align*}
-\Delta U_0 &= \frac{U_K R_i}{R_V}  \\
+\Delta U_0 &= U_0 - U_K = \frac{U_K R_i}{R_V}  \\
 &= (7,8 \pm 0,7) \cdot 10^{-7} \: \symup{V} .
 \end{align*}
-%\noindent Der Fehler von jenem Wert lässt sich mit
-%\begin{align*}
-%\Delta = \sqrt{(\frac{dU_0}{dR_i})^2\Delta (R_i)^2} 
-%\end{align*}
-%berechnen.
+\noindent Der Fehler von jenem Wert lässt sich mit
+\begin{align*}
+\Delta = \sqrt{(\frac{d\Delta U_0}{dR_i})^2\Delta (R_i)^2} 
+\end{align*}
+berechnen, wobei $\Delta (R_i)$ der Fehler von $R_i$ ist.
 
 \noindent Schaltet man das Voltmeter hinter das reale Amperemeter, ändert sich die Spannung, da auch jenes einen Innenwiderstand $R_\text{IA}$ hat.
 Der Fehler wäre dann analog
