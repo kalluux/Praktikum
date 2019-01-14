@@ -6,14 +6,13 @@ from uncertainties import ufloat
 
 #Holt Werte aus Textdatei
 I, U = np.genfromtxt('werte1.txt', unpack=True)
-I = I*10**(-3)
 
 #Definiert Funktion mit der ihr fitten wollt (hier eine Gerade)
 def f(x, A, B):
    return A*x + B
 
 #Erstellt linspace von Bereich, in dem Ausgleichsfunktion erstellt wird
-x_plot = np.linspace(0.02, 0.1, 1000)
+x_plot = np.linspace(24, 93, 1000)
 #Fittet
 params, covariance_matrix = curve_fit(f, I, U)
 errors = np.sqrt(np.diag(covariance_matrix))
@@ -25,10 +24,10 @@ print(np.sqrt(np.diag(covariance_matrix)))
 plt.gcf().subplots_adjust(bottom=0.18)
 #Plot eurer eigentlichen Messwerte
 plt.plot(I , U, 'r.', label='Messwerte', Markersize=4)
-plt.xlim(0.024, 0.1)
+plt.xlim(24, 93)
 plt.ylim(0.87,1.35)
 plt.legend()
 plt.grid()
-plt.xlabel(r'$I/\mathrm{A}$')
-plt.ylabel(r'$U_K/\mathrm{V}$')
+plt.xlabel(r'$I\,/\,\mathrm{mA}$')
+plt.ylabel(r'$U_K\,/\,\mathrm{V}$')
 plt.savefig('plot1.pdf')
