@@ -33,7 +33,7 @@ gespeichert und in Abbildung 6a bis e dargestellt.
   \includegraphics[height=4.3cm]{MAP015.png}
   \caption{Spannungsverlauf bei \varphi = 315°}
 \end{subfigure}
-\caption{Die Drillachse und Positionen der Holzpuppe}
+\caption{Spannungsverläufe für unterschiedliche Phasenverschiebungen $\varphi$}
 \label{fig:versuche}
 \end{figure}
 
@@ -70,18 +70,16 @@ $\varphi$ \:/\: ° & $\varphi$\:/\:rad  & $U_\text{out} \:/\: \si{\volt}$ & $\va
 
 Die Anpassungsfunktion ist nach Gleichung (2) eine cos-Funktion der Form
 \begin{align*}
-U = a\:\text{cos} (bx + c) + d.
+U = a\:\text{cos} (x + c).
 \end{align*}
 Die Parameter $a,b,c,d$ ergeben sich mit Python 3.7 zu
 \begin{align*}
-a &= (4,34 \pm 0,24)\,\si{\volt}, \\
-b &= (0,93 \pm 0,09), \\
-c &= (3,16 \pm 0,14), \\
-d &= (0,22 \pm 0,19)\,\si{\volt}.
+a &= (4,18 \pm 0,11)\,\si{\volt}, \\
+c &= (3,11 \pm 0,03), \\.
 \end{align*}
 Nach Gleichung (2) ergibt sich aus dem Parameter $a = \frac{2 U_\text{0}}{\pi}$ für
 \begin{align*} 
-U_\text{0} = (6,8 \pm 0,4)\,\si{\volt}.
+U_\text{0} = (6,56 \pm 0,17)\,\si{\volt}.
 \end{align*}
 
 Die Phasenverschiebung $\varphi$ und die Amplitude der Ausgangsspannung $U_\text{out}$ 
@@ -118,18 +116,16 @@ $\varphi$ \:/\: ° & $\varphi$\:/\:rad  & $U_\text{out} \:/\: \si{\volt}$ & $\va
 
 Die Anpassungsfunktion ist analog zur ersten Messreihe nach Gleichung (2) eine cos-Funktion der Form
 \begin{align*}
-U = a\:\text{cos} (bx + c) + d.
+U = a\:\text{cos} (x + c).
 \end{align*}
 Die Parameter $a,b,c,d$ ergeben sich mit Python 3.7 zu
 \begin{align*}
-a &= (4,36 \pm 0,24)\,\si{\volt}, \\
-b &= (0,92 \pm 0,09), \\
-c &= (3,19 \pm 0,14), \\
-d &= (-0,14 \pm 0,19)\,\si{\volt}.
+a &= (4,21 \pm 0,11)\,\si{\volt}, \\
+c &= (6,16 \pm 0,03), \\
 \end{align*}
 Nach Gleichung (2) ergibt sich aus dem Parameter $a = \frac{2 U_\text{0}}{\pi}$ für
 \begin{align*} 
-U_\text{0} = (6,8 \pm 0,4)\,\si{\volt}.
+U_\text{0} = (6,62 \pm 0,17)\,\si{\volt}.
 \end{align*}
 
 %AUFGABENTEIL 2
