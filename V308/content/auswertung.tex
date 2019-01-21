@@ -2,7 +2,8 @@
 \label{sec:Auswertung}
 
 \subsection{Bestimmung der Magnetischen Flussdichte von zwei Spulen unterschiedlicher Länge}
-In Tabelle (1) befinden sich die Messwerte der magnetischen Flussdichte $B$ für eine kleine Spule und in Tabelle (2) die der großen Spule.
+In Tabelle (1) befinden sich die Messwerte der magnetischen Flussdichte $B$ für einer kurzen Spule und in Tabelle (2) die der großen Spule.
+Diese sind in Abhängigkeit vom Abstand $x$ in Abbildung (6) und (7) graphisch dargestellt.
 Beide Spulen befinden sich rechts des Ursprungs und beginnen bei diesem.
 
 %tabkurz&lang
@@ -66,17 +67,17 @@ Beide Spulen befinden sich rechts des Ursprungs und beginnen bei diesem.
   \end{tabular}
 \end{table}
 \end{minipage}
-
+\\~\\
 
 Als experimentell bestimmte Flussdichte $B_\text{XX, exp}$ wird jeweils das Maximum der Messreihe gewählt.
-Die theoretische Flussdichte $B_\text{XX, th}$ wird mit Gleichung (xyz) bestimmt.
+Die theoretische Flussdichte $B_\text{XX, th}$ wird mit Gleichung (1) bestimmt.
 So ergibt sich für die kurze Spule eine Flussdichte von 
 \begin{align*}
 B_\text{KS, exp} = 1,838\,\si{\milli\tesla}
 \end{align*}
 und
 \begin{align*}
-B_\text{KS, th} = 
+B_\text{KS, th} = 2,055\,\si{\milli\tesla}.
 \end{align*}
 
 Für die lange Spule ergibt sich eine Flussdichte von 
@@ -85,19 +86,17 @@ B_\text{LS, exp} = 2,374\,\si{\milli\tesla}
 \end{align*}
 und
 \begin{align*}
-B_\text{LS, th} = 
+B_\text{LS, th} = 2,424\,\si{\milli\tesla}.
 \end{align*}
 
+%PLOTKURZ
 \begin{figure}[H]
   \centering
   \includegraphics{kurz.pdf}
   \caption{Magnetische Flussdichte $B$ einer kurzen Spule.}
   \label{fig:plot}
 \end{figure}
-
-
-%LANG
-
+%PLOTLANG
 \begin{figure}[H]
   \centering
   \includegraphics{lang.pdf}
@@ -105,28 +104,15 @@ B_\text{LS, th} =
   \label{fig:plot}
 \end{figure}
 
-
+%HELMHOLTZ
 \subsection{Bestimmung der Magnetischen Flussdichte eines Helmholtzspulenpaares}
+Die magnetische Flussdichte in der Mitte eines Helmholtzspulenpaares wird für den Abstand 
+des Eigendurchmessers $d$ = 12,5cm mit der Stromstärke $I$ = 2 A und 4 A und des 
+Eigenradius $r$ = 6,25cm mit der Stromstärke $I$ = 2 A gemessen.
+Die Messwerte befinden sich in Tabelle (3), (4) und (5). Die ersten zwei Messungen sind in
+Abbildung (8) dargestellt, die letzte in Abbildung (9).
 
-
-
-
-
-\begin{figure}
-  \centering
-  \includegraphics{helmholtzD.pdf}
-  \caption{Magnetische Flussdichte $B$ eines Helmholtz-Spulenpaars im Abstand des Durchmessers $d$ = 12,5 cm.}
-  \label{fig:plot}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics{helmholtzR.pdf}
-  \caption{Magnetische Flussdichte $B$ eines Helmholtz-Spulenpaars im Abstand des Radius $r$ =\,6,25 cm.}
-  \label{fig:plot}
-\end{figure}
-
-
+%TABHELMHOLTZ
 \begin{minipage}{0.6\textwidth}
 \begin{table}[H]
   \centering
@@ -175,8 +161,7 @@ B_\text{LS, th} =
   \end{tabular}
 \end{table}
 \end{minipage}
-
-
+%TABHELMHOLTZ2
 \begin{table}[H]
   \centering
   \caption{Magnetische Flussdichte $B$  und Abstand $x$ des Helmholtzspulenpaares  im Abstand $r$ = 6,25 cm, bei $I$ = 2 A.}
@@ -203,10 +188,60 @@ B_\text{LS, th} =
   \end{tabular}
 \end{table}
 
+Für den experimentell bestimmten Wert der magnetischen Flussdichte in der Mitte des 
+Spulenpaares wird im Fall, dass
+der Abstand zwischen dem Spulenpaar dem Eigendurchmesser entspricht, der Wert im Tiefpunkt
+des Graphen, also bei $x$ = 6 cm gewählt und ergibt sich so zu
+\begin{align*}
+B_\text{Hd2A, exp} = 1,435\,\si{\milli\tesla}
+\end{align*}
+und
+\begin{align*}
+B_\text{Hd4A, exp} = 3,004\,\si{\milli\tesla}.
+\end{align*}
 
+Entspricht der Abstand zwischen dem Spulenpaar dem Eigenradius, so wird der Messwert bei
+$x$ = 3,1 cm als magnetische Flussdichte in der Mitte des Spulenpaares gewählt und ergibt sich
+zu
+\begin{align*}
+B_\text{Hr, exp} = 2,729\,\si{\milli\tesla}.
+\end{align*}
+
+Die entsprechenden theoretischen Werte werden mittels Gleichung (4) zu
+\begin{align*}
+B_\text{Hd2A, th} &=  1,637\,\si{\milli\tesla}\\
+B_\text{Hd4A, th} &=  3,274\,\si{\milli\tesla}\\
+B_\text{Hr, th} &= 2,877\,\si{\milli\tesla}
+\end{align*}
+bestimmt.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{helmholtzD.pdf}
+  \caption{Magnetische Flussdichte $B$ eines Helmholtzspulenpaares im Abstand des Durchmessers $d$ = 12,5 cm.}
+  \label{fig:plot}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{helmholtzR.pdf}
+  \caption{Magnetische Flussdichte $B$ eines Helmholtzspulenpaares im Abstand des Radius $r$ =\,6,25 cm.}
+  \label{fig:plot}
+\end{figure}
 
 
 \subsection{Bestimmung einer Hysteresekurve eines Eisenkerns mit Luftspalt in einer Toroidspule.}
+Die Messwerte der magnetischen Flussdichte in Abhängigkeit der Stromstärke $I$
+für die Hysteresekurve sind in der Tabelle (6) zu finden. Mittels Gleichung (2) lässt sich aus
+der Stromstärke die magnetische Feldstärke $H$ bestimmen, in dessen Abhängigkeit die magnetische
+Flussdichte $B$ in Abbildung (10) aufgetragen wird.\\
+Aus dieser wird nun die Sättigungsmagnetisierung $B_\text{s}$, die Remanenz $B_\text{r}$ und 
+die Koerzitivkraft $H_\text{c}$ abgelesen:
+\begin{align*}
+B_\text{s} &= 688,8\,\si{\milli\tesla},\\
+B_\text{r} &= 122,2\,\si{\milli\tesla},\\
+H_\text{c} &= 457,4\,\si{\ampere\per\meter}.
+\end{align*}
 
 \begin{figure}[H]
   \centering

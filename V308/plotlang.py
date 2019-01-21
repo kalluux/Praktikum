@@ -32,3 +32,5 @@ plt.ylabel('$B$ / mT')
 plt.grid()
 plt.show()
 plt.savefig('lang.pdf')
+
+print('theorie bei 8cm', weltformel(0.08 - 0.005, 1, 0.0205, 300, 0.15))

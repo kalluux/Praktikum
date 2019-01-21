@@ -47,3 +47,5 @@ plt.legend(loc = 'lower left')
 plt.grid()
 plt.show()
 plt.savefig('helmholtzR.pdf')
+
+print('2a r mitte:', helmholtzüberlagert(2, 0.0625, 0.031, 100, 0.033-0.035, -0.0625+0.033-0.035 ))
