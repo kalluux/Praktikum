@@ -42,7 +42,7 @@ plt.plot(x_plot, helmholtzüberlagert(4, 0.0625, x_plot, 100, 0.033-0.035, -0.11
 
 plt.plot(x_plot, helmholtzeinzel(2, 0.0625, x_plot, 100, 0.033-0.035), 'b--',alpha = 0.5) #Für 4A
 plt.plot(x_plot1, helmholtzeinzel(2, 0.0625, x_plot1, 100, -0.115+0.033-0.035), 'b--',alpha = 0.5)
-plt.plot(x_plot, helmholtzüberlagert(2, 0.0625, x_plot, 100, 0.033-0.035, -0.115+0.033-0.035), 'black', label = 'Spulenpaar bei 2A')
+plt.plot(x_plot, helmholtzüberlagert(2, 0.0625, x_plot, 100, 0.033-0.035, -0.115+0.033-0.035), 'grey', label = 'Spulenpaar bei 2A')
 
 
 plt.xticks([-0.050, -0.025, 0,  0.025, 0.050, 0.075, 0.100, 0.125, 0.15, 0.175, 0.2],
