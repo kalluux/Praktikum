@@ -13,7 +13,7 @@ def f(r, A, B):
    return A*r + B
 
 #Erstellt linspace von Bereich, in dem Ausgleichsfunktion erstellt wird
-x_plot = np.linspace(3, 6, 500)
+x_plot = np.linspace(1, 6, 500)
 #Fittet
 params, covariance_matrix = curve_fit(f, np.log(r), np.log(u))
 errors = np.sqrt(np.diag(covariance_matrix))
@@ -25,8 +25,8 @@ print(np.sqrt(np.diag(covariance_matrix)))
 plt.gcf().subplots_adjust(bottom=0.18)
 #Plot eurer eigentlichen Messwerte
 plt.plot(np.log(r) , np.log(u), 'r.', label='Messwerte', Markersize=4)
-plt.xlim(3,4.5)
-plt.ylim(-5,0)
+plt.xlim(1.6,4.5)
+plt.ylim(-5,3)
 plt.legend()
 plt.grid()
 plt.xlabel('ln($r$) ')
