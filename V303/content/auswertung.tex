@@ -158,21 +158,29 @@ $r$\:/\:\si{\centi\meter}& $U$\:/\:\si{\volt} & $r$\:/\:\si{\centi\meter}& $U$\:
 \begin{figure}[H]
   \centering
   \includegraphics{plot3.pdf}
-  \caption{Lichtintensität $U$ des Photodetektors in Abhängigkeit des Abstands $r$.}
+  \caption{Logarithmus der Lichtintensität $U$ des Photodetektors in Abhängigkeit des Logarithmus des Abstands $r$.}
 \end{figure}
 
-Die Funktion wird mit
+\noindent Die Spannung wird gegen den Abstand doppellogarithmisch aufgetragen. Die Funktion wird mit 
 \begin{align*}
-U = a \frac{1}{x^{2}} + b
+U = a \cdot r + b
 \end{align*}
-angenähert.
-Die Parameter der Anpassungsfunktion ergeben sich mit Python 3.7 zu
+beschrieben. 
+Die Parameter der Anpassungsfunktion ergeben sich mit Python 3.7 zu 
 \begin{align*}
-a &= (474,96 \pm 29,42)\si{\volt\centi\meter\squared},\\
-b &= (0,27 \pm 0,22)\si{\volt}.
+a &= -2,54 \pm 0,23 \\
+b &= 7,88 \pm 0,81 .
 \end{align*}
-Da sich die Lichtintensität in den letzten beiden Messungen nicht verändern und
+\noindent Da sich die Lichtintensität in den letzten beiden Messungen nicht verändern und
 diese generell zu sehr fluktuiert, wird
 angenommen, dass für den maximalen Abstand $r_\text{max} = 80\,\si{\centi\meter}$
 nicht mehr hauptsächlich die LED für die Lichtintensität verantwortlich ist, sodass
 für $r_\text{max}$ die Intensität $U_\text{min} = 0,01\,\si{\volt}$ festgehalten wird.
+
+
+
+
+
+
+
+
