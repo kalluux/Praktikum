@@ -19,7 +19,7 @@ def weltformel(a, i, r, n, l):   #a: Punkt entlang der x-Achse, l:Länge der Spu
 plt.plot(x, b, 'rx', label = 'Messwerte', Markersize=4)
 
 x_plot = np.linspace(-0.05, 0.12, 1000) #THEORIE
-plt.plot(x_plot, weltformel(x_plot - 0.005, 0.95, 0.0205, 100, 0.045), 'b--', label = 'Theoriekurve')
+plt.plot(x_plot, weltformel(x_plot - 0.005, 1, 0.0205, 100, 0.045), 'b--', label = 'Theoriekurve')
 
 plt.xticks([-0.06,-0.04,-0.02,0,0.02,0.04,0.06,0.08,0.1,0.12],
             ['-6','-4','-2','0','2','4','6','8','10','12'])

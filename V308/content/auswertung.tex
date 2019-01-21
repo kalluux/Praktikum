@@ -1,40 +1,18 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-\begin{table}[H]
-  \centering
-  \caption{Magnetische Flussdichte und Abstand einer langen Spule.}
-  \begin{tabular}{c c}
-    \toprule
-     $x/cm$ & $B/mT$  \\
-    \midrule
-    -4 & 0,131 \\
-    -3 & 0,193 \\
-    -2 & 0,316 \\
-    -1 & 0,569 \\
-    0 & 1,033\\
-    1 & 1,648 \\
-    2 & 2,007 \\
-    3 & 2,185 \\
-    4 & 2,280 \\
-    5 & 2,330 \\
-    6 & 2,353 \\
-    7 & 2,369 \\
-    8 & 2,374 \\
-    9 & 2,372 \\
-    10 & 2,364 \\
-    11 & 2,346 \\
-    12 & 2,307 \\
-  \bottomrule
-  \end{tabular}
-\end{table}
+\subsection{Bestimmung der Magnetischen Flussdichte von zwei Spulen unterschiedlicher Länge}
+In Tabelle (1) befinden sich die Messwerte der magnetischen Flussdichte $B$ für eine kleine Spule und in Tabelle (2) die der großen Spule.
+Beide Spulen befinden sich rechts des Ursprungs und beginnen bei diesem.
 
+%tabkurz&lang
+\begin{minipage}{0.5\textwidth}
 \begin{table}[H]
   \centering
-  \caption{Magnetische Flussdichte und Abstand einer kurzen Spule.}
+  \caption{Magnetische Flussdichte $B$ \\ und Abstand $x$ einer kurzen Spule.}
   \begin{tabular}{c c}
     \toprule
-     $x/cm$ & $B/mT$  \\
+     $x/$cm & $B/$mT  \\
     \midrule
     -5 & 0,039 \\
     -4 & 0,079 \\
@@ -57,6 +35,77 @@
   \bottomrule
   \end{tabular}
 \end{table}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{table}[H]
+  \centering
+  \caption{Magnetische Flussdichte $B$ \\ und Abstand $x$ einer langen Spule.}
+  \begin{tabular}{c c}
+    \toprule
+     $x/$cm & $B/$mT  \\
+    \midrule
+    - & - \\
+    -4 & 0,131 \\
+    -3 & 0,193 \\
+    -2 & 0,316 \\
+    -1 & 0,569 \\
+    0 & 1,033\\
+    1 & 1,648 \\
+    2 & 2,007 \\
+    3 & 2,185 \\
+    4 & 2,280 \\
+    5 & 2,330 \\
+    6 & 2,353 \\
+    7 & 2,369 \\
+    8 & 2,374 \\
+    9 & 2,372 \\
+    10 & 2,364 \\
+    11 & 2,346 \\
+    12 & 2,307 \\
+  \bottomrule
+  \end{tabular}
+\end{table}
+\end{minipage}
+
+
+Als experimentell bestimmte Flussdichte $B_\text{XX, exp}$ wird jeweils das Maximum der Messreihe gewählt.
+Die theoretische Flussdichte $B_\text{XX, th}$ wird mit Gleichung (xyz) bestimmt.
+So ergibt sich für die kurze Spule eine Flussdichte von 
+\begin{align*}
+B_\text{KS, exp} = 1,838\,\si{\milli\tesla}
+\end{align*}
+und
+\begin{align*}
+B_\text{KS, th} = 
+\end{align*}
+
+Für die lange Spule ergibt sich eine Flussdichte von 
+\begin{align*}
+B_\text{LS, exp} = 2,374\,\si{\milli\tesla}
+\end{align*}
+und
+\begin{align*}
+B_\text{LS, th} = 
+\end{align*}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{kurz.pdf}
+  \caption{Magnetische Flussdichte $B$ einer kurzen Spule.}
+  \label{fig:plot}
+\end{figure}
+
+
+%LANG
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{lang.pdf}
+  \caption{Magnetische Flussdichte $B$ einer langen Spule.}
+  \label{fig:plot}
+\end{figure}
+
+
 
 
 \begin{table}[H]
@@ -86,35 +135,21 @@
 
 \begin{figure}
   \centering
-  \includegraphics{spule_lang.pdf}
-  \caption{Plot.}
-  \label{fig:plot}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics{spule_kurz.pdf}
-  \caption{Plot.}
-  \label{fig:plot}
-\end{figure}
-
-\begin{figure}
-  \centering
   \includegraphics{helmholtzD.pdf}
-  \caption{Plot.}
+  \caption{Magnetische Flussdichte $B$ eines Helmholtz-Spulenpaars im Abstand des Durchmessers $d$ = 12,5 cm.}
   \label{fig:plot}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics{helmholtzR.pdf}
-  \caption{Plot.}
+  \caption{Magnetische Flussdichte $B$ eines Helmholtz-Spulenpaars im Abstand des Radius $r$ =\,6,25 cm.}
   \label{fig:plot}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics{hysterese.pdf}
-  \caption{Plot.}
+  \includegraphics{plothyst.pdf}
+  \caption{Hysteresekurve eines Eisenkerns mit Luftspalt in einer Toroidspule.}
   \label{fig:plot}
 \end{figure}
