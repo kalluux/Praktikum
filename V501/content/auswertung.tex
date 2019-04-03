@@ -26,7 +26,7 @@ In Tabelle () sind die Strahlverschiebungen $D$ und die jeweiligen Stromstärken
   \end{tabular}
 \end{table}
 
-In einem Diagramm wird die Größe $D/(L**2+D**2)$ gegen das Magnetfeld $B$ aufgetragen.
+In einem Diagramm wird die Größe $\frac{D}{(L^2+D^2)}$ gegen das Magnetfeld $B$ aufgetragen.
 Um das Magnetfeld auszurechnen, benötigt man laut Gleichung () folgende Größen: Die Windungszahl der Spule $N=20$ und ihren Radius $R=28,2$\si{\cm}, und
 den Weg $L=17,5$ \si{\cm}, welcher von der Beschleunigungselektrode bis zum Leuchtschirm reicht.
 Die für den Plot notwendigen Werte sind in Tabelle () aufgeführt.
@@ -37,7 +37,7 @@ Die für den Plot notwendigen Werte sind in Tabelle () aufgeführt.
   \label{tab:Parameter}
   \begin{tabular}{c c}
     \toprule
-    $D/(L^2+D^2)$& $ $B$ \cdot 10^-5 /$T \\
+    $\frac{D}{(L^2+D^2)}$& $ $B$ \cdot 10^{-5} /$T \\
     \bottomrule
      0,0 & 0,0 \\
      0,204 & 1,913  \\
@@ -52,7 +52,35 @@ Die für den Plot notwendigen Werte sind in Tabelle () aufgeführt.
   \end{tabular}
 \end{table}
 
+Der Plot in Abbildung (), die Parameter und die Fehler werden mit Python berechnet.
+\begin{figure}
+  \centering
+  \includegraphics{plot1.pdf}
+  \caption{}
+  \label{fig:plot}
+\end{figure}
+
+Die lineare Ausgleichsrechnung $y = mx+C$ hat die Form
+\begin{align*}
+    \frac{D}{(L^2+D^2)} = \frac{1}{\sqrt{8U_B}}\sqrt{\frac{e_0}{m_0}} \cdot B + C .
+\end{align*}
+
+Es ergeben sich die Parameter
+\begin{align*}
+    m =
+\end{align*}
+
+Aus der Steigung berechnet man mit Hilfe von Formel () den Wert für $\frac{e_0}{m_0}$ :
 
 
 \subsection{Bestimmung der Intensität des lokalen Erdmagnetfeldes}
 Die Stromstärke wurde gemessen und beträgt $I = 0,15$ \si{\ampere}.
+Laut Gleichung () ergibt sich daraus eine Magnetfeldstärke von
+\begin{align*}
+    B = 9,566 \cdot 10^{-6}
+\end{align*}
+Der gemessene Inklinationswinkel beträgt $\phi = 80°$.
+Die Totalintensität des Erdmagnetfelds beträgt also
+\begin{align*}
+    B_{total} = \frac{B}{cos(\phi)} = -8,666 \cdot 10^{-5}
+\end{align*}

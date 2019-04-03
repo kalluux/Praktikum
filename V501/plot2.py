@@ -9,7 +9,7 @@ import math
 #Holt Werte aus Textdatei
 I, D = np.genfromtxt('strom1.txt', unpack=True)
 L = 0.175
-N = 20*10**4
+N = 20
 R = 0.282
 B = mu_0*8/np.sqrt(125)*N*I/R
 
