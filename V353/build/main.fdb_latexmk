@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber build/main"] 1544989435 "build/main.bcf" "build/main.bbl" "build/main" 1545072437
-  "build/main.bcf" 1545072436 90809 daba580ca862a77235c8eba360ab735c ""
+["biber build/main"] 1544989435 "build/main.bcf" "build/main.bbl" "build/main" 1554310700
+  "build/main.bcf" 1554310699 90809 daba580ca862a77235c8eba360ab735c ""
   "lit.bib" 1543660868 225 383f7c990526d2116fb6c6cfef087bd7 ""
   (generated)
   "build/main.blg"
   "build/main.bbl"
-["lualatex"] 1545072426 "main.tex" "build/main.pdf" "main" 1545072437
+["lualatex"] 1554310689 "main.tex" "build/main.pdf" "main" 1554310700
   "/home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1480098679 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1480098679 64684 15a2082c8e31f411875a86ea2d29a0ee ""
   "/home/kalina/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1480098679 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
@@ -222,10 +222,10 @@
   "Sinus.JPG" 1543593330 93267 197187b84569ab1ea520bd6bfeba417b ""
   "V353_1.png" 1543660868 15224 026503131ad708619a79a372c9a4ed62 ""
   "V353_2.png" 1543660868 14695 a2811de924bb2595b4a72ec8606bf3a0 ""
-  "build/main.aux" 1545072436 17882 e9dd6c7c96a057aa918a820c17e2e12b ""
+  "build/main.aux" 1554310699 17882 e9dd6c7c96a057aa918a820c17e2e12b ""
   "build/main.bbl" 1544989437 1756 e37b6048c284fd54d4033b38f390d72c "biber build/main"
-  "build/main.run.xml" 1545072436 2365 9506e75c9b41e27fa8670338f5c4ba94 ""
-  "build/main.toc" 1545072436 1889 9d70d673076d94064c172e5a5e91423f ""
+  "build/main.run.xml" 1554310699 2365 9506e75c9b41e27fa8670338f5c4ba94 ""
+  "build/main.toc" 1554310699 1889 9d70d673076d94064c172e5a5e91423f ""
   "content/auswertung.tex" 1545072377 8784 faca9fd45e11bc8b79d708e16abfb522 ""
   "content/diskussion.tex" 1545072422 1375 07050acdc672a7cda56bf41bc8c61ee0 ""
   "content/durchfuehrung.tex" 1545071623 3045 05002827aeca0e54bbe79ef62893933a ""
@@ -233,14 +233,14 @@
   "header.tex" 1543660868 3634 8a06b06c7548cbcc918db5c904bf970a ""
   "main.tex" 1543660868 400 b850114c9314131da0f9999de2e76a1d ""
   "phi.png" 1543660868 11286 829deb6adfb16fabf87648dd6bbfe9c5 ""
-  "plot1.pdf" 1545072425 17818 9eaa522bbbd76d7a6fdfb10f92773a2b ""
+  "plot1.pdf" 1554310688 17818 01b22a4521ac0c5ab4abbff821cc5a0b ""
   "plot2.pdf" 1545072196 18859 190e12dcc560c5cfb383aadd353314c3 ""
   "plot3.pdf" 1545072188 16814 7ca2848e45d76afe11d0544cb5d89acb ""
   "plot4.pdf" 1543593330 13985 67c7845c6762e552d9f70e7fc142e683 ""
   (generated)
-  "build/main.aux"
-  "build/main.pdf"
-  "build/main.toc"
-  "build/main.bcf"
   "build/main.log"
+  "build/main.aux"
+  "build/main.toc"
+  "build/main.pdf"
+  "build/main.bcf"
   "build/main.run.xml"
