@@ -8,7 +8,7 @@ from scipy.constants import mu_0
 #Holt Werte aus Textdatei
 I, D = np.genfromtxt('strom.txt', unpack=True)
 L = 0.175
-N = 20*10**4
+N = 20
 R = 0.282
 B = mu_0*8/np.sqrt(125)*N*I/R
 
@@ -18,7 +18,7 @@ def f(x, A, B):
    return A*x + B
 
 #Erstellt linspace von Bereich, in dem Ausgleichsfunktion erstellt wird
-x_plot = np.linspace(0, 0.0005, 400)
+x_plot = np.linspace(-1*10**(-4), 1.8*10**(-4), 400)
 #Fittet
 params, covariance_matrix = curve_fit(f, B, D/(L**2+D**2))
 errors = np.sqrt(np.diag(covariance_matrix))
@@ -31,10 +31,14 @@ print(np.sqrt(np.diag(covariance_matrix)))
 plt.gcf().subplots_adjust(bottom=0.18)
 #Plot eurer eigentlichen Messwerte
 plt.plot(B , D/(L**2+D**2), 'r.', label='Messwerte', Markersize=4)
-plt.xlim(0,0.0005)
+plt.xlim(-1*10**(-4),1.8*10**(-4))
 plt.legend()
 plt.grid()
-plt.xlabel(r'$t$ / s')
-plt.ylabel(r'ln($U_c/U_0$)')
+plt.xlabel(r'$B$ / T')
+plt.ylabel(r'$\frac{D}{L^2 + D^2}\: / \frac{1}{m}$')
 plt.savefig('plot1.pdf')
 
+B =  mu_0*8/np.sqrt(125)*N*I/R
+print(B)
+A = D/(L**2+D**2)
+print(A)
