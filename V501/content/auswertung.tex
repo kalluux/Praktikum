@@ -1,5 +1,246 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+\subsection{Bestimmung der Empfindlichkeiten}
+
+In den Abbildungen () wird $D$ gegen $U_D$ aufgetragen. Die dazu benötigten Werte befinden sich in den Tabellen (1), (2), (3), (4) und (5).
+Mit Hilfe einer Ausgleichsrechnung der Form $y = ax + C$ wird die Empfindlichkeit bestimmt.
+Die Geradengleichung lautet
+\begin{align*}
+D = \frac{Lp}{2dU_B}U_D ,
+\end{align*}
+wobei $L = 14,3 \si{\cm}$, $p = 1,9 \si{\cm} $ und $d = 0,38 \si{\cm}$ betragen.
+
+Der Plot, die Parameter und die Fehler werden mit Python berechnet.
+
+\begin{table}[H]
+  \centering
+  \caption{Die gemessene Ablenkspannung und die zugehörigen Ablenkungen bei einer Beschleunigungsspannung von $U_B = 200 \si{\volt}$.}
+  \label{tab:Parameter}
+  \begin{tabular}{c c}
+    \toprule
+    $D/$cm& $U_d/$V \\
+    \bottomrule
+    0,0 & -24,7 \\
+     0,625 & -21,0  \\
+     1,25 & -17,4 \\
+     1,875 & -13,8  \\
+     2,5 & -9,7 \\
+     3,125 & -5,9  \\
+     3,75& -1,9  \\
+     4,375 & 2,5  \\
+     5,0 &  6,6 \\
+     \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot3.pdf}
+  \caption{}
+  \label{fig:plot}
+\end{figure}
+
+Der Wert für die Steigung und somit die Empfindlichkeit bei $U_B = 200 \si{\volt}$ lautet
+\begin{align*}
+\frac{D}{U_D} = (1,597 \pm 0,019) \cdot 10^{-3} \symup{\frac{m}{V}} .
+\end{align*}
+
+
+
+\begin{table}[H]
+  \centering
+  \caption{Die gemessene Ablenkspannung und die zugehörigen Ablenkungen bei einer Beschleunigungsspannung von $U_B = 250 \si{\volt}$.}
+  \label{tab:Parameter}
+  \begin{tabular}{c c}
+    \toprule
+    $D/$cm& $U_d/$V \\
+    \bottomrule
+    0,0 & -30,5 \\
+     0,625 & -25,6  \\
+     1,25 & -21,3 \\
+     1,875 & -16,5  \\
+     2,5 & -11,9 \\
+     3,125 & -6,9  \\
+     3,75& -1,7 \\
+     4,375 & 2,9  \\
+     5,0 &  8,2 \\
+     \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot4.pdf}
+  \caption{}
+  \label{fig:plot}
+\end{figure}
+
+Der Wert für die Empfindlichkeit bei $U_B = 250 \si{\volt}$ lautet
+\begin{align*}
+\frac{D}{U_D} = (1,297 \pm 0,011) \cdot 10^{-3} \symup{\frac{m}{V}} .
+\end{align*}
+
+\begin{table}[H]
+  \centering
+  \caption{Die gemessene Ablenkspannung und die zugehörigen Ablenkungen bei einer Beschleunigungsspannung von $U_B = 300 \si{\volt}$.}
+  \label{tab:Parameter}
+  \begin{tabular}{c c}
+    \toprule
+    $D/$cm& $U_d/$V \\
+    \bottomrule
+    0,0 & -36,2 \\
+     0,625 & -30,2  \\
+     1,25 & -24,8 \\
+     1,875 & -19,2  \\
+     2,5 & -13,1 \\
+     3,125 & -7,6  \\
+     3,75& -1,3 \\
+     4,375 & 4,8  \\
+     5,0 &  10,8 \\
+     \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot5.pdf}
+  \caption{}
+  \label{fig:plot}
+\end{figure}
+
+Der Wert für die Empfindlichkeit bei $U_B = 300 \si{\volt}$ lautet
+\begin{align*}
+\frac{D}{U_D} = (1,067 \pm 0,008) \cdot 10^{-3} \symup{\frac{m}{V}} .
+\end{align*}
+
+\begin{table}[H]
+  \centering
+  \caption{Die gemessene Ablenkspannung und die zugehörigen Ablenkungen bei einer Beschleunigungsspannung von $U_B = 350 \si{\volt}$.}
+  \label{tab:Parameter}
+  \begin{tabular}{c c}
+    \toprule
+    $D/$cm& $U_d/$V \\
+    \bottomrule
+     0,625 & -35,3  \\
+     1,25 & -28,4 \\
+     1,875 & -22,1  \\
+     2,5 & -15,3 \\
+     3,125 & -8,6  \\
+     3,75& -1,4 \\
+     4,375 & 5,7  \\
+     5,0 &  12,4 \\
+     \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot6.pdf}
+  \caption{}
+  \label{fig:plot}
+\end{figure}
+
+Der Wert für die Empfindlichkeit bei $U_B = 350 \si{\volt}$ lautet
+\begin{align*}
+\frac{D}{U_D} = (0,916 \pm 0,006) \cdot 10^{-3} \symup{\frac{m}{V}} .
+\end{align*}
+
+\begin{table}[H]
+  \centering
+  \caption{Die gemessene Ablenkspannung und die zugehörigen Ablenkungen bei einer Beschleunigungsspannung von $U_B = 400 \si{\volt}$.}
+  \label{tab:Parameter}
+  \begin{tabular}{c c}
+    \toprule
+    $D/$cm& $U_d/$V \\
+    \bottomrule
+     0,625 & -37,7 \\
+     1,25 & -31,6 \\
+     1,875 & -24,1  \\
+     2,5 & -16,4 \\
+     3,125 & -8,6  \\
+     3,75& -0,8 \\
+     4,375 & 7,3  \\
+     5,0 &  15,0 \\
+     \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot7.pdf}
+  \caption{}
+  \label{fig:plot}
+\end{figure}
+
+Der Wert für die Empfindlichkeit bei $U_B = 400 \si{\volt}$ lautet
+\begin{align*}
+\frac{D}{U_D} = (0,818 \pm 0,010) \cdot 10^{-3} \symup{\frac{m}{V}} .
+\end{align*}
+
+Die Empfindlichkeiten werden nun gegen $\frac{1}{U_B}$ aufgetragen und es wird erneut eine lineare Ausgleichsrechnung durchgeführt. Diese ist in Abbildung () zu sehen.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot8.pdf}
+  \caption{}
+  \label{fig:plot}
+\end{figure}
+
+Die Steigung $a$ dieser Gerade beträgt
+\begin{align*}
+a = (0,324 \pm 0,015)  \si{\meter} .
+\end{align*}
+
+Berechnet man aus den oben aufgeführten Werten für $p$, $L$ und $d$ den Wert für $\frac{pL}{2d}$, ergibt sich
+\begin{align*}
+\frac{pL}{2d} = . \si{\meter}.
+\end{align*}
+
+\subsection{Bestimmung der Frequenz der Sinusspannung aus den gemessenen Synchronisationsfrequenzen}
+
+In Tabelle () sind die gemessenen Frequenzen für die Sägezahnspannung aufgelistet.
+
+\begin{table}[H]
+  \centering
+  \caption{Frequenzen der Sägezahnspannung in Abhängigkeit von $n$.}
+  \label{tab:Spannungsamplitude}
+  \begin{tabular}{c c}
+    \toprule
+    $n$ & $\nu_{Sa} / \symup{\frac{1}{s}}$ \\
+    \midrule
+    1/2 &  25,01  \\
+      1 &  50,02  \\
+      2 & 100,03  \\
+      3 & 15,05  \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Die gemessene Strahlauslenkung beträgt $s = 0,0125 \si{\cm} $.
+Aus Gleichung () lässt sich erkennen, dass die Frequenz der Sinusspannung ca. $\nu_{Si} = 50 \si{\hertz}$ beträgt.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \subsection{Bestimmung der spezifischen Ladung der Elektronen}
 In Tabelle () sind die Strahlverschiebungen $D$ und die jeweiligen Stromstärken $I$ angegeben.
@@ -52,8 +293,8 @@ Die für den Plot notwendigen Werte sind in Tabelle () aufgeführt.
   \end{tabular}
 \end{table}
 
-Der Plot in Abbildung (), die Parameter und die Fehler werden mit Python berechnet.
-\begin{figure}
+
+\begin{figure}[H]
   \centering
   \includegraphics{plot1.pdf}
   \caption{}
@@ -67,10 +308,59 @@ Die lineare Ausgleichsrechnung $y = mx+C$ hat die Form
 
 Es ergeben sich die Parameter
 \begin{align*}
-    m =
+    m = (8,98 \pm 0,14) \cdot 10^{3} \\
+    C = (3,01 \pm 1,42) \cdot 10^{-2}
 \end{align*}
 
 Aus der Steigung berechnet man mit Hilfe von Formel () den Wert für $\frac{e_0}{m_0}$ :
+\begin{align*}
+\frac{e_0}{m_0} = (1.61 \pm 0.05) \cdot 10^{11}
+\end{align*}
+
+Die Gleiche Rechnung wird für eine Beschleunigungsspannung von $U_B = 435\si{\volt}$ durchgeführt. Die Messwerte dazu und die benötigten Werte für den Plot sind in Tabelle () aufgelistet.
+
+\begin{table}[H]
+  \centering
+  \caption{Stromstärke der Helmholtz-Spule, die zugehörigen Ablenkungen, das berechnete Magnetfeld und die Größe $D/(L^2+D^2)$ bei einer Beschleunigungsspannung von $U_B = 435 \si{\volt}$.}
+  \label{tab:Parameter}
+  \begin{tabular}{c c c c}
+    \toprule
+    $D/$cm& $I/$A & $\frac{D}{(L^2+D^2)}$ & $ $B$ \cdot 10^{-5} /$T\\
+    \bottomrule
+    0,0 & 0,0 & 0,0 & 0,0\\
+    0,625 & 0,4 & 0,204 & 2,551 \\
+    1,250 & 0,8 & 0,406 & 5,102\\
+    1,875 & 1,2 & 0,605 & 7,653\\
+    2,50 & 1,65 & 0,800 & 10,522\\
+    3,125 & 2,05 & 0,989 & 13,073\\
+    3,750 & 2,5 & 1,171 & 15,942\\
+    4,375 & 2,95 & 1,345 & 18,813\\
+    5,0 & 3,35 & 1,509 & 21,363\\
+    
+     \bottomrule
+  \end{tabular}
+\end{table}
+
+Der zugehörige Plot ist in Abbildung () zusehen.
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot2.pdf}
+  \caption{}
+  \label{fig:plot}
+\end{figure}
+
+Aus der Ausgleichsrechnung ergeben sich die Parameter
+\begin{align*}
+    m = (7,04 \pm 0,13) \cdot 10^{3} \\
+    C = (3,74 \pm 1,68) \cdot 10^{-2}
+\end{align*}
+
+Der Wert für $\frac{e_0}{m_0}$ ergibt sich zu
+\begin{align*}
+\frac{e_0}{m_0} = (1.72 \pm 0.06) \cdot 10^{11}
+\end{align*}
 
 
 \subsection{Bestimmung der Intensität des lokalen Erdmagnetfeldes}

@@ -7,11 +7,11 @@ from scipy.constants import mu_0
 import math
 
 #Holt Werte aus Textdatei
-I, D = np.genfromtxt('strom1.txt', unpack=True)
+U, a = np.genfromtxt('kehr.txt', unpack=True)
 L = 0.175
 N = 20
 R = 0.282
-B = mu_0*8/np.sqrt(125)*N*I/R
+
 
 
 #Definiert Funktion mit der ihr fitten wollt (hier eine Gerade)
@@ -19,9 +19,9 @@ def f(x, A, B):
    return A*x + B
 
 #Erstellt linspace von Bereich, in dem Ausgleichsfunktion erstellt wird
-x_plot = np.linspace(-1*10**(-4), 3.5*10**(-4), 400)
+x_plot = np.linspace(0.002,0.006, 400)
 #Fittet
-params, covariance_matrix = curve_fit(f, B, D/(L**2+D**2))
+params, covariance_matrix = curve_fit(f, U, a)
 errors = np.sqrt(np.diag(covariance_matrix))
 #Plottet Fit
 plt.plot(x_plot, f(x_plot, *params), 'k-', label='Anpassungsfunktion', linewidth=0.5)
@@ -31,30 +31,10 @@ print(np.sqrt(np.diag(covariance_matrix)))
 #Formatiert etws schöner
 plt.gcf().subplots_adjust(bottom=0.18)
 #Plot eurer eigentlichen Messwerte
-plt.plot(B , D/(L**2+D**2), 'r.', label='Messwerte', Markersize=4)
-plt.xlim(0, 2.3*10**(-4))
+plt.plot(U , a, 'r.', label='Messwerte', Markersize=4)
+plt.xlim(0.0024,0.0051)
 plt.legend()
 plt.grid()
-plt.xlabel(r'$B$ / T')
-plt.ylabel(r'$\frac{D}{L^2 + D^2}\: / \frac{1}{m}$')
-plt.savefig('plot2.pdf')
-
-A = D/(L**2+D**2)
-print(A)
-
-B =  mu_0*8/np.sqrt(125)*N*I/R
-print(B)
-
-H =  mu_0*8/np.sqrt(125)*N*(0.15)/R
-print(H)
-T = H/math.cos(80)
-print(T)
-
-m = ufloat(8.98*10**3 , 0.14*10**3)
-E = 8*250*m**2
-print(E)
-
-z = ufloat(7.04*10**3 , 0.13*10**3)
-F = 8*435*z**2
-print(F)
-
+plt.xlabel(r'$\frac{1}{U} / \mathrm{\frac{1}{V}}$')
+plt.ylabel(r'$\frac{D}{U_d} / (\mathrm{\frac{m}{V}})$')
+plt.savefig('plot8.pdf')
