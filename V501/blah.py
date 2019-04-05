@@ -38,3 +38,7 @@ plt.grid()
 plt.xlabel(r'$\frac{1}{U} / \mathrm{\frac{1}{V}}$')
 plt.ylabel(r'$\frac{D}{U_d} / (\mathrm{\frac{m}{V}})$')
 plt.savefig('plot8.pdf')
+
+a = ufloat(0.324,0.015)
+D = (0.0125*300)/a
+print(D)
