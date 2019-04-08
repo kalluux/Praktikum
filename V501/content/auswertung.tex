@@ -2,7 +2,7 @@
 \label{sec:Auswertung}
 \subsection{Bestimmung der Empfindlichkeiten der Kathodenstrahlröhre}
 
-In den Abbildungen () wird $D$ gegen $U_D$ aufgetragen. Die dazu benötigten Werte befinden sich in den Tabellen (1), (2), (3), (4) und (5).
+In den Abbildungen (6), (7), (8), (9), (10) wird $D$ gegen $U_D$ aufgetragen. Die dazu benötigten Werte befinden sich in den Tabellen (1), (2), (3), (4) und (5).
 Mit Hilfe einer Ausgleichsrechnung der Form $y = ax + C$ wird die Empfindlichkeit bestimmt.
 Die Geradengleichung lautet
 \begin{align*}
@@ -177,7 +177,7 @@ Der Wert für die Empfindlichkeit bei $U_B = 400 \si{\volt}$ lautet
 \frac{D}{U_D} = (0,818 \pm 0,010) \cdot 10^{-3} \symup{\frac{m}{V}} .
 \end{align*}
 
-\noindent Die Empfindlichkeiten werden nun gegen $\frac{1}{U_B}$ aufgetragen und es wird erneut eine lineare Ausgleichsrechnung durchgeführt. Diese ist in Abbildung () zu sehen.
+\noindent Die Empfindlichkeiten werden nun gegen $\frac{1}{U_B}$ aufgetragen und es wird erneut eine lineare Ausgleichsrechnung durchgeführt. Diese ist in Abbildung (11) zu sehen.
 
 \begin{figure}[H]
   \centering
@@ -201,8 +201,8 @@ a = (0,324 \pm 0,015)  \si{\meter} .
 
 \subsection{Bestimmung der Frequenz der Sinusspannung aus den gemessenen Synchronisationsfrequenzen}
 
-In Tabelle () sind die gemessenen Frequenzen für die Sägezahnspannung aufgelistet, welche bei einer Beschleunigungsspannung von $U_B = 300 \si{\volt}$ gemessen wurden.
-Aus Gleichung () lässt sich erkennen, dass die Frequenz der Sinusspannung ca. $\nu_{Si} = (50,018 \pm 0,016) \si{\hertz}$ beträgt.
+In Tabelle (6) sind die gemessenen Frequenzen für die Sägezahnspannung aufgelistet, welche bei einer Beschleunigungsspannung von $U_B = 300 \si{\volt}$ gemessen wurden.
+Aus Gleichung (4) lässt sich erkennen, dass die Frequenz der Sinusspannung ca. $\nu_{Si} = (50,018 \pm 0,016) \si{\hertz}$ beträgt.
 Der Mittelwert der Sinusfreqzenz beträgt
 \begin{align*}
 \nu_{SiMittel} = \frac{1}{4}\cdot \sum_{n=1}^4 \nu_{Si} = 50,018 .
@@ -265,7 +265,7 @@ mit $\Delta a$ als Fehler von $a$.
 
 
 \subsection{Bestimmung der spezifischen Ladung der Elektronen}
-In Tabelle () sind die Strahlverschiebungen $D$ und die jeweiligen Stromstärken $I$ angegeben.
+In Tabelle (7) sind die Strahlverschiebungen $D$ und die jeweiligen Stromstärken $I$ angegeben.
 
 
 \begin{table}[H]
@@ -290,9 +290,14 @@ In Tabelle () sind die Strahlverschiebungen $D$ und die jeweiligen Stromstärken
 \end{table}
 
 \noindent In einem Diagramm wird die Größe $\frac{D}{(L^2+D^2)}$ gegen das Magnetfeld $B$ aufgetragen.
-Um das Magnetfeld auszurechnen, benötigt man laut Gleichung () folgende Größen: Die Windungszahl der Spule $N=20$ und ihren Radius $R=28,2$\si{\cm}, und
+Um das Magnetfeld auszurechnen, benötigt man laut Gleichung (8) folgende Größen: Die Windungszahl der Spule $N=20$ und ihren Radius $R=28,2$\si{\cm}, und
 den Weg $L=17,5$ \si{\cm}, welcher von der Beschleunigungselektrode bis zum Leuchtschirm reicht.
-Die für den Plot notwendigen Werte sind in Tabelle () aufgeführt.
+Die für den Plot notwendigen Werte sind in Tabelle (8) aufgeführt.
+\begin{equation}
+B = \mu_0 \frac{8NI}{\sqrt{125}R}
+\end{equation}
+  
+
 
 \begin{table}[H]
   \centering
@@ -319,7 +324,7 @@ Die für den Plot notwendigen Werte sind in Tabelle () aufgeführt.
 \begin{figure}[H]
   \centering
   \includegraphics{plot1.pdf}
-  \caption{Die Größe $D/(L^2+D^2)$ aufgetragen gegen das Magnetfeld $U_B = 250\si{\volt}$.}
+  \caption{Die Größe $D/(L^2+D^2)$ aufgetragen gegen das Magnetfeld bei einer Beschleunigungsspannung von $U_B = 250\si{\volt}$.}
   \label{fig:plot}
 \end{figure}
 
@@ -330,16 +335,16 @@ Die lineare Ausgleichsrechnung $y = mx+C$ hat die Form
 
 Es ergeben sich die Parameter
 \begin{align*}
-    m = (8,98 \pm 0,14) \cdot 10^{3} ,\\
+    m = (8,98 \pm 0,14) \cdot 10^{3} \symup{\frac{1}{T}},\\
     C = (3,01 \pm 1,42) \cdot 10^{-2} .
 \end{align*}
 
-Aus der Steigung berechnet man mit Hilfe von Formel () den Wert für $\frac{e_0}{m_0}$ :
+Aus der Steigung berechnet man mit Hilfe von Formel (7) den Wert für $\frac{e_0}{m_0}$ :
 \begin{align*}
-\frac{e_0}{m_0} = (1.61 \pm 0.05) \cdot 10^{11} .
+\frac{e_0}{m_0} = (1.61 \pm 0.05) \cdot 10^{11} \symup{\frac{C}{kg}}.
 \end{align*}
 
-\noindent Die Gleiche Rechnung wird für eine Beschleunigungsspannung von $U_B = 435\si{\volt}$ durchgeführt. Die Messwerte dazu und die benötigten Werte für den Plot sind in Tabelle () aufgelistet.
+\noindent Die Gleiche Rechnung wird für eine Beschleunigungsspannung von $U_B = 435\si{\volt}$ durchgeführt. Die Messwerte dazu und die benötigten Werte für den Plot sind in Tabelle (9) aufgelistet.
 
 \begin{table}[H]
   \centering
@@ -363,7 +368,7 @@ Aus der Steigung berechnet man mit Hilfe von Formel () den Wert für $\frac{e_0}
   \end{tabular}
 \end{table}
 
-Der zugehörige Plot ist in Abbildung () zusehen.
+Der zugehörige Plot ist in Abbildung (13) zusehen.
 
 
 \begin{figure}[H]
@@ -375,13 +380,13 @@ Der zugehörige Plot ist in Abbildung () zusehen.
 
 Aus der Ausgleichsrechnung ergeben sich die Parameter
 \begin{align*}
-    m = (7,04 \pm 0,13) \cdot 10^{3} ,\\
+    m = (7,04 \pm 0,13) \cdot 10^{3} \symup{\frac{1}{T}},\\
     C = (3,74 \pm 1,68) \cdot 10^{-2} .
 \end{align*}
 
 Der Wert für $\frac{e_0}{m_0}$ ergibt sich zu
 \begin{align*}
-\frac{e_0}{m_0} = (1.72 \pm 0.06) \cdot 10^{11} .
+\frac{e_0}{m_0} = (1.72 \pm 0.06) \cdot 10^{11} \symup{\frac{C}{kg}}.
 \end{align*}
 
 
@@ -389,10 +394,10 @@ Der Wert für $\frac{e_0}{m_0}$ ergibt sich zu
 Die Stromstärke wurde gemessen und beträgt $I = 0,15$ \si{\ampere}.
 Laut Gleichung () ergibt sich daraus eine Magnetfeldstärke von
 \begin{align*}
-    B = 9,566 \cdot 10^{-6} .
+    B = 9,566 \cdot 10^{-6} \si{\tesla}.
 \end{align*}
 Der gemessene Inklinationswinkel beträgt $\phi = 80°$.
 Die Totalintensität des Erdmagnetfelds beträgt also
 \begin{align*}
-    B_{total} = \frac{B}{cos(\phi)} = -8,666 \cdot 10^{-5} .
+    B_{total} = \frac{B}{cos(\phi)} = -8,666 \cdot 10^{-5} \si{\tesla}.
 \end{align*}
