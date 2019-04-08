@@ -36,7 +36,7 @@ plt.xlim(0.0024,0.0051)
 plt.legend()
 plt.grid()
 plt.xlabel(r'$\frac{1}{U} / \mathrm{\frac{1}{V}}$')
-plt.ylabel(r'$\frac{D}{U_d} / (\mathrm{\frac{m}{V}})$')
+plt.ylabel(r'$\frac{D}{U_d} / \mathrm{\frac{m}{V}}$')
 plt.savefig('plot8.pdf')
 
 a = ufloat(0.324,0.015)
