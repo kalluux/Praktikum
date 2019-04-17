@@ -38,3 +38,10 @@ plt.grid()
 plt.xlabel(r'$U_d/V$')
 plt.ylabel(r'$D/$m')
 plt.savefig('plot7.pdf')
+
+B = 9.566*10**(-6)
+r = 1.3962634015955
+
+T = B*math.sin(r)
+print(T)
+
