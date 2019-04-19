@@ -4,13 +4,8 @@
 \subsection{Bestimmung der Größe der Fehlstellen im Acrylblock}
 
 Die Höhe $h$ des Acrylblocks beträgt $8,35\,\si{\centi\meter}$ 
-und die Schallgeschwindigkeit in Acryl beträgt $c_A=2730\,\si{\meter\per\second}$.
+und die Schallgeschwindigkeit in Acryl beträgt $c_A=2730\,\si{\meter\per\second}$\cite{kent2}.
 Die gemessene Zeit des A-Scans ohne Fehlstelle beträgt $t=60,5\,\si{\micro\second}$.
-
-Mithilfe von Gleichung 7 ergibt sich die ermittelte Höhe des Blocks zu
-\begin{align*}
-h_\text{A} = \frac{1}{2} c_\text{A} t = 0,0826\,\si{\meter} = 8,26\,\si{\centi\meter}.
-\end{align*}
 
 In Tabelle 1 befinden sich die Schalllaufzeiten des A-Scans von der oberen $t_\text{A,o}$ 
 und unteren $t_\text{A,u}$ Kante zur Fehlstelle sowie 
@@ -18,9 +13,9 @@ die damit und mithilfe der Gleichung 7 berechneten Abstände zur oberen $s_\text
 $s_\text{A,u}$ Kante, abzüglich der $0,2\,\si{\centi\meter}$ dicken Schutzschicht der Sonde, dessen
 Verzögerung in jeden Scan einfließt. Aus den beiden Abständen 
 lassen sich die Durchmesser der Fehlstellen 
-\begin{align*}
+\begin{align}
 d_\text{A} = h_\text{A} - (s_\text{A,o} + s_\text{A,u})
-\end{align*}
+\end{align}
 berechnen, welche ebenfalls in Tabelle 1 aufgelistet sind.
 
 \begin{table}[H]
@@ -74,7 +69,7 @@ sich die Cursor befinden.
 In Abbildung 6 und 7 ist der B-Scan des Blocks dargestellt. Mit der Eingabe der Schallgeschwindigkeit in Acryl
 $c_\text{A}$ in das verwendete Programm lassen sich die Abstände zur oberen $s_\text{B,o}$ und
 unteren $s_\text{B,u}$ Kante auslesen. Aus diesen lässt sich
-erneut der Durchmesser der Fehlstellen $d_\text{B}$ bestimmen. Die genannten Abstände und die
+mit Gleichung 8 erneut der Durchmesser der Fehlstellen $d_\text{B}$ bestimmen. Die genannten Abstände und die
 Durchmesser sind in Tabelle 2 notiert.
 
 \begin{figure}[H]
@@ -115,15 +110,12 @@ Durchmesser sind in Tabelle 2 notiert.
 \subsection{Bestimmung des Herzvolumens}
 In Tabelle \ref{tab:1} werden für die 7 simulierten Herzschläge jeweils die gemessenen Amplituden $t_s$ und die daraus berechneten
 Volumina $V_s$ aufgeführt. In Abbildung \ref{fig:TM} ist das Diagramm des erstellten TM-Scans zu erkennen, aus dem die besagten Amplituden
-bestimmt wurden. Das Luftvolumen, welches das Wasser beim Pumpen durch die bewegliche Membran verdrängt, wird als
-Kugelsegment angenähert und ergibt sich zu
-\begin{equation*}
+bestimmt werden. Das Luftvolumen, welches das Wasser beim Pumpen durch die bewegliche Membran verdrängt, wird als
+Kugelsegment\cite{kent3} angenähert und ergibt sich zu
+\begin{equation}
   V_s = \frac{h\pi}{6}\cdot(3r^2 + h^2),
-\end{equation*}
-mit
-\begin{equation*}
-h = \frac{1}{2}\cdot c \cdot t_\text{s}.
-\end{equation*}
+\end{equation}
+mit $h$ nach Gleichung 7.
 Der Radius beträgt $r = 2,5 \: \symup{cm}$ und die Frequenz des simulierten
 Herzschlags beträgt $f = 0,45\,\si{\hertz}$.
 
@@ -153,9 +145,10 @@ Herzschlags beträgt $f = 0,45\,\si{\hertz}$.
   \end{tabular}
 \end{table}
 
-\noindent Als Mittelwert ergibt sich ein Volumen von $V_{m} = (18,93 \pm 1,41) \: \symup{cm^3}$.
+\noindent Als Mittelwert ergibt sich mittels Mittelwerts- und Standardabweichungsformel
+ ein Volumen von $V_{m} = (18,93 \pm 1,41) \: \symup{cm^3}$.
 
-\noindent Aus
+\noindent Mithilfe der Gleichung zur Bestimmung des Herzvolumens\cite[S.5]{kent}
 \begin{equation*}
   V_{Herz} = V_m \cdot f
 \end{equation*}
@@ -163,4 +156,4 @@ ergibt sich das gesuchte Herzvolumen zu
 \begin{equation*}
   V_{Herz} = (8,5 \pm 0,6) \: \symup{\frac{cm^3}{s}}.
 \end{equation*}
-\vspace*{20mm}
+%\vspace*{20mm}
