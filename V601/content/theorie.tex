@@ -7,6 +7,10 @@ Hg-Atoms bestimmt. Weiter wird die Energieverteilung der beschleunigten Elektron
 
 \section{Theorie}
 \label{sec:Theorie}
+\begin{wrapfigure}{l}{6.5cm}
+  \includegraphics[width=6cm]{aufbau.png}
+  \caption{Schematischer Aufbau des Franck-Hertz-Versuchs. \cite[S.116]{kent}}
+\end{wrapfigure}
 Der Franck-Hertz-Versuch gehört zu den Elektronenstoßexperimenten, mit denen die
 diskrete Struktur der Elektronenhüllen untersucht werden kann. In einer abgeschlossenen
  Kammer kommt es dabei zu Wechselwirkungen von Elektronen einer bestimmten Energie und
@@ -64,3 +68,58 @@ h \nu = E_\text{1} - E_\text{0},
 wobei $h$ das Plancksche Wirkungsquantum und $\nu$ die Frequenz der emittierten Strahlung
 ist, wieder in den Grundzustand zurück.
 
+
+\begin{wrapfigure}{r}{6.5cm}
+  \includegraphics[width=6cm]{peaks.png}
+  \caption{Auffängerstrom $I_\text{A}$ in Abhängigkeit der Beschleunigungsspannung $U_\text{B}$. \cite[S.118]{kent}}
+\end{wrapfigure}
+Bei der Gegenfeldmethode wird nun der Auffängerstrom $I_\text{A}$ in Abhängigkeit 
+der Beschleunigungsspannung $U_\text{B}$ betrachtet, während diese kontinuierlich erhöht wird.
+Ein schematischer dieses Graphen ist in Abbildung 2 dargestellt. Ist die Beschleunigungsspannung
+größer als die Spannung der Auffängerelektrode, wird ein wachsender Strom registriert.
+Erreicht die Elektronenenergie den Wert $E_\text{1} - E_\text{0}$, so kommt es zu den genannten
+inelastischen Stößen, bei denen die Elektronen ihre Energie verlieren, sodass sie nicht mehr zur
+Auffängerelektrode gelangen können. Der Auffängerstrom fällt ab. Ist die Beschleunigungsspannung
+groß genug, so kann dieser Prozess mehrfach stattfinden. Die Länge 
+\begin{align}
+U_\text{1} := \frac{1}{e_\text{0}} (E_\text{1} - E_\text{0}),
+\end{align} 
+welche die Länge diese periodischen Intervalle bezeichnet, liefert das erste Anregungspotential.
+
+\subsection{Störeinflüsse}
+Die tatsächlich beobachtete Kurve des Auffängerstroms weicht aufgrund von einigen Nebeneffekten
+ab.
+
+Das Beschleunigungspotential weicht dadurch ab, dass Glühdraht und Beschleunigungselektrode
+eine unterschiedliche Austrittsarbeit $\phi_\text{G/B}$ für Elektronen vorweisen, um bei niedriger Temperatur 
+bereits höhere Emissionsraten zu erzielen. Es ergibt sich das effektive Beschleunigungspotential
+\begin{align}
+U_\text{B,eff} = U_\text{B} - \frac{1}{e_\text{0}(\phi_\text{B} - \phi_\text{G})}.
+\end{align}
+Der Ausdruck $\frac{1}{e_\text{0}}(\phi_\text{B}-\phi_\text{G}$ wird als Kontaktpotential $K$
+bezeichnet, um den die resultierende Franck-Hertz-Kurve verschoben ist.
+
+Weiter weisen die Leitungselektronen im Metall des Glühdrahts eine Energieverteilung auf, 
+sodass sie mit unterschiedlichen Anfangsgeschwindigkeiten aus diesem austreten und demnach
+auch nach der Beschleunigung unterschiedliche Energien besitzen. Die Folge ist, dass die
+inelastischen Stöße nicht mehr bei einer bestimmten Beschleunigungsspannung eintreten,
+weshalb sich die Kurve flacher den Maxima nähert und stetig bis auf ein Minimum \neq 0 abfällt.
+Auch die elastischen Stöße der Elektronen mit den Hg-Atomen zwischen Beschleunigungs- und Auffängerelektrode
+sorgen für eine Abflachung und Verbreiterung der Kurve, da die daraus resultierenden Richtungsänderungen
+eine Verteilung der relevanten Geschwindigkeitskomponente $v_\text{z}$ hervorrufen. Einige
+Elektronen erreichen somit nicht die Auffängerelektrode.
+
+Auch der Dampfdruck $p_\text{Sättigung}$ beeinflusst das Erscheinungsbild der Kurve.
+Um eine merkliche Anzahl von Zusammenstößen zwischen Elektronen und Hg-Atomen beobachten zu können,
+muss die mittlere freie Weglänge $\overline{w}$ der Atome um den Faktor $1000$ bis $4000$
+kleiner als der Abstand $a$ zwischen Beschleunigungs- und Auffängerelektrode sein.
+In der kinetischen Gastheorie sind diese in Abhängigkeit der Temperatur $T$ miteinander verknüpft:
+\begin{align}
+\overline{w} &= \frac{0,0029}{p_\text{Sättigung}},\\
+p_\text{Sättigung}(T) &= 5.5 \cdot 10^{7} e^{\frac{-6876}{T}},
+\end{align}
+wobei $\overline{w}$ in cm, $p_\text{Sättigung}$ in mbar und $T$ in K angegeben werden.
+Es gibt also einen Dampfdruckbereich, der sich zur Beobachtung des Effekts besonders gut eignet.
+Unterhalb dieses Bereichs sinkt die Wahrscheinlichkeit für die benötigten inelastischen Zusammenstöße,
+oberhalb treten zu viele elastische Stöße auf, die mit Richtungsänderung der Elektronenbahnen
+einhergehen.
