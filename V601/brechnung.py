@@ -41,3 +41,9 @@ v = V/4.135*10**(-15)
 print(v)
 j = 299792458/v 
 print(j)
+
+
+blah =  ufloat(2.549,0.05)
+ya =  299792458.0/blah
+print(ya)
+

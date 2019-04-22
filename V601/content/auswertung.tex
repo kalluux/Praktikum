@@ -3,14 +3,14 @@
 \label{sec:Auswertung}
 
 \subsection{Bestimmung der mittleren Weglänge}
-Mit Hilfe von Formel (6) und (7) wird die mittlere freie Weglänge $w$ für die verwendeten Temperaturen berechnet. Außerdem ist das Verhältnis zum Abstand $a = 1 \si{\cm}$ aufgeführt.
+Mit Hilfe von Formel (6) und (7) wird die mittlere freie Weglänge $\overline{w}$ für die verwendeten Temperaturen berechnet. Außerdem ist das Verhältnis zum Abstand $a = 1 \si{\cm}$ aufgeführt.
 \begin{table}[H]
   \centering
   \caption{Berechnung der mittleren freien Weglänge und Vergleich mit dem Abstand $a$.}
   \label{tab:Parameter}
   \begin{tabular}{c c c}
     \toprule
-    $T/$K& $w/$m  & Verhältnis $\frac{a}{w}$ \\
+    $T/$K& $\overline{w}/$m  & Verhältnis $\frac{a}{\overline{w}}$ \\
     \bottomrule
     299,25 & 5,471 $\cdot 10^{-7}$ & 18278,74 \\
     418,15 & 3,801 $\cdot 10^{-4}$ & 26,28\\
@@ -24,8 +24,8 @@ Mit Hilfe von Formel (6) und (7) wird die mittlere freie Weglänge $w$ für die 
 \subsection{Bestimmung der integralen Energieverteilung der beschleunigten Elektronen}
 
 Aus den angefügten Abbildungen (6) und (7) wird die Steigung des Graphen für zwei Temperaturen abgelesen. 
-Dazu wurden der x und y Wert abgelesen der Steigungsdreiecke abgelesen. Außerdem wird die Spannung abgelesen, wobei vorher richtig skaliert werden muss. Die Steigungen und die Spannungswerte werden in Tabelle (2) dargestellt.
-Dabei wurden je die x und y Werte auf dem erstellten Graphen abgelesen, und die x Werte genormt.
+Dazu wurden der x und y Wert der Steigungsdreiecke gemessen. Außerdem wird die Spannung abgelesen, wobei vorher richtig skaliert werden muss. Die Steigungen und die Spannungswerte werden in Tabelle (2) dargestellt.
+Dabei wurden die x Werte genormt.
 
 \begin{table}[H]
   \centering
@@ -71,7 +71,7 @@ Dabei wurden je die x und y Werte auf dem erstellten Graphen abgelesen, und die 
   \label{tab:Parameter}
   \begin{tabular}{c c}
     \toprule
-    Steigung $m$ &  Genortme Spannungen \\
+    Steigung $m$ &  Genormte Spannungen \\
     \bottomrule
     0 & 0\\
     0 & 2,57\\
@@ -98,13 +98,13 @@ Der Graph zu dieser Messreihe ist in Abbildung (5) zu finden.
   \label{fig:plot}
 \end{figure}
 
-\noindent Aus Abbildung () kann man das Kontaktpotential ablesen. 
+\noindent Aus Abbildung (4) kann man das Kontaktpotential ablesen. 
 An dem Maximum des Graphen ist die Energie der Elekronen $9,45\si{\eV}$.
-Energie der elektronen 9,45.Da die Beschleunigungsspannung von $11\si{\V}$ hinzugerechnet werden muss, ergibt sich
-ein Kontaktpotential von $K_1 = 1,55 \si{\V}$.
+Da die Beschleunigungsspannung von $11\si{\V}$ hinzugerechnet werden muss, ergibt sich
+ein Kontaktpotential von $K = 1,55 \si{\V}$.
 Damit viele Zusammenstöße der Elektronen mit den Quecksilber-Atomen stattfinden können, muss die mittlere freie Weglänge klein gegen den Abstand $a$ sein.
 Somit treten mehr Stöße bei der ersten Messreihe auf.
-Im nächsten Abschnitt wird klar, dass die Anregungsspannung bei ca. $ (4,89 \pm 0,206) \si{\V}$ liegt. Dies lässt das Gefälle in Abbildung () erklären.
+Im nächsten Abschnitt wird klar, dass die Anregungsspannung bei ca. $ (4,89 \pm 0,206) \si{\V}$ liegt. Dies lässt das Gefälle in Abbildung (5) erklären.
 
 \begin{figure}[H]
   \centering
@@ -145,7 +145,7 @@ Aus dieser werden die Abstände der Maxima gemessen, zu sehen in Tabelle (4).
   \end{tabular}
 \end{table}
 
-Der gemittelte Abstand beträgt
+\noindent Der gemittelte Abstand beträgt
 \begin{align*}
 U_1 = (4,89 \pm 0,206) \si{\V}.
 \end{align*}
@@ -158,7 +158,7 @@ Alle Mittelwerte und Fehler werden mit Python berechnet.
 Aus dem Abstand wird nun die Wellenlänge der emittierten Strahlung mit Hilfe von Formel (3) und der Relation $\lambda = \frac{c}{\nu} $ berechnet.
 \begin{align*}
 \nu = \frac{E_1}{h} = (1,18 \pm 0,05)\cdot 10^{-15} \si{\Hz}\\
-\lambda = (2,54 \pm 0,11)\cdot 10^{23} \si{\m}.
+\lambda = (2,54 \pm 0,11)\cdot 10^{-7} \si{\m}.
 \end{align*}
 Inelastische Stöße treten nur auf, wenn die Energie hoch genug ist.
 Der Energieverlust beim elastischen Stoß ist also zu vernachlässigen.
@@ -177,7 +177,7 @@ Aus der angefügten Abbildung (9) lässt sich der Wert $U_{ion}+K$ ablesen.
 Dazu wird eine Asymptote eingezeichnet und der Schnittpunkt mit der x-Achse abgelesen.
 Er beträgt $X = 2,5 \si{\V}$. Mit Hilfe des vorher bestimmten Kontaktpotentials, wird die Spannung bestimmt.
 \begin{align*}
-U_{ion} = X-K_1 = 0,95\si{\V}.
+U_{ion} = X-K = 0,95\si{\V}.
 \end{align*}
 
 \begin{figure}[H]
