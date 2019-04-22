@@ -37,7 +37,7 @@ print(np.mean(y),np.std(y))
 V = ufloat(4.89,0.206)
 E = V*1.602*10**(-19)
 print(E)
-v = E/6.626*10**(-34)
+v = V/4.135*10**(-15)
 print(v)
 j = 299792458/v 
 print(j)
