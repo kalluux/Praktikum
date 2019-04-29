@@ -5,35 +5,44 @@ from scipy.optimize import curve_fit
 from uncertainties import ufloat
 from scipy.constants import mu_0
 import math
+import uncertainties.unumpy as unp
 
 h = 6.626070040*10**(-34)
 c = 299792458 
 d = 2.014*10**(-10)
 
-E = (h*c)/(2*d*math.sin(0.069813170079773))
-print(E)
+emaxwinkel = ufloat(4.9, 0.1)
+emaxenergie = (h*c)/(2*d*unp.sin(emaxwinkel * np.pi / 180))*6.242*10**(18)
+emaxlambda = 2*d*unp.cos(emaxwinkel * np.pi / 180)
+print(emaxenergie)
+print(emaxlambda)
 
-maxenergie = E*6.242*10**(18)
-print(maxenergie)
+winkelbetamax = ufloat(20.20, 0.1)
+winkelalphamax = ufloat(22.3, 0.1)
+winkelb1 = ufloat(19.9, 0.1)
+winkelb2 = ufloat(20.3, 0.1)
+winkela1 = ufloat(22.0, 0.1)
+winkela2 = ufloat(22.5, 0.1)
 
-#winkel betamax : 20,15625
-#winkel alphamax : 22,34375
 
-Eb = (h*c)/(2*d*math.sin(0.35179292735511))
+Eb = (h*c)/(2*d*unp.sin(winkelbetamax * np.pi / 180))*6.242*10**(18)
 print(Eb)
-Ebeta = Eb*6.242*10**(18)
-print(Ebeta)
-Ea = (h*c)/(2*d*math.sin(0.38997200474248 ))
+Ea = (h*c)/(2*d*unp.sin(winkelalphamax * np.pi / 180 ))*6.242*10**(18)
 print(Ea)
-Ealpha = Ea*6.242*10**(18)
-print(Ealpha)
+eb1 = (h*c)/(2*d*unp.sin(winkelb1 * np.pi / 180))*6.242*10**(18)
+eb2 = (h*c)/(2*d*unp.sin(winkelb2 * np.pi / 180))*6.242*10**(18)
+ea1 = (h*c)/(2*d*unp.sin(winkela1 * np.pi / 180))*6.242*10**(18)
+ea2 = (h*c)/(2*d*unp.sin(winkela2 * np.pi / 180))*6.242*10**(18)
+print('eb1-2, ea1-2', eb1, eb2, ea1, ea2)
+print('aufloesung b a:', eb1-eb2, ea1-ea2)
+print('aufloesungmittel', 1/2 * (eb1-eb2 + ea1-ea2))
 
-#sg1 = 29-math.sqrt(Ebeta/13.6)
-#print(sg1)
-#sg2 = 29-2*math.sqrt((13.6*(29-sg1)**2 -Ealpha)/13.6)
-#print(sg2)
-#sg3 = 29-3*math.sqrt((13.6*(29-sg1)**2 -Ebeta)/13.6)
-#print(sg3)
+sg1 = 29-unp.sqrt(Eb/13.6)
+print(sg1)
+sg2 = 29-2*unp.sqrt((13.6*(29-sg1)**2 -Ea)/13.6)
+print(sg2)
+sg3 = 29-3*unp.sqrt((13.6*(29-sg1)**2 -Eb)/13.6)
+print(sg3)
 
 Ea1 =(h*c)/(2*d*math.sin(0.38449603421435 ))*6.242*10**(18)
 Ea2 =(h*c)/(2*d*math.sin(0.39269908169872))*6.242*10**(18)

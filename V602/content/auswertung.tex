@@ -9,48 +9,74 @@ Betrachtet man das Maximum der Messung, ergibt sich ein doppelter Winkel von $2 
 \subsection{Analyse des Emissionsspektrums einer Kupfer-Röntgenröhre}
 Die aufgetragene Intensität in Abhängigkeit des doppelten Winkels $2 \cdot \theta$ ist in Abbildung (4) zu sehen.
 Der von links gesehen erste Peak entspricht der $K_{\beta}$-Linie, der zweite der $K_{\alpha}$-Linie.
-Aus dem Grenzwinkel $\theta = 4$° wird die maximale Energie des Bremsspektrums mit Gleichung (1) und (6) bestimmt
-
+Aus dem Grenzwinkel $\theta = (4,9 \pm 0,1)\,$° ergibt sich nach der Gleichung (6) eine minimale Wellenlänge von:
 \begin{align*}
-E_{max} = \frac{hc}{2\cdot d \sin{\theta}} = 44,129 \si{\keV} .
+\lambda_\text{min} = (\num{40,133 +- 0,0060})\,\si{\pico\meter}.
 \end{align*}
+Der Fehler wird dabei mit folgender Formel berechnet:
+\begin{equation}
+  \label{eqn:fehlerlambda}
+  \Delta \lambda_\text{min} = 2d \cdot \cos{\left (\theta \right )} \Delta\theta.
+\end{equation}
+Mit dieser Wellenlänge und Gleichung (1) wird die maximale Energie berechnet:
+\begin{align*}
+E_\text{max} = \frac{hc}{2\cdot d \sin{\theta}} = (36 \pm 0,7)\,\si{\keV}.
+\end{align*}
+Dadurch, dass die Wellenlänge $\lambda_\text{min}$ eine fehlerbehaftete Größe ist, wird zur Berechnung des Fehlers die Gauß'sche Fehlerfortpflanzung benötigt,
+welche in diesem Fall 
+\begin{equation}
+  \label{eqn:fehlerenergie}
+\Delta E_\text{max} = \frac{hc}{\lambda_\text{min}^2} \cdot \Delta \lambda_\text{min}
+\end{equation}
+lautet.
+
 
 \noindent Um die Halbwertsbreite zu bestimmen werden die Winkel auf der Mitte der Peaks gemessen. 
 Diese betragen bei der $K_{\beta}$-Linie
 \begin{align*}
-\theta_{\beta,1} = 19,845° \\
-\theta_{\beta,2} = 20,315°
+\theta_{\beta,1} = (19,9 \pm 0,1) °, \\
+\theta_{\beta,2} = (20,3 \pm 0,1) °
 \end{align*}
 und bei der $K_{\alpha}$-Linie
 \begin{align*}
-\theta_{\alpha,1} = 22,03° \\
-\theta_{\alpha,2} = 22,50° .
-\end{align*}
-Also lauten die Halbwertsbreiten
-\begin{align*}
-b_{\alpha} &= \frac{\theta_{\alpha,2} - \theta_{\alpha,1}}{2} = 0,235° \\
-b_{\beta} &= 0,235° .
+\theta_{\alpha,1} = (22,3 \pm 0,1) °, \\
+\theta_{\alpha,2} = (22,5 \pm 0,1) °.
 \end{align*}
 
-\noindent Das Auflösungsvermögen ergibt sich durch die Energiedifferenzen der gemessenen Winkel bei der Halbwertsbreite. Die Energien werden wie oben bestimmt.
+\noindent Das Auflösungsvermögen ergibt sich durch die Energiedifferenzen der gemessenen Winkel bei der Halbwertsbreite. Die zugehörigen Energien werden wie oben bestimmt:
 \begin{align*}
-\Delta E_{\theta_{\alpha}} = E_{\theta_{\alpha,1}} - E_{\theta_{\alpha,2}} = (8,207 - 8,044) \si{\keV} = 0,163 \si{\keV}. \\
-\Delta E_{\theta_{\beta}} = E_{\theta_{\beta,1}} - E_{\theta_{\beta,2}} = (9,068 - 8,866) \si{\keV} = 0,201 \si{\keV}. 
+\Delta E_{\theta_{\alpha}} = E_{\theta_{\alpha,1}} - E_{\theta_{\alpha,2}} = (0,170 \pm 0,060) \si{\keV}, \\
+\Delta E_{\theta_{\beta}} = E_{\theta_{\beta,1}} - E_{\theta_{\beta,2}} = (0,170 \pm 0,050) \si{\keV}. 
+\end{align*}
+
+\noindent Zur Vervollständigung werden die Werte $\Delta E_{\theta_{\alpha}}$ und $\Delta E_{\theta_{\beta}}$ mit der Formel:
+\begin{equation}
+  \label{eqn:mittelenergie}
+  \overline{\Delta E} = \frac{1}{2}(\Delta E_{\theta_{\alpha}} + \Delta E_{\theta_{\beta}})
+\end{equation}
+gemittelt. Zusammen mit der Standardabweichung des Mittelwerts:
+\begin{equation}
+  \label{eqn:abweichung}
+  \Delta \overline{\Delta E} = \frac{1}{\sqrt{2}}\sqrt{(\Delta E_{\theta_{\alpha}} - \overline{\Delta E})^2 + (\Delta E_{\theta_{\beta}} - \overline{\Delta E})^2}
+\end{equation}
+ergibt sich für das Auflösungsvermögen folgender Wert:
+\begin{align*}
+\overline{\Delta E} = (\num{0.170 +- 0.040})\,\si{\kilo\electronvolt}.
 \end{align*}
 
 
 \noindent Um die Abschirmkonstanten zu bestimmen, muss zuerst die Energie $E_\alpha$ und $E_\beta$ berechnet werden. 
-Die Maxima der beiden Peaks liegen bei den Winkeln $\theta_{\beta} = 20,156 $° und $\theta_{\alpha} = 22,344$°.
+Die Maxima der beiden Peaks liegen bei den Winkeln $\theta_{\beta} = 20,20$° und $\theta_{\alpha} = 22,30$°.
 Daraus ergeben sich erneut mit Gleichungen (1) und (6) folgende Energien
 \begin{align*}
-E_\alpha &= 8,097 \si{\keV} \\
-E_\beta &= 8,934 \si{\keV}.
+E_\beta &= 8,910 \si{\keV}.
+E_\alpha &= 8,112 \si{\keV} \\
 \end{align*}
 Mit Gleichungen (2) und (3) werden die Abschirmkonstanten für die $K_{\alpha}$-Linie und die $K_{\beta}$-Linie berechnet.
 \begin{align*}
-\sigma_1 &= z_{Cu} - \sqrt{\frac{E_\beta}{R_\infty}} = 3,371\\
-\sigma_2 &= z_{Cu} - 2 \cdot \sqrt{\frac{R_\infty \cdot (z_Cu - \sigma_1)^2 - E_\alpha}{R_\infty}} = 13,318 \\
-\sigma_3 &= z_{Cu} - 3 \cdot \sqrt{\frac{R_\infty \cdot (z_Cu - \sigma_1)^2 - E_\beta}{R_\infty}} = 28,999
+\sigma_1 &= z_{Cu} - \sqrt{\frac{E_\beta}{R_\infty}} = 3,4\\
+\sigma_2 &= z_{Cu} - 2 \cdot \sqrt{\frac{R_\infty \cdot (z_Cu - \sigma_1)^2 - E_\alpha}{R_\infty}} = 13,6 \\
+\sigma_3 &= z_{Cu} - 3 \cdot \sqrt{\frac{R_\infty \cdot (z_Cu - \sigma_1)^2 - E_\beta}{R_\infty}} = 29
 \end{align*}
 Dabei entspricht $\sigma_2$ der Abschirmkonstanten auf der $K_{\alpha}$-Linie und $\sigma_3$ der auf der $K_{\beta}$-Linie.
 
@@ -102,7 +128,7 @@ R_\infty = a^2 = (\num{12.0 +- 0.4})\,\si{\electronvolt}.
 
 Zuletzt wird ein weiteres Mal die Abschirmkonstante $\sigma$ für ein Element mit einer Ordnungszahl $Z \geq 70$ bestimmt. In diesem Fall wurde ein Absorber des Materials
 Quecksilber mit der Ordnungszahl $Z = 80$ verwendet. Das dazugehörige Absorptionsspektrum befindet sich in Abbildung xyz. Die von der $L_2$- und $L_3$-Linie abgelesenen $\theta$-Winkel
-und die nach Gleichung \eqref{eqn:lambdamin} berechneten Energien befinden sich in Tabelle \ref{tab:hg}.
+und die nach Gleichung (1) und (6) berechneten Energien befinden sich in Tabelle \ref{tab:hg}.
 
 \begin{table}[H]
   \centering
@@ -113,7 +139,7 @@ und die nach Gleichung \eqref{eqn:lambdamin} berechneten Energien befinden sich 
 $\theta\:/\:°$ & $E_\text{L}\:/\: \si{\kilo\electronvolt}$ \\
 \midrule
 12,5 & 14,222 \\
-14,7 & 12,130 \\
+14,7 & 12,131 \\
 \midrule
 \multicolumn{2}{c}{Energiedifferenz $\Delta E_\text{L}: 2,092\,\si{\kilo\electronvolt}$} \\
 \bottomrule
