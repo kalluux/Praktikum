@@ -1,4 +1,42 @@
+\section{Zielsetzung}
+\label{sec:Zielsetzung}
+In diesem Versuch sollen die Reichweite und der Energieverlust von Alphastrahlung in Luft
+bestimmt werden. Außerdem soll die Statistik des radioaktiven
+Zerfalls untersucht werden.
+
 \section{Theorie}
 \label{sec:Theorie}
-
-\cite{sample}
+Eine experimentelle Bestimmung der Energie von Alphastrahlung ist durch Messung
+ihrer Reichweite möglich. Alphateilchen verlieren beim Durchlaufen eines Mediums ihre Energie
+hauptsächlich durch Ionistationsprozesse, sowie durch Anregung oder Dissoziation von Molekülen.
+Elatische Stöße spielen hierbei nur eine untergeordnete Rolle. Der Energieverlust $-\text{d}E_\alpha / \text{d}x$
+hängt dabei von der Energie der Strahlung und der Dichte des Mediums statt und lässt sich
+für hinreichend große Energien durch die Bethe-Bloch-Gleichung
+\begin{align}
+  - \frac{\text{d}E_\alpha}{\text{d}x} = \frac{z^2 e^4}{4\pi \epsilon_0 m_\text{e}} \frac{n Z}{v^2} \ln{\left(\frac{2m_\text{e}v^2}{I}\right)}
+\end{align}
+beschreiben, wobei $z$ die Ladung und $v$ die Geschwindigkeit der Alphateilchen darstellt.
+Die Ordnungszahl sei $Z$, $n$ ist die Teilchendichte und $I$ die Ionisierungsenergie
+des Targetgases. Die Bethe-Bloch-Gleichung verliert durch Auftreten von Ladungsaustauschprozessen
+für sehr kleine Energien ihre Gültigkeit. \\
+Die Reichweite $R$ eines Alphateilchens bezeichnet seine Wegstrecke bis zur vollständigen Abbremsung
+und älsst sich durch
+\begin{align}
+  R = \int_0^{E_0} \frac{\text{d}E_{\alpha}}{-\text{d}E_{\alpha} / \text{d}x}\,
+\end{align}
+bestimmen. Bevor ein Alphateilchen vollständig abgebremst ist verbringt es zwingend eine Zeit 
+mit niedriger Energie, in der die Bethe-Bloch-Gleichung nicht aussagekräftig ist.
+Deswegen werden zur Bestimmung der mittleren Reichweite $R_{\text{m}}$ empirische Formeln
+verwendet. So gilt zum Beispiel näherungsweise für die Reichweite von Alphastrahlung mit einer
+Energie $E_\text{\alpha} \leq 2,5\,\si{\mega\eV}$ in Luft
+\begin{align}
+  R_{\text{m}} = 3{,}1 \cdot E_\text{\alpha}^{3/2}\,,
+\end{align}
+wobei $R_{\text{m}}$ in Millimetern und $E_\text{\alpha}$ in Megaelektronenvolt anzugeben ist.\\
+Für die Reichweite von Alphateilchen in Gasen gilt, dass sie bei konstanter Temperatur
+und konstantem Volumen proportional zum Druck $p$ ist. Es gilt für einen festen Abstand $x_\text{0}$
+zwischen Detektor und Quelle der Alphastrahlung
+\begin{equation}
+  x = x_\text{0} \frac{p}{p_\text{0}}\,,
+\end{equation}
+wobei $x$ die effektive Weglänge bezeichnet und $p_\text{0} = 1013\,\si{\milli\bar}$ der Normaldruck ist.
