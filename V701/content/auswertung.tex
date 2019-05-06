@@ -2,7 +2,7 @@
 \label{sec:Auswertung}
 
 \subsection{Ermittlung der effekiven Reichweite und der Energie der Alpha-Teilchen}
-Aus dem Druck und dem Abstand des Detektors zur Quelle wird mit Gleichung () die effekive Reichweite $x$ der $\alpha$-Teilchen bestimmt. 
+Aus dem Druck und dem Abstand des Detektors zur Quelle wird mit Gleichung 4 die effekive Reichweite $x$ der $\alpha$-Teilchen bestimmt. 
 Die Energie kann man bestimmen, indem angenommen wird, dass die Position des Maximums bei $0$ $\si{\milli\bar}$ einer Energie von 4 $\si{\MeV}$ entspricht und von einer linearen Energsieskala ausgegangen wird.
 Alle gemessenen und berechneten Werte sind in Tabelle 1 und 2 für die beiden Abstände aufgelistet.
 
@@ -42,7 +42,7 @@ Alle gemessenen und berechneten Werte sind in Tabelle 1 und 2 für die beiden Ab
 \end{table}
 
 \noindent Die Zählrate wir als Funktion der effektiven Weglänge aufgetragen, und für den linearen Teil wird eine lineare Ausgleichsrechnung durchgeführt.
-Der Plot ist in Abbildung () zu sehen.
+Der Plot ist in Abbildung 2 zu sehen.
 \begin{figure}[H]
   \centering
   \includegraphics{plot1.pdf}
@@ -64,7 +64,7 @@ wobei sich der zugehörige Fehler bestimmen lässt durch die Gaußsche Fehlerfor
 \Delta R_{m} = \sqrt{(\frac{dR_m}{da})^2 (\Delta a)^2 + (\frac{dR_m}{db})^2 (\Delta b)^2}
 \end{align*}
 mit $\Delta a $ und $\Delta b$ als jeweilige Fehler der Parameter der Ausgleichsgeraden.
-Aus dieser Größe wird nun die Energie mit Gleichung () bestimmt:
+Aus dieser Größe wird nun die Energie mit Gleichung 3 bestimmt:
 \begin{align*}
 E_{1} = (47,7 \pm 2,1) \si{\MeV}.
 \end{align*}
@@ -107,7 +107,7 @@ Der Fehler kann berechnet werden durch
      \bottomrule
   \end{tabular}
 \end{table}
-\noindent Der Plot für diese Messreihe ist in Abbildung () aufgeführt. Diesmal betragen die Parameter
+\noindent Der Plot für diese Messreihe ist in Abbildung 3 aufgeführt. Diesmal betragen die Parameter
 \begin{align*}
 a &=  (-111244,12 \pm 12442,09) \frac{1}{\si{\meter}}\\
 b &= 133465,09 \pm 9511,85 \\
@@ -188,7 +188,12 @@ Z &= \frac{1}{100}\cdot \sum_{n=1}^{100} Z_i = 5462.81 \\
 Var(N) = 78647,35 .
 \end{align*}
 Die Messwerte werden in einem Histogramm aufgetragen
-
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{h.PNG}
+  \caption{Histogramm für die 100 Zählraten und Vergleich mit einer Poisson- und Gaußverteilung. }
+  \label{fig:plot}
+\end{figure}
 \noindent Vergleicht man die berechneten Größen miteinander, so fällt auf, dass
 das Quadrat der Standardabweichung ungefähr der Varianz entspricht. Deshalb kann bei diesen Messwerten gesagt werden, dass sie besser zu einer Gaußverteilung passen.
 
