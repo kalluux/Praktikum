@@ -41,21 +41,37 @@ Alle gemessenen und berechneten Werte sind in Tabelle 1 und 2 für die beiden Ab
   \end{tabular}
 \end{table}
 
-Die Zählrate wir als Funktion der effektiven Weglänge aufgetragen, und für den linearen Teil wird eine lineare Ausgleichsrechnung durchgeführt.
+\noindent Die Zählrate wir als Funktion der effektiven Weglänge aufgetragen, und für den linearen Teil wird eine lineare Ausgleichsrechnung durchgeführt.
 Der Plot ist in Abbildung () zu sehen.
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot1.pdf}
+  \caption{Zählrate in Abhängikeit der effektiven Weglänge für einen Abstand von $1,8$ $\si{\cm}$. }
+  \label{fig:plot}
+\end{figure}
 
-Die Parameter der Ausgleichsrechnung der Form $y=ax+b$ lauten
+\noindent Die Parameter der Ausgleichsrechnung der Form $y=ax+b$ lauten
 \begin{align*}
-a =  (-79951,82 \pm 3690,95) \si{\per\meter}\\
-b = 119937,39 \pm 3702,19 \\
+a &=  (-79951,82 \pm 3690,95) \frac{1}{\si{\meter}}\\
+b &= 119937,39 \pm 3702,19 \\
 \end{align*}
-Daraus kann die mittlere Reichweite der Teilchen bestimmt werden. Die Zählrate beträgt $N=76536$ und die Hälfte dementsprechend $\frac{N}{2}=38268$. Setzt man dies als y in die Geradengleichung zusammen mit den Parametern ein, erhält man
+Daraus kann die mittlere Reichweite der Teilchen bestimmt werden. Die Zählrate beträgt $N=76536$ und die Hälfte dementsprechend $\frac{N}{2}=38268$. Setzt man dies als y in die Geradengleichung zusammen mit den Parametern ein und löst nach $x$ auf, erhält man
 \begin{align*}
-R_m1 = 
+R_{m1} = (1,02 \pm 0,07) \si{\meter},
 \end{align*}
-
-
-
+wobei sich der zugehörige Fehler bestimmen lässt durch die Gaußsche Fehlerfortpflanzung
+\begin{align*}
+\Delta R_{m} = \sqrt{(\frac{dR_m}{da})^2 (\Delta a)^2 + (\frac{dR_m}{db})^2 (\Delta b)^2}
+\end{align*}
+mit $\Delta a $ und $\Delta b$ als jeweilige Fehler der Parameter der Ausgleichsgeraden.
+Aus dieser Größe wird nun die Energie mit Gleichung () bestimmt:
+\begin{align*}
+E_{1} = (47,7 \pm 2,1) \si{\MeV}.
+\end{align*}
+Der Fehler kann berechnet werden durch
+\begin{align*}
+\Delta E = \sqrt{(\frac{dE}{dR_m})^2 (\Delta R_m)^2 }.
+\end{align*}
 
 
 \begin{table}[H]
@@ -91,23 +107,46 @@ R_m1 =
      \bottomrule
   \end{tabular}
 \end{table}
-Der Plot für diese Messreihe ist in Abbildung () aufgeführt. Diesmal betragen die Parameter
+\noindent Der Plot für diese Messreihe ist in Abbildung () aufgeführt. Diesmal betragen die Parameter
 \begin{align*}
-a =  (-111244,12 \pm 12442,09) \si{\per\meter}\\
-b = 133465,09 \pm 9511,85 \\
+a &=  (-111244,12 \pm 12442,09) \frac{1}{\si{\meter}}\\
+b &= 133465,09 \pm 9511,85 \\
+\end{align*}
+Für die zweite Messung beträgt die Zählrate $N=100641$ und die Hälfte dementsprechend $\frac{N}{2}=50320$. 
+Nach gleichem Verfahren wie oben ergibt sich die mittlere Reichweite zu
+\begin{align*}
+R_{m2} = (0,75 \pm 0,12) \si{\meter},
+\end{align*}
+und die entsprechende Energie zu
+\begin{align*}
+E_{2} = (39 \pm 4) \si{\MeV}.
 \end{align*}
 
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot2.pdf}
+  \caption{Zählrate in Abhängikeit der effektiven Weglänge für einen Abstand von $1,5$ $\si{\cm}$. }
+  \label{fig:plot}
+\end{figure}
 
-
-
-
+\subsection{Bestimmung des Energieverlustes}
+Die berechneten Energien aus der ersten Messung werden gegen die effektive Weglänge aufgetragen. 
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot3.pdf}
+  \caption{Energie in Abhänigkeit der effektiven Weglänge für einen Abstand von $1,8$ $\si{\cm}$. }
+  \label{fig:plot}
+\end{figure}
+\noindent Es wird erneut eine lineare Ausgleichsrechnung mit dem linearen Teil der Kurve durchgeführt. Der Energieverlust $-\frac{dE}{dx}$
+liest sich als Steigung der Geraden ab, und beträgt somit
+\begin{align*}
+-\frac{dE}{dx} = (-1,14 \pm 0,09) \symup{\frac{MeV}{cm}} .
+\end{align*}
 
 
 \subsection{Statistik des radioakiven Zerfalls}
 
 Es werden 100 Werte für die Zerfälle pro Zeiteinheit gemessen und notiert. Diese sind in Tabelle 3 zu finden.
-
-
 \begin{table}[H]
   \centering
   \caption{Zerfälle pro Zeiteinheit.}
@@ -138,8 +177,18 @@ Es werden 100 Werte für die Zerfälle pro Zeiteinheit gemessen und notiert. Die
   \end{tabular}
 \end{table}
 
-\noindent Aus diesen Werten wird der Mittelwert und der zugehörige Fehler bestimmt
-\begin{align}
-Z = \frac{1}{100}\cdot \sum_{n=1}^{100} Z_i = 5462.81 \\
-\Delta Z =\frac{1}{\sqrt{100}} \cdot \sqrt{\frac{1}{99} \sum_{n=1}^{100} (Z_i - Z)^2} = 280,44
-\end{align}
+\noindent Aus diesen Werten wird der Mittelwert und die Standardabweichung bestimmt
+\begin{align*}
+Z &= \frac{1}{100}\cdot \sum_{n=1}^{100} Z_i = 5462.81 \\
+\Delta Z &=\frac{1}{\sqrt{100}} \cdot \sqrt{\frac{1}{99} \sum_{n=1}^{100} (Z_i - Z)^2} = 280,44.
+\end{align*}
+
+\noindent Außerdem wird die Varianz berechnet
+\begin{align*}
+Var(N) = 78647,35 .
+\end{align*}
+Die Messwerte werden in einem Histogramm aufgetragen
+
+\noindent Vergleicht man die berechneten Größen miteinander, so fällt auf, dass
+das Quadrat der Standardabweichung ungefähr der Varianz entspricht. Deshalb kann bei diesen Messwerten gesagt werden, dass sie besser zu einer Gaußverteilung passen.
+

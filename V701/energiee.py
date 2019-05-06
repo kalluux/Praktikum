@@ -9,16 +9,17 @@ import math
 #Holt Werte aus Textdatei
 x, E = np.genfromtxt('energie.txt', unpack=True)
 
-
+y = [0.53,0.62,0.71,0.8,0.89,0.98]
+B = [3.45,3.38,3.32,3.14,3.07,2.95]
 
 #Definiert Funktion mit der ihr fitten wollt (hier eine Gerade)
-def f(x, A, B):
-   return A*x + B
+def f(y, A, B):
+   return A*y + B
 
 #Erstellt linspace von Bereich, in dem Ausgleichsfunktion erstellt wird
-x_plot = np.linspace(-0.02,1.5, 400)
+x_plot = np.linspace(0.52,0.99, 400)
 #Fittet
-params, covariance_matrix = curve_fit(f, x, E)
+params, covariance_matrix = curve_fit(f, y, B)
 errors = np.sqrt(np.diag(covariance_matrix))
 #Plottet Fit
 plt.plot(x_plot, f(x_plot, *params), 'k-', label='Anpassungsfunktion', linewidth=0.5)
