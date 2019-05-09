@@ -33,7 +33,7 @@ print(np.sqrt(np.diag(covariance_matrix)))
 plt.gcf().subplots_adjust(bottom=0.18)
 #Plot eurer eigentlichen Messwerte
 plt.plot(x , N, 'r.', label='Messwerte', Markersize=4)
-plt.xlim(-0.02,1.5)
+plt.xlim(-0.0,1.5)
 plt.legend()
 plt.grid()
 plt.xlabel(r'$x/$cm')
