@@ -1,17 +1,17 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-In diesem Kapitel wird der Absorptionskoeffizient von Zink und Blei ermittelt, die sich vor einer Gamma-Strahlungsquelle befinden. Im Anschluss
+In diesem Kapitel wird der Absorptionskoeffizient von Blei und Eisen ermittelt, die sich vor einer Gamma-Strahlungsquelle befinden. Im Anschluss
 wird die Maximalenergie des verwendetem Beta-Strahlers bestimmt.
 
-subsection{Bestimmung der Absorptionskoeffizienten von Blei und Eisen}
+\subsection{Bestimmung der Absorptionskoeffizienten von Blei und Eisen}
 Bevor die Absorptionskoeffizienten berechnet werden können, muss von den Messwerten die Nullmessung abgezogen werden. Da hierbei nur geringe Zählraten
-aufgenommen werden, wird für die Messung ein Zeitintervall von:
+aufgenommen werden, wird für die Messung ein Zeitintervall von
 \begin{align*}
 \Delta t = 900\,\si{\second}
 \end{align*}
-verwendet. Die Anzahl der Counts $N$ und die radioaktive Aktivität $A_0$ sind dann:
+betrachtet. Die Anzahl der Counts $N$ und die radioaktive Aktivität $A_0$ sind dann:
 \begin{align*}
-N &= (\num{1059 +- 33}) \\
+N &= (\num{1059 +- 33}), \\
 A_0 &= (\num{1,18 +- 0,04})\,\frac{1}{\si{\second}}.
 \end{align*}
 Der statistische Fehler nach der Poissonverteilung von $N$ ist:
@@ -22,17 +22,18 @@ Somit wurde zur Berechnung der Aktivität folgende Fehlerformel nach der Gauß's
 \begin{equation}
 \Delta A_0 = \frac{1}{\Delta t} \cdot \sqrt{N}.
 \end{equation}
-Nun wird der Absorptionskoeffizient von Blei mit Hilfe einer Ausgleichsrechnung bestimmt. Dazu wird die Aktivität gegen die Dicke des zu durchdringenden Materials
+Der Absorptionskoeffizient von Blei wird mit Hilfe einer Ausgleichsrechnung bestimmt. Dazu wird die Aktivität gegen die Dicke des zu durchdringenden Materials
 in einem halblogarithmischen Diagram aufgetragen. Nach Gleichung (2) besteht zwischen der Aktivität und der Dicke des Materials ein exponentieller
 Zusammenhang. Durch Umstellen und Logarithmieren dieser Gleichung wird folgender Zusammenhang deutlich:
 \begin{align*}
 \ln{A(D)} = - \mu \cdot D + \ln{A_0}.
 \end{align*}
-Dies lässt nun auf eine lineare Ausgleichsrechnung deuten, welche folgende Form hat:
+Dies lässt auf eine lineare Ausgleichsrechnung der Form
 \begin{equation}
 \label{eqn:ausgleich1}
-A(D) = - a \cdot D + b.
+A(D) = - a \cdot D + b
 \end{equation}
+schließen.
 Die für die lineare Regression verwendeten Messwerte befinden sich in Tabelle \ref{tab:blei} und der Graph ist in Abbildung \ref{fig:blei} zu sehen.
 \begin{figure}[H]
   \center
@@ -64,7 +65,7 @@ $D\:/\:\si{\meter}$ & $t\:/\:\si{\second}$ & Counts $N$ & $A\:/\:\frac{1}{\si{\s
 \end{table}
 \noindent Die nach Gleichung \eqref{eqn:ausgleich1} berechneten Parameter $a$ und $b$ entsprechen dem Absorptionskoeffizienten und der Anfangsaktivität und sind somit:
 \begin{align*}
-a &= \mu = (\num{108.7 +- 2.1})\,\frac{1}{\si{\meter}} \\
+a &= \mu_\text{Pb} = (\num{108.7 +- 2.1})\,\frac{1}{\si{\meter}} \\
 b &= A_\text{A} = (\num{133 +- 8})\,\frac{1}{\si{\second}}.
 \end{align*}
 Der theoretische Wert für den Compton-Absorptionskoeffizienten lässt sich mit Hilfe der Gleichung (6) berechnen.
@@ -77,23 +78,23 @@ N_\text{A} &= 6,022 \cdot 10^{23} \,\frac{1}{\si{\mol}} \text{\cite{kent4}},\\
 Z &= 82 ,\\
 M &= 207,2\,\frac{\si{\gram}}{\si{\mol}} \: \text{\cite{kent3}}.
 \end{align*}
-Daraus ergibt sich nun der Compton-Absorptionskoeffizient:
+Daraus ergibt sich der Compton-Absorptionskoeffizient für Blei
 \begin{align*}
   \mu_{com, \text{Pb}} = 69,35\,\frac{1}{\si{\meter}}.
 \end{align*}
 
-\noindent Nun wird analog der Absorptionskoeffizent von Eisen ermittelt. Die hierfür benötigten Messwerte befinden sich in Tabelle \ref{tab:eisen}
+\noindent Analog wird der Absorptionskoeffizent von Eisen ermittelt. Die hierfür benötigten Messwerte befinden sich in Tabelle \ref{tab:eisen}
 und die lineare Regression nach Gleichung \eqref{eqn:ausgleich1} befindet sich in Abbildung \ref{fig:eisen}.
 %EISEN
 \begin{figure}[H]
   \center
   \includegraphics[scale = 0.75]{eisen.pdf}
-  \caption{Lineare Regression zur Bestimmung des Absorptionskoeffizienten von Blei.}
+  \caption{Lineare Regression zur Bestimmung des Absorptionskoeffizienten von Eisen.}
   \label{fig:eisen}
 \end{figure}
 \begin{table}[H]
   \centering
-  \caption{Messwerte zur Bestimmung des Absorptionskoeffizienten von Blei.}
+  \caption{Messwerte zur Bestimmung des Absorptionskoeffizienten von Eisen.}
   \label{tab:eisen}
   \begin{tabular}{c c c c c}
     \toprule
@@ -115,7 +116,7 @@ $D\:/\:\si{\meter}$ & $t\:/\:\si{\second}$ & Counts $N$ & $A\:/\:\frac{1}{\si{\s
 
 \noindent Die nach Gleichung \eqref{eqn:ausgleich1} berechneten Parameter $a$ und $b$ entsprechen erneut dem Absorptionskoeffizienten und der Anfangsaktivität und sind somit:
 \begin{align*}
-a &= \mu = (\num{51.9 +- 1.4})\,\frac{1}{\si{\meter}} ,\\
+a &= \mu_\text{Fe} = (\num{51.9 +- 1.4})\,\frac{1}{\si{\meter}} ,\\
 b &= A_\text{A} = (\num{137 +- 6})\,\frac{1}{\si{\second}}.
 \end{align*}
 Der theoretische Wert für den Compton-Absorptionskoeffizienten lässt sich mit Hilfe der Gleichung (6) berechnen.
@@ -126,18 +127,18 @@ Z &= 26 ,\\
 M &= 55,845\,\frac{\si{\gram}}{\si{\mol}}\: \text{\cite{kent3}}.
 \end{align*}
 Die Werte für $\epsilon$, dem Elektronenradius $r_e$ und der Avogadro-Konstante $N_\text{A}$ sind die selben geblieben.
-Daraus ergibt sich nun der Compton-Absorptionskoeffizient:
+Daraus ergibt sich der Compton-Absorptionskoeffizient für Eisen
 \begin{align*}
   \mu_{com, \text{Fe}} = 56,64\,\frac{1}{\si{\meter}}.
 \end{align*}
 
 \subsection{Bestimmung der Maximalenergie der Beta-Strahlung}
 Für die Bestimmung der Maximalenergie der Beta-Strahlung wird zunächst die maximale Reichweite $R_\text{max}$ der Elektronen bestimmt.
-Dazu wird die Aktivität gegen die Massenbelegung aufgetragen und gemäß Abbildung \ref{fig:absorp} in zwei Teile aufgeteilt. Die einzelnen Teile
-werden dann mit einer linearen Regression gefittet. Ziel ist es, die Stelle zu errechnen, an der sich beide Graphen treffen. Der $x$-Wert dieses
+Dazu wird die Aktivität gegen die Massenbelegung aufgetragen und gemäß Abbildung (3) in zwei Teile aufgeteilt. Die einzelnen Teile
+werden dann mit einer linearen Regression gefittet. Ziel ist es, die Stelle zu errechnen, an der sich die Ausgleichsgeraden treffen. Der $x$-Wert dieses
 Schnittpunktes gibt dann die maximale Reichweite der Elektronen an. Die Ausgleichsrechnung wird analog zur Gleichung \eqref{eqn:ausgleich1} durchgeführt, wobei
 die Parameter verändert wurden. Die neuen Parameter sind $A_i$ und $B_i$ mit $i=1,\: 2$. Die beiden Graphen sind in Abbildung \ref{fig:reichweite} zu sehen.
-Die Massenbelegung, welche durch die Formel \eqref{eqn:masse} berechnet wird, befindet sich zusammen mit den Messwerten in Tabelle \ref{tab:reichweite}.
+Die Massenbelegung, welche durch die Gleichung (7) berechnet wird, befindet sich zusammen mit den Messwerten in Tabelle \ref{tab:reichweite}.
 Dabei ist die Dichte von Aluminium
 \begin{align*}
 \rho = 2698\,\frac{\si{\kilo\gram}}{\si{\cubic\meter}} \text{\cite{kent2}}.
@@ -203,7 +204,7 @@ Nach Gleichung \eqref{eqn:reichweite} und \eqref{eqn:reichweitef} ergibt sich f�
 \begin{align*}
 R_\text{max} = (\num{0.081 +- 0.026})\,\frac{\si{\gram}}{\si{\centi\meter\squared}}.
 \end{align*}
-Mit dieser Reichweite lässt sich nun nach Gleichung \eqref{eqn:emax} die maximale Energie ausrechnen:
+Mit dieser Reichweite lässt sich nun nach Gleichung (8) die maximale Energie ausrechnen:
 \begin{align*}
 E_\text{max} = (\num{0.30 +- 0.06})\,\si{\mega\electronvolt}.
 \end{align*}
