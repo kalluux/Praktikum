@@ -52,7 +52,17 @@ a2=ufloat(-111244.12,12442.09)
 R2=(50320-b2)/a2
 print(R2)
 
-en1 = (R1*1000/3.1)**(2/3)
+en1 = (R1*10/3.1)**(2/3)
 print(en1)
-en2 = (R2*1000/3.1)**(2/3)
+en2 = (R2*10/3.1)**(2/3)
 print(en2)
+
+gr1=ufloat(-1.14603175,0.0851441)
+gr2=ufloat(4.0835873, 0.06560241)
+Energie1 = gr1*R1+gr2
+print(Energie1)
+
+gr11=ufloat(-1.13196201,0.1223414)
+gr22=ufloat(3.75347222, 0.05901062)
+Energie2 = gr11*R2+gr22
+print(Energie2)

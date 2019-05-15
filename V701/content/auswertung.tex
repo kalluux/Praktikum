@@ -1,7 +1,7 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-\subsection{Ermittlung der effekiven Reichweite und der Energie der Alpha-Teilchen}
+\subsection{Ermittlung der effektiven Reichweite und der Energie der Alpha-Teilchen}
 Aus dem Druck und dem Abstand des Detektors zur Quelle wird mit Gleichung 4 die effekive Reichweite $x$ der $\alpha$-Teilchen bestimmt. 
 Die Energie kann man bestimmen, indem angenommen wird, dass die Position des Maximums bei $0$ $\si{\milli\bar}$ einer Energie von 4 $\si{\MeV}$ entspricht und von einer linearen Energsieskala ausgegangen wird.
 Alle gemessenen und berechneten Werte sind in Tabelle 1 und 2 für die beiden Abstände aufgelistet.
@@ -9,11 +9,11 @@ Alle gemessenen und berechneten Werte sind in Tabelle 1 und 2 für die beiden Ab
 
 \begin{table}[H]
   \centering
-  \caption{Druck, Channel, Anzahl an gemessenen Impulsen, berechnete Energie und effektive Reichweite der Teilchen für einen Abstand von $1,8$ $\si{\cm}$.}
+  \caption{Druck, Kanal, Anzahl an gemessenen Impulsen, berechnete Energie und effektive Reichweite der Teilchen für einen Abstand von $1,8$ $\si{\cm}$.}
   \label{tab:Parameter}
   \begin{tabular}{c c c c c}
     \toprule
-    $p/$mbar& Channel & $N/$ & $E/$MeV & $x/$cm \\
+    $p/$mbar& Kanal & $N/\frac{1}{120\si{\second}}$ & $E/$MeV & $x/$cm \\
     \bottomrule
     0 & 520 & 76536 & 4,00 & 0,00 \\
     50 & 487 & 71337 & 3,75 & 0,09 \\
@@ -41,23 +41,24 @@ Alle gemessenen und berechneten Werte sind in Tabelle 1 und 2 für die beiden Ab
   \end{tabular}
 \end{table}
 
-\noindent Die Zählrate wir als Funktion der effektiven Weglänge aufgetragen, und für den linearen Teil wird eine lineare Ausgleichsrechnung durchgeführt.
+\noindent Die Zählrate wird als Funktion der effektiven Weglänge aufgetragen, und für den linearen Teil wird eine lineare Ausgleichsrechnung durchgeführt. 
+Sie fängt bei $x=0,62$ $\si{\cm}$ und der entsprechenden Zählrate an, und geht bis $x=1,33$ $\si{\cm}$.
 Der Plot ist in Abbildung 2 zu sehen.
 \begin{figure}[H]
   \centering
   \includegraphics{plot1.pdf}
-  \caption{Zählrate in Abhängikeit der effektiven Weglänge für einen Abstand von $1,8$ $\si{\cm}$. }
+  \caption{Zählrate $N$ in Abhängikeit der effektiven Weglänge $x$ für einen Abstand von $1,8$ $\si{\cm}$. }
   \label{fig:plot}
 \end{figure}
 
 \noindent Die Parameter der Ausgleichsrechnung der Form $y=ax+b$ lauten
 \begin{align*}
-a &=  (-79951,82 \pm 3690,95) \frac{1}{\si{\meter}}\\
-b &= 119937,39 \pm 3702,19 \\
+a &=  (-79951,82 \pm 3690,95) \frac{1}{\si{\centi\meter}}\cdot \frac{1}{120\si{\second}} \\
+b &= (119937,39 \pm 3702,19) \frac{1}{120\si{\second}} \\
 \end{align*}
 Daraus kann die mittlere Reichweite der Teilchen bestimmt werden. Die Zählrate beträgt $N=76536$ und die Hälfte dementsprechend $\frac{N}{2}=38268$. Setzt man dies als y in die Geradengleichung zusammen mit den Parametern ein und löst nach $x$ auf, erhält man
 \begin{align*}
-R_{m1} = (1,02 \pm 0,07) \si{\meter},
+R_{m1} = (1,02 \pm 0,07) \si{\centi\meter},
 \end{align*}
 wobei sich der zugehörige Fehler bestimmen lässt durch die Gaußsche Fehlerfortpflanzung
 \begin{align*}
@@ -66,7 +67,7 @@ wobei sich der zugehörige Fehler bestimmen lässt durch die Gaußsche Fehlerfor
 mit $\Delta a $ und $\Delta b$ als jeweilige Fehler der Parameter der Ausgleichsgeraden.
 Aus dieser Größe wird nun die Energie mit Gleichung 3 bestimmt:
 \begin{align*}
-E_{1} = (47,7 \pm 2,1) \si{\MeV}.
+E_{1} = (2,21 \pm 0,1) \si{\MeV}.
 \end{align*}
 Der Fehler kann berechnet werden durch
 \begin{align*}
@@ -76,11 +77,11 @@ Der Fehler kann berechnet werden durch
 
 \begin{table}[H]
   \centering
-  \caption{Druck, Channel, Anzahl an gemessenen Impulsen, berechnete Energie und effektive Reichweite der Teilchen für einen Abstand von $1,5$ $\si{\cm}$.}
+  \caption{Druck, Kanal, Anzahl an gemessenen Impulsen, berechnete Energie und effektive Reichweite der Teilchen für einen Abstand von $1,5$ $\si{\cm}$.}
   \label{tab:Parameter}
   \begin{tabular}{c c c c c}
     \toprule
-    $p/$mbar& Channel & $N/$ & $E/$MeV & $x/$cm \\
+    $p/$mbar& Kanal & $N/\frac{1}{120\si{\second}}$ & $E/$MeV & $x/$cm \\
     \bottomrule
     0 & 527 & 100641 & 4,00 & 0,00 \\
     50 & 504 & 99843 & 3,83 & 0,07 \\
@@ -107,25 +108,25 @@ Der Fehler kann berechnet werden durch
      \bottomrule
   \end{tabular}
 \end{table}
-\noindent Der Plot für diese Messreihe ist in Abbildung 3 aufgeführt. Diesmal betragen die Parameter
+\noindent Der Plot für diese Messreihe ist in Abbildung 3 aufgeführt. Die lineare Ausgleichsgeraden geht von $x=0,44$ $\si{\cm}$ bis $x=1,04$ $\si{\cm}$. Diesmal betragen die Parameter
 \begin{align*}
-a &=  (-111244,12 \pm 12442,09) \frac{1}{\si{\meter}}\\
-b &= 133465,09 \pm 9511,85 \\
+a &=  (-111244,12 \pm 12442,09) \frac{1}{\si{\centi\meter}}\cdot \frac{1}{120\si{\second}}\\
+b &= (133465,09 \pm 9511,85)\frac{1}{120\si{\second}}\\
 \end{align*}
 Für die zweite Messung beträgt die Zählrate $N=100641$ und die Hälfte dementsprechend $\frac{N}{2}=50320$. 
 Nach gleichem Verfahren wie oben ergibt sich die mittlere Reichweite zu
 \begin{align*}
-R_{m2} = (0,75 \pm 0,12) \si{\meter},
+R_{m2} = (0,75 \pm 0,12) \si{\centi\meter},
 \end{align*}
 und die entsprechende Energie zu
 \begin{align*}
-E_{2} = (39 \pm 4) \si{\MeV}.
+E_{2} = (1,8 \pm 0,19) \si{\MeV}.
 \end{align*}
 
 \begin{figure}[H]
   \centering
   \includegraphics{plot2.pdf}
-  \caption{Zählrate in Abhängikeit der effektiven Weglänge für einen Abstand von $1,5$ $\si{\cm}$. }
+  \caption{Zählrate $N$ in Abhängikeit der effektiven Weglänge $x$ für einen Abstand von $1,5$ $\si{\cm}$. }
   \label{fig:plot}
 \end{figure}
 
@@ -134,14 +135,45 @@ Die berechneten Energien aus der ersten Messung werden gegen die effektive Wegl�
 \begin{figure}[H]
   \centering
   \includegraphics{plot3.pdf}
-  \caption{Energie in Abhänigkeit der effektiven Weglänge für einen Abstand von $1,8$ $\si{\cm}$. }
+  \caption{Energie $E$ in Abhänigkeit der effektiven Weglänge $x$ für einen Abstand von $1,8$ $\si{\cm}$. }
   \label{fig:plot}
 \end{figure}
-\noindent Es wird erneut eine lineare Ausgleichsrechnung mit dem linearen Teil der Kurve durchgeführt. Der Energieverlust $-\frac{dE}{dx}$
+\noindent Es wird erneut eine lineare Ausgleichsrechnung mit dem linearen Teil der Kurve durchgeführt. Diesmal ist der Anfangswert $x=0,53$ $\si{\cm}$ und der Endwert $x=0,98$ $\si{\cm}$.  Der Energieverlust $-\frac{dE}{dx}$
 liest sich als Steigung der Geraden ab, und beträgt somit
 \begin{align*}
--\frac{dE}{dx} = (-1,14 \pm 0,09) \symup{\frac{MeV}{cm}} .
+a = -\frac{dE}{dx} = (-1,14 \pm 0,09) \symup{\frac{MeV}{cm}} .
 \end{align*}
+Der Parameter $b$ ergibt sich außerdem zu
+\begin{align*}
+b = (4,08 \pm 0,66) \si{\MeV}.
+\end{align*}
+Um die Energie zu der maximalen Reichweite zu bestimmen, setzt man $R_{m1}$ in die Geradengleichung $E_1 = a \cdot R_{m1} + b$ ein:
+\begin{align*}
+E_1 = (2,91 \pm 0,13) \si{\MeV},
+\end{align*}
+wobei der Fehler berechnet wird durch
+\begin{align*}
+\Delta E = \sqrt{(\frac{dE}{da})^2 (\Delta a)^2 + (\frac{dE}{db})^2 (\Delta b)^2 + (\frac{dE}{dR_m})^2 (\Delta R_m)^2}.
+\end{align*}
+
+
+Gleiches wird für die zweite Messung durchgeführt. 
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot4.pdf}
+  \caption{Energie $E$ in Abhänigkeit der effektiven Weglänge $x$ für einen Abstand von $1,5$ $\si{\cm}$. }
+  \label{fig:plot}
+\end{figure}
+Die lineare Ausgleichsgerade geht von $x=0,1$ $\si{\cm}$ bis $x=0,74$ $\si{\cm}$. Die Parameter lauten
+\begin{align*}
+a &= -\frac{dE}{dx} = (-1,13 \pm 0,12) \symup{\frac{MeV}{cm}} \\
+b &= (3,75 \pm 0,06) \si{\MeV}.
+\end{align*}
+Die Energie berechnet aus dieser Steigung beträgt
+\begin{align*}
+E_2 = (2,91 \pm 0,17) \si{\MeV}.
+\end{align*}
+
 
 
 \subsection{Statistik des radioakiven Zerfalls}
@@ -194,6 +226,5 @@ Die Messwerte werden in einem Histogramm aufgetragen
   \caption{Histogramm für die 100 Zählraten und Vergleich mit einer Poisson- und Gaußverteilung. }
   \label{fig:plot}
 \end{figure}
-\noindent Vergleicht man die berechneten Größen miteinander, so fällt auf, dass
-das Quadrat der Standardabweichung ungefähr der Varianz entspricht. Deshalb kann bei diesen Messwerten gesagt werden, dass sie besser zu einer Gaußverteilung passen.
+
 

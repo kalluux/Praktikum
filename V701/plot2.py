@@ -37,6 +37,6 @@ plt.xlim(-0.0,1.5)
 plt.legend()
 plt.grid()
 plt.xlabel(r'$x/$cm')
-plt.ylabel(r'$N$')
+plt.ylabel(r'$N/\frac{1}{120s}$')
 plt.savefig('plot2.pdf')
 
