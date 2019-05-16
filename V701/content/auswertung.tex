@@ -126,7 +126,7 @@ E_{2} = (1,8 \pm 0,19) \si{\MeV}.
 \begin{figure}[H]
   \centering
   \includegraphics{plot2.pdf}
-  \caption{Zählrate $N$ in Abhängikeit der effektiven Weglänge $x$ für einen Abstand von $1,5$ $\si{\cm}$. }
+  \caption{Zählrate $N$ in Abhängigkeit der effektiven Weglänge $x$ für einen Abstand von $1,5$ $\si{\cm}$. }
   \label{fig:plot}
 \end{figure}
 
@@ -161,7 +161,7 @@ Gleiches wird für die zweite Messung durchgeführt.
 \begin{figure}[H]
   \centering
   \includegraphics{plot4.pdf}
-  \caption{Energie $E$ in Abhänigkeit der effektiven Weglänge $x$ für einen Abstand von $1,5$ $\si{\cm}$. }
+  \caption{Energie $E$ in Abhängigkeit der effektiven Weglänge $x$ für einen Abstand von $1,5$ $\si{\cm}$. }
   \label{fig:plot}
 \end{figure}
 Die lineare Ausgleichsgerade geht von $x=0,1$ $\si{\cm}$ bis $x=0,74$ $\si{\cm}$. Die Parameter lauten
@@ -215,7 +215,7 @@ N &= \frac{1}{100}\cdot \sum_{n=1}^{100} N_i = 5463, \\
 \Delta N &=\frac{1}{\sqrt{100}} \cdot \sqrt{\frac{1}{99} \sum_{n=1}^{100} (N_i - N)^2} = 280.
 \end{align*}
 
-\noindent Außerdem wird die Varianz berechnet
+\noindent Außerdem wird die Varianz berechnet:
 \begin{align*}
 Var(N) = 78647 .
 \end{align*}
@@ -231,3 +231,7 @@ Die Messwerte werden in einem Histogramm aufgetragen und sind in Abbildung 5 zu 
   \caption{Histogramm für die 100 Zählraten und Vergleich mit einer Poisson- und Gaußverteilung. }
   \label{fig:plot}
 \end{figure}
+
+Die Gaußverteilung ist hierbei eine von dem Python-Paket SciPy an die Messwerte angepasste Funktion,
+während für die Poissonverteilung $10000$ poisson-verteilte Messwerte um den Mittelwert generiert wurden,
+welche als Histogramm dargestellt sind.

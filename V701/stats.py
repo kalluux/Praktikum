@@ -19,7 +19,7 @@ lnspc = np.linspace(xmin, xmax, len(b))
 
 pdf_g = stats.norm.pdf(lnspc, mean, std)
 plt.plot(lnspc, pdf_g, color="r", label="Gaußverteilung")
-plt.xlabel(r'Impulse / 1/10s')
+plt.xlabel(r'Zählrate N / 1/10s')
 plt.ylabel(r'Relative Häufigkeit')
  
 poi = np.random.poisson(lam=mean, size= 10000)
