@@ -211,14 +211,19 @@ Es werden 100 Werte für die Zerfälle pro Zeiteinheit gemessen und notiert. Die
 
 \noindent Aus diesen Werten wird der Mittelwert und die Standardabweichung bestimmt
 \begin{align*}
-Z &= \frac{1}{100}\cdot \sum_{n=1}^{100} Z_i = 5462.81 \\
-\Delta Z &=\frac{1}{\sqrt{100}} \cdot \sqrt{\frac{1}{99} \sum_{n=1}^{100} (Z_i - Z)^2} = 280,44.
+N &= \frac{1}{100}\cdot \sum_{n=1}^{100} N_i = 5463 \\
+\Delta N &=\frac{1}{\sqrt{100}} \cdot \sqrt{\frac{1}{99} \sum_{n=1}^{100} (N_i - N)^2} = 280.
 \end{align*}
 
 \noindent Außerdem wird die Varianz berechnet
 \begin{align*}
-Var(N) = 78647,35 .
+Var(N) = 78647 .
 \end{align*}
+%Die Funktion für die Gaußkurve lautet(wobei angenommen wird, dass die Wurzel der Varianz die Standardabweichung ist)
+%\begin{align*}
+%f(N_i,N,Var(N)) = \frac{1}{\Delta N \sqrt{2\pi}}\cdot e^{-\frac{1}{2}(\frac{N_i - N}{\Delta N})^2}.
+%\end{align*}
+
 Die Messwerte werden in einem Histogramm aufgetragen
 \begin{figure}[H]
   \centering
