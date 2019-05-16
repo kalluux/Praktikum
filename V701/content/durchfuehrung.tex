@@ -9,11 +9,14 @@ Der Versuchsaufbau ist in Abbildung \ref{fig:aufbau} dargestellt.
   \label{fig:aufbau}
 \end{figure}
 
-Als Strahlungsquelle wird ein Am-Präparat verwendet, welches sich von außerhalb verschiebbar in 
+Als Strahlungsquelle wird ein Americium-Präparat verwendet, welches sich von außerhalb verschiebbar in 
 einem Glaszylinder befindet, der sich mittels einer Vakuumpumpe evakuieren lässt.
 Die Alphastrahlung wird mithilfe eines Halbleiter-Sperrschichtzählers detektiert, welcher an
 einen Vorverstärker angeschlossen ist, der das Signal an einen Vielkanalanalysator weiterleitet.
-Das Signal lässt sich mit einem Programm am Computer analysieren.
+Das Signal lässt sich mit einem Programm am Computer analysieren, wenn man ihn mit diesem verbindet.
+Hierbei ist darauf zu achten, dass der Schalter im Programm unter \textit{MCA STATUS} auf \textit{connected} gestellt wird.
+Da in festen zeitlichen Intervallen gemessen wird, muss der Zählmodus auf \textit{AUTO} gestellt und als Bedingung
+\textit{Measurement time} ausgewählt werden. Anschließend wird das jeweilige Messintervall eingetragen.
 
 Um das Grundrauschen bei der Messung zu unterdrücken, muss vor Beginn der Messung
 am Vielkanalanalysator eine Diskriminatorschwelle eingestellt werden. Hierfür wird
@@ -23,7 +26,7 @@ Danach wird die Strahlungsquelle so nah an den Detektor herangebracht, dass der 
 wieder beginnt Pulse zu zählen. Anschließend wird die Röhre evakuiert und die Messung beginnt.
 
 In Intervallen von $50\,\si{\milli\bar}$ werden die Gesamtanzahl der Pulse in einem Zeitintervall
-von $120\,\si{\minute}$ und der Kanal, in dem das Maximum der Pulse liegt, notiert.
+von $120\,\si{\second}$ und der Kanal, in dem das Maximum der Pulse liegt, notiert.
 
 Zur Überprüfung der Statistik des radioaktiven Zerfalls wird in einem Intervall
 von $10\,\si{\second}$ die Anzahl der registrierten Pulse in der evakuierten Röhre notiert. Diese
