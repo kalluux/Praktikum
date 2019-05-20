@@ -1,6 +1,7 @@
 from scipy import stats
 import numpy as np
 import matplotlib.pylab as plt
+import math
  
 b = np.genfromtxt('n.txt', unpack=True)
  
@@ -27,3 +28,15 @@ plt.hist(poi, bins=10, density = True, histtype = "step", color ="k", label="Poi
 plt.grid()
 plt.legend()
 plt.show()
+
+
+
+#def f(x):
+#    return math.exp(-(x - 5463)**2 / (2 * 79442**2)) / (79442 * (2 * math.pi)**0.5)
+
+#f2 = np.vectorize(f)
+#x = np.linspace(4500, 6500)
+
+
+#plt.plot(x,f2(x))
+#plt.savefig('blah.pdf')

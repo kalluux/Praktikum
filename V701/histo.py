@@ -16,17 +16,23 @@ print('Varianz der Stichprobe', np.var(N, ddof = 1))
 print('Varianz der Stichprobe', np.var(N))
 print('gaussverteilung, da stndardabweichung 280^2 = varianz ist')
 
-def f(N):
-   return 1/(79442*np.sqrt(2*np.pi)) * np.exp(-1/2 * ((N-5463)/79442)**2)
-   
-#Erstellt linspace von Bereich, in dem Ausgleichsfunktion erstellt wird
-plt.hist(N, 15, label='Messwerte', alpha=1, density=1)
+#N.sort()
+#hmean = np.mean(N)
+#hstd = np.std(N)
+#pdf = stats.norm.pdf(N, hmean, hstd)
+#plt.plot(N, pdf)
+#plt.savefig('1.pdf')
 
-x_plot = np.linspace(4500, 6500)
+mean = 5463; std = 280; variance = np.square(std)
+x = np.linspace(5462.99,5463.01)
+f = np.exp(-np.square(x-mean)/2*variance)/(np.sqrt(2*np.pi*variance))
+
+plt.plot(x,f)
 
 
-plt.plot(x_plot,f(x_plot))
-plt.show()
 
 
-#plt.savefig('h.pdf')
+plt.savefig('1.pdf')
+
+
+

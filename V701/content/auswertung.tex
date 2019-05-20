@@ -24,7 +24,7 @@ Alle gemessenen und berechneten Werte sind in Tabelle 1 und 2 für die beiden Ab
     300 & 448 & 58861 & 3,35 & 0,53 \\
     350 & 440 & 66611 & 3,38 & 0,62 \\
     400 & 431 & 62401 & 3,32 & 0,71 \\
-    450 & 408 & 57024 & 3,14 & 0,8 \\
+    450 & 408 & 57024 & 3,14 & 0,80 \\
     500 & 399 & 51804 & 3,07 & 0,89 \\
     550 & 384 & 43950 & 2,95 & 0,98 \\
     600 & 384 & 36752 & 2,95 & 1,07 \\
@@ -33,7 +33,7 @@ Alle gemessenen und berechneten Werte sind in Tabelle 1 und 2 für die beiden Ab
     750 & 379 & 10923 & 2,92 & 1,33 \\
     800 & 380 & 6037 & 2,92 & 1,42 \\
     850 & 378 & 2710 & 2,91 & 1,51 \\
-    900 & 379 & 815 & 2,92 & 1,6 \\
+    900 & 379 & 815 & 2,92 & 1,60 \\
     950 & 378 & 393 & 2,91 & 1,69 \\
     1000 & 388 & 84 & 2,98 & 1,78 \\
  
@@ -149,7 +149,7 @@ b = (4,08 \pm 0,66) \si{\MeV}.
 \end{align*}
 Um die Energie zu der maximalen Reichweite zu bestimmen, wird $R_{m1}$ in die Geradengleichung $E_1 = a \cdot R_{m1} + b$ eingesetzt:
 \begin{align*}
-E_1 = (2,91 \pm 0,13) \si{\MeV}, %fehler 0,67?
+E_1 = (2,91 \pm 0,67) \si{\MeV}, %fehler 0,67?
 \end{align*}
 wobei der Fehler berechnet wird durch
 \begin{align*}
@@ -164,7 +164,7 @@ Gleiches wird für die zweite Messung durchgeführt.
   \caption{Energie $E$ in Abhängigkeit der effektiven Weglänge $x$ für einen Abstand von $1,5$ $\si{\cm}$. }
   \label{fig:plot}
 \end{figure}
-Die lineare Ausgleichsgerade geht von $x=0,1$ $\si{\cm}$ bis $x=0,74$ $\si{\cm}$. Die Parameter lauten
+\noindent Die lineare Ausgleichsgerade geht von $x=0,1$ $\si{\cm}$ bis $x=0,74$ $\si{\cm}$. Die Parameter lauten
 \begin{align*}
 a &= -\frac{dE}{dx} = (-1,13 \pm 0,12) \symup{\frac{MeV}{cm}} \\
 b &= (3,75 \pm 0,06) \si{\MeV}.
@@ -219,11 +219,14 @@ N &= \frac{1}{100}\cdot \sum_{n=1}^{100} N_i = 5463, \\
 \begin{align*}
 Var(N) = 78647 .
 \end{align*}
-%Die Funktion für die Gaußkurve lautet(wobei angenommen wird, dass die Wurzel der Varianz die Standardabweichung ist)
-%\begin{align*}
-%f(N_i,N,Var(N)) = \frac{1}{\Delta N \sqrt{2\pi}}\cdot e^{-\frac{1}{2}(\frac{N_i - N}{\Delta N})^2}.
-%\end{align*}
-
+Die Funktion für eine Gaußkurve mit $\sigma^2$ als Varianz und $\mu$ als Erwartungswert lautet
+\begin{align*}
+f(x,\mu,\sigma) = \frac{1}{\sigma \sqrt{2\pi}}\cdot e^{-\frac{1}{2}(\frac{x - \mu}{\sigma})^2}.
+\end{align*}
+Die Wahrscheinlichkeitsdichte für eine Poissonverteilung lautet
+\begin{align*}
+P(x) = \frac{\mu^x}{x!}\cdot e^{-\mu}.
+\end{align*}
 Die Messwerte werden in einem Histogramm aufgetragen und sind in Abbildung 5 zu sehen.
 \begin{figure}[H]
   \centering
