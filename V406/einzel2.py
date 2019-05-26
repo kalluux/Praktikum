@@ -24,7 +24,6 @@ print('A: ', a)
 print('b: ', b)
 
 
-
 plt.plot(x, y, 'rx', label='Messwerte')
 plt.plot(x, f(x, *params), 'b-', label='Regression')
 plt.yticks( [0, 0.000001, 0.000002, 0.000003, 0.000004, 0.000005],
