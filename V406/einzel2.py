@@ -23,16 +23,16 @@ b = ufloat(params[1], errors[1])
 print('A: ', a)
 print('b: ', b)
 
-
+c = np.linspace(x[0], x[48], 1000)
 plt.plot(x, y, 'rx', label='Messwerte')
-plt.plot(x, f(x, *params), 'b-', label='Regression')
+plt.plot(c, f(c, *params), 'b-', label='Regression')
 plt.yticks( [0, 0.000001, 0.000002, 0.000003, 0.000004, 0.000005],
             [r'$0$', r'$1$', r'$2$', r'$3$', r'$4$', r'$5$'])
 plt.xlabel(r'Winkel / rad')
 plt.ylabel(r'Intenstität / µA')
 plt.grid()
 plt.legend()
-plt.show()
+plt.savefig('einzel2.pdf')
 
 #A:  6.40+/-0.09
 #b:  0.000338+/-0.000005
