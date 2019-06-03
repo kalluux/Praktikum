@@ -2,7 +2,7 @@
 \label{sec:Auswertung}
 
 \subsection{Verifizierung der Linsengleichung}
-Die gemessenen Bild- und Gegenstandslängen sind in Tabelle (1) zu finden. Aus diesen Größen wird jeweils mit Gleichung (2) 
+Die gemessenen Bild- und Gegenstandslängen sind in Tabelle (\ref{tab:einzel1}) zu finden. Aus diesen Größen wird jeweils mit Gleichung (\ref{eqn:linsengleichung})
 die Brennweite $f$ für  die Linse berechnet. Auch diese sind in selbiger Tabelle aufgelistet.
 Verwendet wurde eine Linse, welche laut Herstellerangabe eine Brennweite von $f = 100\si{\milli\meter}$ besitzt.
 \begin{table}[H]
@@ -37,14 +37,14 @@ Somit lautet die Brennweite der Linse
 f_1 = (98,08 \pm 0,57) \si{\milli\meter} .
 \end{align*}
 
-Um graphisch die Brennweite zu bestimmen, werden die $b$- und $g$-Wertepaare aus Tabelle (1) in ein Diagramm eingezeichnet und durch eine Gerade verbunden.
-Dies ist in Abbildung () dargestellt.
+Um graphisch die Brennweite zu bestimmen, werden die $b$- und $g$-Wertepaare aus Tabelle (\ref{tab:einzel1}) in ein Diagramm eingezeichnet und durch eine Gerade verbunden.
+Dies ist in Abbildung \ref{fig:plot1} dargestellt.
 
 \begin{figure}[H]
   \centering
   \includegraphics{plot1.pdf}
   \caption{Darstellung der Geraden zwischen Gegenstandsweite und zugehöriger Bildweite.}
-  \label{fig:plot}
+  \label{fig:plot1}
 \end{figure}
 
 Aus dem Schnittpunkt aller Geraden kann die Brennweite abgelesen werden. Legt man eine horizontale und eine vertikale Linie durch den Schnittpunkt, symbolisiert der jeweilie Achsenschnittpunkt die Brennweite. Im Idealfall ist der Wert auf beiden Achsen identisch.
@@ -53,11 +53,11 @@ Da die Schnittpunkte mit den Achsen nicht den gleichen Wert ergeben, ergeben sic
 
 \subsection{Bestimmung der Brennweite einer Linse durch Bessel}
 Für diese Methode wird aus dem Abstand $e$ des Gegenstands und des Bildes und aus der Größe $d_1 = g_1-b_1$ beziehungsweise $d_2 = g_2-b_2$ die Brennweite bestimmt.
-Die Messwerte für beide Gegenstands-und Bildweiten sind in Tabelle (2) aufgelistet.
+Die Messwerte für beide Gegenstands-und Bildweiten sind in Tabelle (\ref{tab:einzel2}) aufgelistet.
 \begin{table}[H]
 \centering
 \caption{Daten zur Bestimmung der Brennweite für weißes Licht.}
-\label{tab:einzel1}
+\label{tab:einzel2}
 \begin{tabular}{c c c c c}
 \toprule
 $e/\si{\milli\meter}$ & $b1/\si{\milli\meter}$ & $g1/\si{\milli\meter}$ & $b2/\si{\milli\meter}$ & $g2/\si{\milli\meter}$ \\
@@ -76,11 +76,11 @@ $e/\si{\milli\meter}$ & $b1/\si{\milli\meter}$ & $g1/\si{\milli\meter}$ & $b2/\s
 \end{tabular}
 \end{table}
 
-Die berechnete Größe $d$ und die zugehörige Brennweite bestimmt durch Gleichung () sind in Tabelle (3) zu finden.
+Die berechnete Größe $d$ und die zugehörige Brennweite bestimmt durch Gleichung (\ref{eq:bessel}) sind in Tabelle (\ref{tab:einzel3}) zu finden.
 \begin{table}[H]
 \centering
 \caption{Abstand $d_W$ der Linsen und berechnete Brennweiten $f_W$.}
-\label{tab:einzel1}
+\label{tab:einzel3}
 \begin{tabular}{c c c c}
 \toprule
 $d_{W1}/\si{\milli\meter}$ & $f_{W1}/\si{\milli\meter}$ & $d_{W2}/\si{\milli\meter}$ & $f_{W2}/\si{\milli\meter}$ \\
@@ -101,18 +101,18 @@ $d_{W1}/\si{\milli\meter}$ & $f_{W1}/\si{\milli\meter}$ & $d_{W2}/\si{\milli\met
 
 Die Mittelwerte der Brennweiten ergeben sich zu
 \begin{align*}
-f_{W1} = (98,70 \pm 0,53) \si{\milli\meter} \\
+f_{W1} = (98,70 \pm 0,53) \si{\milli\meter}, \\
 f_{W2} = (96,55 \pm 0,34) \si{\milli\meter} .
 \end{align*}
 
 
-Gleiches Verfahren wird nun für rotes Licht angewendet. Die Daten befinden sich in Tabelle (4) und die berechneten Größen in Tabelle (5).
+Gleiches Verfahren wird nun für rotes Licht angewendet. Die Daten befinden sich in Tabelle \ref{tab:einzel4} und die berechneten Größen in Tabelle \ref{tab:einzel5}.
 
 
 \begin{table}[H]
 \centering
 \caption{Daten zur Bestimmung der Brennweite für rotes Licht.}
-\label{tab:einzel1}
+\label{tab:einzel4}
 \begin{tabular}{c c c c c}
 \toprule
 $e/\si{\milli\meter}$ &$b1/\si{\milli\meter}$ & $g1/\si{\milli\meter}$ & $b2/\si{\milli\meter}$ & $g2/\si{\milli\meter}$ \\
@@ -129,7 +129,7 @@ $e/\si{\milli\meter}$ &$b1/\si{\milli\meter}$ & $g1/\si{\milli\meter}$ & $b2/\si
 \begin{table}[H]
 \centering
 \caption{Abstand $d_R$ der Linsen und berechnete Brennweiten $f_R$ für rotes Licht.}
-\label{tab:einzel1}
+\label{tab:einzel5}
 \begin{tabular}{c c c c}
 \toprule
 $d_{R1}/\si{\milli\meter}$ & $f_{R1}/\si{\milli\meter}$ & $d_{R2}/\si{\milli\meter}$ & $f_{R2}/\si{\milli\meter}$ \\
@@ -145,17 +145,17 @@ $d_{R1}/\si{\milli\meter}$ & $f_{R1}/\si{\milli\meter}$ & $d_{R2}/\si{\milli\met
 
 Die Mittelwerte der Brennweiten für rotes Licht ergeben sich zu
 \begin{align*}
-f_{R1} = (100,19 \pm 0,55) \si{\milli\meter} \\
+f_{R1} = (100,19 \pm 0,55) \si{\milli\meter}, \\
 f_{R2} = (97,08 \pm 0,38) \si{\milli\meter} .
 \end{align*}
 
- \noindent Die Daten und die berechneten Größen für blaues Licht befinden sich in Tabellen (6) und (7). Wieder wird analog verfahren.
+ \noindent Die Daten und die berechneten Größen für blaues Licht befinden sich in Tabellen (\ref{tab:einzel6}) und (\ref{tab:einzel7}). Wieder wird analog verfahren.
 
 
 \begin{table}[H]
 \centering
 \caption{Daten zur Bestimmung der Brennweite für blaues Licht.}
-\label{tab:einzel1}
+\label{tab:einzel6}
 \begin{tabular}{c c c c c}
 \toprule
 $e/\si{\milli\meter}$ &$b1/\si{\milli\meter}$ & $g1/\si{\milli\meter}$ & $b2/\si{\milli\meter}$ & $g2/\si{\milli\meter}$ \\
@@ -172,7 +172,7 @@ $e/\si{\milli\meter}$ &$b1/\si{\milli\meter}$ & $g1/\si{\milli\meter}$ & $b2/\si
 \begin{table}[H]
 \centering
 \caption{Abstand $d_B$ der Linsen und berechnete Brennweiten $f_B$ für blaues Licht.}
-\label{tab:einzel1}
+\label{tab:einzel7}
 \begin{tabular}{c c c c}
 \toprule
 $d_{B1}/\si{\milli\meter}$ & $f_{B1}/\si{\milli\meter}$ & $d_{B2}/\si{\milli\meter}$ & $f_{B2}/\si{\milli\meter}$ \\
@@ -188,18 +188,18 @@ $d_{B1}/\si{\milli\meter}$ & $f_{B1}/\si{\milli\meter}$ & $d_{B2}/\si{\milli\met
 
 Die Mittelwerte der Brennweiten für blaues Licht ergeben sich zu
 \begin{align*}
-f_{B1} = (98,33 \pm 0,59) \si{\milli\meter} \\
+f_{B1} = (98,33 \pm 0,59) \si{\milli\meter}, \\
 f_{B2} = (96,26 \pm 0,31) \si{\milli\meter} .
 \end{align*}
 
 \subsection{Bestimmung der Brennweite eines Linsensystems durch Abbe}
 Das Linsensystem besteht aus einer Sammellinse mit Brennweite $f_S = 100 \si{\milli\meter}$ und einer Zerstreuungsline mit Brennweite $f_Z = - 100 \si{\milli\meter}$.
-Die gemessenen Gegenstands-und Bildweiten und die Bildgröße sind in Tabelle (8) aufgelistet. Die Gegenstandsgröße beträgt $G = 28 \si{\milli\meter}$.
+Die gemessenen Gegenstands-und Bildweiten und die Bildgröße sind in Tabelle (\ref{tab:einzel8}) aufgelistet. Die Gegenstandsgröße beträgt $G = 28 \si{\milli\meter}$.
 
 \begin{table}[H]
 \centering
 \caption{Gemessene Bild-und Gegenstandsweite und zugehörige Bildgröße.}
-\label{tab:einzel1}
+\label{tab:einzel8}
 \begin{tabular}{c c c}
 \toprule
 $g'/\si{\milli\meter}$ & $b'/\si{\milli\meter}$ & $B/\si{\milli\meter}$\\
@@ -218,32 +218,32 @@ $g'/\si{\milli\meter}$ & $b'/\si{\milli\meter}$ & $B/\si{\milli\meter}$\\
 \end{tabular}
 \end{table}
 
-In einem Diagramm wird $g'$ gegen $1+1/V$ aus Gleichung () aufgetragen und eine lineare Ausgleichsrechnung durchgeführt(s. Abbildung ()). Die Größe $V$ berechnet sich mit Hilfe von Gleichung ().
+In einem Diagramm wird $g'$ gegen $1+1/V$ aus Gleichung (\ref{eq:abbe1}) aufgetragen und eine lineare Ausgleichsrechnung durchgeführt(s. Abbildung (\ref{fig:plot2})). Die Größe $V$ berechnet sich mit Hilfe von Gleichung (\ref{eq:abbe1}).
 Aus den Parametern der Ausgleichsgeraden lassen sich dann Brennweite und Hauptebenen ablesen.
 \begin{figure}[H]
   \centering
   \includegraphics{plot2.pdf}
   \caption{Gegenstandsweite aufgetragen gegen $1+1/V$ und lineare Ausgleichsgerade.}
-  \label{fig:plot}
+  \label{fig:plot2}
 \end{figure}
 Die Parameter der Ausgleichsrechnung betragen
 \begin{align*}
-a = f = (171,39 \pm 5,71)\si{\milli\meter}\\
-b = h = (-66,42\pm 10,75)\si{\milli\meter}\\
+a &= f = (171,39 \pm 5,71)\si{\milli\meter},\\
+b &= h = (-66,42\pm 10,75)\si{\milli\meter}
 \end{align*}
 
 
-\noindent Außerdem wird $b'$ gegen $1+V$ aus Gleichung () aufgetragen und erneut eine lineare Ausgleichsrechnung durchgeführt(s. Abbildung ()).
+\noindent Außerdem wird $b'$ gegen $1+V$ aus Gleichung (\ref{eq:abbe2}) aufgetragen und erneut eine lineare Ausgleichsrechnung durchgeführt(s. Abbildung (\ref{fig:plot3})).
 \begin{figure}[H]
   \centering
   \includegraphics{plot3.pdf}
   \caption{Bildweite aufgetragen gegen $1+V$ und lineare Ausgleichsgerade.}
-  \label{fig:plot}
+  \label{fig:plot3}
 \end{figure}
 Die Parameter der Ausgleichsrechnung betragen
 \begin{align*}
-a = f = (178,19 \pm 4,92)\si{\milli\meter}\\
-b = h' = (131,03\pm 10,82)\si{\milli\meter}\\
+a &= f = (178,19 \pm 4,92)\si{\milli\meter},\\
+b &= h'= (131,03\pm 10,82)\si{\milli\meter}.
 \end{align*}
 
 \noindent Da das System aus einer Sammel- und einer Zerstreuungslinse besteht, kann sich über Matrizenoptik die theoretische Brennweite $f_T$ berechnen über
