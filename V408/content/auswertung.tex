@@ -79,11 +79,11 @@ $e/\si{\milli\meter}$ & $b1/\si{\milli\meter}$ & $g1/\si{\milli\meter}$ & $b2/\s
 Die berechnete Größe $d$ und die zugehörige Brennweite bestimmt durch Gleichung () sind in Tabelle (3) zu finden.
 \begin{table}[H]
 \centering
-\caption{Abstand $d$ der Linsen und berechnete Brennweiten $f$.}
+\caption{Abstand $d_W$ der Linsen und berechnete Brennweiten $f_W$.}
 \label{tab:einzel1}
 \begin{tabular}{c c c c}
 \toprule
-$d_1/\si{\milli\meter}$ & $f_1/\si{\milli\meter}$ & $d_2/\si{\milli\meter}$ & $f_2/\si{\milli\meter}$ \\
+$d_{W1}/\si{\milli\meter}$ & $f_{W1}/\si{\milli\meter}$ & $d_{W2}/\si{\milli\meter}$ & $f_{W2}/\si{\milli\meter}$ \\
 \midrule
 -230 & 98,55 & 238 & 96,68\\
 -254 & 98,98 & 264 & 96,49\\
@@ -128,11 +128,11 @@ $e/\si{\milli\meter}$ &$b1/\si{\milli\meter}$ & $g1/\si{\milli\meter}$ & $b2/\si
 
 \begin{table}[H]
 \centering
-\caption{Abstand $d$ der Linsen und berechnete Brennweiten $f$.}
+\caption{Abstand $d_R$ der Linsen und berechnete Brennweiten $f_R$ für rotes Licht.}
 \label{tab:einzel1}
 \begin{tabular}{c c c c}
 \toprule
-$d_1/\si{\milli\meter}$ & $f_1/\si{\milli\meter}$ & $d_2/\si{\milli\meter}$ & $f_2/\si{\milli\meter}$ \\
+$d_{R1}/\si{\milli\meter}$ & $f_{R1}/\si{\milli\meter}$ & $d_{R2}/\si{\milli\meter}$ & $f_{R2}/\si{\milli\meter}$ \\
 \midrule
 224 & 99,91 & -236 & 97,15\\
 290 & 99,27 & -296 & 97,67\\
@@ -149,7 +149,7 @@ f_{R1} = (100,19 \pm 0,55) \si{\milli\meter} \\
 f_{R2} = (97,08 \pm 0,38) \si{\milli\meter} .
 \end{align*}
 
-Die Daten und die berechneten Größen für blaues Licht befinden sich in Tabelle (6) und (7). Wieder wird analog verfahren.
+ \noindent Die Daten und die berechneten Größen für blaues Licht befinden sich in Tabellen (6) und (7). Wieder wird analog verfahren.
 
 
 \begin{table}[H]
@@ -171,11 +171,11 @@ $e/\si{\milli\meter}$ &$b1/\si{\milli\meter}$ & $g1/\si{\milli\meter}$ & $b2/\si
 
 \begin{table}[H]
 \centering
-\caption{Abstand $d$ der Linsen und berechnete Brennweiten $f$.}
+\caption{Abstand $d_B$ der Linsen und berechnete Brennweiten $f_B$ für blaues Licht.}
 \label{tab:einzel1}
 \begin{tabular}{c c c c}
 \toprule
-$d_1/\si{\milli\meter}$ & $f_1/\si{\milli\meter}$ & $d_2/\si{\milli\meter}$ & $f_2/\si{\milli\meter}$ \\
+$d_{B1}/\si{\milli\meter}$ & $f_{B1}/\si{\milli\meter}$ & $d_{B2}/\si{\milli\meter}$ & $f_{B2}/\si{\milli\meter}$ \\
 \midrule
 232 & 98,09 & -238 & 96,68\\
 290 & 99,27 & -300 & 96,59\\
@@ -218,7 +218,8 @@ $g'/\si{\milli\meter}$ & $b'/\si{\milli\meter}$ & $B/\si{\milli\meter}$\\
 \end{tabular}
 \end{table}
 
-In einem Diagramm wird $g'$ gegen $1+1/V$ aus Gleichung () aufgetragen und eine lineare Ausgleichsrechnung durchgeführt(s. Abbildung ()).
+In einem Diagramm wird $g'$ gegen $1+1/V$ aus Gleichung () aufgetragen und eine lineare Ausgleichsrechnung durchgeführt(s. Abbildung ()). Die Größe $V$ berechnet sich mit Hilfe von Gleichung ().
+Aus den Parametern der Ausgleichsgeraden lassen sich dann Brennweite und Hauptebenen ablesen.
 \begin{figure}[H]
   \centering
   \includegraphics{plot2.pdf}
@@ -232,7 +233,7 @@ b = h = (-66,42\pm 10,75)\si{\milli\meter}\\
 \end{align*}
 
 
-Außerdem wird $b'$ gegen $1+V$ aus Gleichung () aufgetragen und erneut eine lineare Ausgleichsrechnung durchgeführt(s. Abbildung ()).
+\noindent Außerdem wird $b'$ gegen $1+V$ aus Gleichung () aufgetragen und erneut eine lineare Ausgleichsrechnung durchgeführt(s. Abbildung ()).
 \begin{figure}[H]
   \centering
   \includegraphics{plot3.pdf}
@@ -245,7 +246,7 @@ a = f = (178,19 \pm 4,92)\si{\milli\meter}\\
 b = h' = (131,03\pm 10,82)\si{\milli\meter}\\
 \end{align*}
 
-Da das System aus einer Sammel- und einer Zerstreuungslinse besteht, kann sich über Matrizenoptik die theoretische Brennweite $f_T$ berechnen über
+\noindent Da das System aus einer Sammel- und einer Zerstreuungslinse besteht, kann sich über Matrizenoptik die theoretische Brennweite $f_T$ berechnen über
 \begin{align*}
 f_T = -\frac{f_{\symup{S}}\cdot f_{\symup{Z}}}{d}.
 \end{align*}
