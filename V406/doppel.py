@@ -4,44 +4,36 @@ from scipy.optimize import curve_fit
 from uncertainties import ufloat
 
 xs, ys = np.genfromtxt('doppel.txt', unpack = True)
-x = xs/100
+x = (xs/100)
 y = (ys-0.00032)*10**(-6)
 l = 635 * 10**(-9)
-sin_phi = x / np.sqrt(x**2 + 1)
 phi = np.arctan(x)
-print(sin_phi)
 
-
+phi2 = np.linspace(-0.02, 0.02, 1000)
 #a = gitterkonstante, b = breite
-def f(sin_phi, a0, a, b, c, d):
-    return a0 * 4 * np.cos(np.pi * a * (np.sin(phi + d)) / l)**2 * (l / (np.pi * b * np.sin(phi + d)))**2 * (np.sin(np.pi * b * np.sin(phi + d) / l))**2 + c
+def f(phi, a0, s, b, d):
+    return a0 * (np.cos((np.pi * s * np.sin(phi-d))/l))**2 * (l/(np.pi * b * np.sin(phi-d)))**2 * (np.sin((np.pi * b * np.sin(phi-d)/l)))**2
 
 
-#   return a0 * 4 * np.cos(np.pi * a * (sin_phi + d) / l)**2 * (l / (np.pi * b * (sin_phi + d)))**2 * (np.sin(np.pi * b * (sin_phi + d) / l))**2 + c
 
-
-params, covariance_matrix = curve_fit(f, x, y, p0=(250, 0.00004, 0.00001, 0, 0))
+params, covariance_matrix = curve_fit(f, phi, y, p0=(0.0000003, 0.0005, 0.0001, 0.0005))
 errors = np.sqrt(np.diag(covariance_matrix))
-a0 = ufloat(params[0], errors[0])
-a = ufloat(params[1], errors[1])
-b = ufloat(params[2], errors[2])
+i = params[0] * (np.cos((np.pi * params[1] * np.sin(phi2-params[3]))/l))**2 * (l/(np.pi * params[2] * np.sin(phi2-params[3])))**2 * (np.sin((np.pi * params[2] * np.sin(phi2-params[3])/l)))**2
 
-
-#print('a0: ', a0)
-#print('A: ', a)
-#print('b: ', b)
 print('Parameter: ', params)
 
-c = np.linspace(x[0], x[84], 1000)
-plt.plot(x, y, 'rx', linestyle=':', linewidth=2, label='Messwerte')
-plt.plot(phi, f(phi, *params), 'b-', label='Regression')
+
+plt.plot(phi, y, 'rx', linewidth=2, label='Messwerte')
+#plt.plot(phi2, i, 'b-', label='Theorie')
+#plt.plot(phi2, f(phi, *params), 'g-', label='Regression')
+plt.plot(phi2, i, 'g-', label='Regression')
 #plt.yticks( [0, 0.0000002, 0.0000004, 0.0000006, 0.0000008, 0.000001, 0.0000012, 0.0000014],
 #           [ r'$0$', r'$0.2$', r'$0.4$', r'$0.6$', r'$0.8$', r'$1$', r'$1.2$', r'$1.4$'])
 plt.xlabel(r'Winkel / rad')
 plt.ylabel(r'Intenstität / µA')
 plt.grid()
 plt.legend()
-plt.savefig('doppel.pdf')
+plt.savefig('doppelfix.pdf')
 
 
 #A:  0.2498718+/-0.0000028
