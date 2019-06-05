@@ -17,11 +17,9 @@ def f(x, a, b):
 
 params, covariance_matrix = curve_fit(f, x, y, p0=(6, 0.00015))
 errors = np.sqrt(np.diag(covariance_matrix))
-a = ufloat(params[0], errors[0])
-b = ufloat(params[1], errors[1])
 
-print('A: ', a)
-print('b: ', b)
+print('Parameter: ', params)
+print('Fehler: ', errors)
 
 
 c = np.linspace(x[0], x[64], 1000)
