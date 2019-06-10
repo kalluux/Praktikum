@@ -28,12 +28,23 @@ gerechnet werden.
 Um den Zusammenhang zwischen Anodenstrom $I_A$ und Potential zu erkennen, dient eine Kennlinie einer Hochvakuumdiode. Ein Verlauf ist in Abbildung (2) dargestellt.
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth]{k.png}
+  \includegraphics[width=0.7\textwidth]{k.png}
   \caption{Verlauf einer Kennlinie\cite{kent}.}
   \label{fig:aufbau}
 \end{figure}
 Die Kurve lässt sich in drei Bereiche einteilen: Das Anlaufstrom-, Raumladungs-, und Sättigungsstromgebiet. Das Anlaufstromgebiet liegt dort, wo das Potential negativ ist.
-Dass die Stromdichte bei $V=0$ nicht Null ist, liegt daran, dass die Elektronen eine Eigengeschwindigkeit besitzen, wenn sie aus der Kathode austreten. Die Elektronen mit Energieüberschuss $\Delta E = E - ( \zeta + e_0 \phi)$ können gegen ein Gegenfeld anlaufen.
+Dass die Stromdichte bei $V=0$ nicht Null ist, liegt daran, dass die Elektronen eine Eigengeschwindigkeit besitzen, wenn sie aus der Kathode austreten. Die Elektronen mit Energieüberschuss $\Delta E = E - ( \zeta + e_0 \phi)$ können gegen ein Gegenfeld anlaufen und die Energie ist größer als die Austrittsarbeit.
+Das Anodenmaterial besitzt eine größere Austrittsarbeit $\phi_A$. Bei angelegtem äußerden Potential $V$ zwischen Anode und Kathode, verschieben sich die Fermi-Oberflächen um $e_0V$ gemäß Abbildung (3).
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{blah.png}
+  \caption{Verschiebung der Potentiale von Kathode und Anode \cite{kent}.}
+  \label{fig:aufbau}
+\end{figure}
+Die Elektronen, welche die Anode erreichen, müssen eine um $e_0 \phi_A + e_0 V$ höhere Energie besitzen. Ein Zusammenhang zwischen Strom und Potential gibt folgende Gleichung
+\begin{align}
+j(V) = j_0 \exp(-\frac{e_0 \phi_A + e_0 V}{k T}) = const \exp(-\frac{e_0 V}{k T})
+\end{align}
 Das Raumladungsgebiet schließt an das Anlaufgebiet an. Bei niedriger Spannung erreichen nur wenige Elektronen die Anode. Das Ohmsche Gesetz ist bei einer Diode nicht gültig, da die Elektronen keine konstante Geschwindigkeit in Richtung Anode besitzen. Die Raumladungsdichte $\rho$ ist also eine vom Ort abhängige Funktion, und nimmt in Richtung Anode ab, da die Stromdichte durch die Kontinuitätsgleichung
 \begin{align}
 j = -\rho v
