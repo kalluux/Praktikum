@@ -1,9 +1,73 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-\begin{figure}
-  \centering
-  \includegraphics{plot.pdf}
-  \caption{Plot.}
-  \label{fig:plot}
-\end{figure}
+Um die Wellenlänge des verwendeten Lasers mit Gleichung () zu berechnen, werden die Anzahl der Intensitätsmaxima $z$ und die zugehörige Verschiebung $d$ gemessen.
+Die tatsächlich abgelesene Verschiebung muss noch durch die Hebelübersetzung Ü = 5,017 geteilt werden. 
+Alle benötigten Daten und die daraus berechnete Wellenlänge sind in Tabelle (1) zu finden.
+\begin{table}[H]
+\centering
+\caption{Verschiebung, Anzahl der Maxima und Wellenlänge.}
+\label{tab:einzel1}
+\begin{tabular}{c c c}
+\toprule
+$d/\si{\milli\meter}$ & $z$ & $\lambda/\si{\nano\meter}$\\
+\midrule
+4,3 & 3034 & 564,99 \\
+4,6 & 3178 & 577,02 \\
+4,8 & 3024 & 632,77 \\
+4,8 & 3047 & 627,99 \\
+4,9 & 3045 & 641,50 \\
+4,8 & 3061 & 625,12 \\
+4,8 & 3056 & 626,14 \\
+4,7 & 3024 & 619,59 \\
+4,8 & 3063 & 624,71 \\
+4,7 & 3036 & 617,14 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Der Mittelwert der Wellenlängen kann berechnet werden durch
+\begin{align*}
+x &= \frac{1}{10}\cdot \sum_{n=1}^{10} x_i\\
+\Delta x &=\frac{1}{\sqrt{10}} \cdot \sqrt{\frac{1}{9} \sum_{n=1}^{10} (x_i - x)^2} 
+\end{align*}
+Die ersten beiden Werte werden dafür nicht beachtet, da sie von den übrigen deutlich abweichen. Somit beträgt der Mittelwert 
+\begin{align*}
+\lambda = (626,87 \pm 7,12) \si{\nano\meter} .
+\end{align*}
+
+Um den Brechungsindex von Luft zu berechen wird Formel () genutzt. Weitere Größen die bekannt sein müssen sind
+\begin{align*}
+T_0 &= 273.15 \,\si{\kelvin}\\
+p_0 &= 1.0132 \,\si{\bar}\\
+b &= 0.05 \,\si{\meter}\\
+\end{align*}
+wobei $T_0$ und $p_0$ die Temperatur und der Druck bei Normalbedingungen sind und $b$ die Schichtdicke.
+Als Zimmertemperatur werden $295,15 \,\si{\kelvin}$ angenommen.
+In Tabelle (2) sind die bei einem Druckunterschied $p-p'= 0,6 \,\si{\bar}$ gemessenen Maxima und die daraus resultierenden Brechungsindizes aufgelistet.
+\begin{table}[H]
+\centering
+\caption{Anzahl der Maxima und berechneter Brechungsindex von Luft.}
+\label{tab:einzel1}
+\begin{tabular}{c c}
+\toprule
+$z$ & $n$\\
+\midrule
+24 & $1,0002696 \pm 0,0000102$ \\
+23 & $1,0002584 \pm 0,0000098$ \\
+24 & $1,0002696 \pm 0,0000102$ \\
+24 & $1,0002696 \pm 0,0000102$ \\
+25 & $1,0002809 \pm 0,0000107$ \\
+25 & $1,0002809 \pm 0,0000107$ \\
+25 & $1,0002809 \pm 0,0000107$ \\
+24 & $1,0002696 \pm 0,0000102$ \\
+24 & $1,0002696 \pm 0,0000102$ \\
+25 & $1,0002809 \pm 0,0000107$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+Der Mittelwert der berechneten Brechungsindizes ist
+\begin{align*}
+n = 1,000273 \pm 0,000010 .
+\end{align*}
+
