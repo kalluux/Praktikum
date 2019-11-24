@@ -33,7 +33,7 @@ plt.xlabel(r'Winkel / rad')
 plt.ylabel(r'Intenstität / µA')
 plt.grid()
 plt.legend()
-plt.savefig('doppelfix.pdf')
+#plt.savefig('doppelfix.pdf')
 
 
 #A:  0.2498718+/-0.0000028
